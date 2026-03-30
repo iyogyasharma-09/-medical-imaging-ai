@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTorch model weights — too large for git; use LFS or share separately
+# The models/ directory itself is tracked for structure
+models/*.pt
+models/*.pth
+models/*.pth.zip
+models/*.bin
+
+# Dataset — never commit raw NIfTI data
+dataset/
+
+# Results & generated outputs (reproducible from code)
+results/
+gradcam_results/
+
+# Temp files
+/tmp/
+*.tmp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Secrets / credentials
+.env
+kaggle.json
