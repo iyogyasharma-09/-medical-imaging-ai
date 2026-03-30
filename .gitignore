@@ -23,6 +23,8 @@ models/*.pt
 models/*.pth
 models/*.pth.zip
 models/*.bin
+# Exception: MedicalNet pretrained weights (tracked via LFS)
+!models/resnet_18_23dataset.pth
 
 # Dataset — never commit raw NIfTI data
 dataset/

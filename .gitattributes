@@ -1,0 +1,2 @@
+*.pt filter=lfs diff=lfs merge=lfs -text
+models/resnet_18_23dataset.pth filter=lfs diff=lfs merge=lfs -text
