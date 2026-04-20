@@ -291,9 +291,14 @@ class SwinClassifier3D(nn.Module):
       → global average pooling  → (B, feature_size*16)
       → Dropout → Linear → num_classes logits
 
-    For img_size=(96,96,96) and feature_size=24:
-      Bottleneck: 384 channels,  spatial 3×3×3
+    For img_size=(96,96,96) [RTX A1000 8 GB config] and feature_size=24:
+      Bottleneck: 384 channels, spatial 3×3×3
       Total classifier params: ~150 K
+      Peak VRAM: ~5–6 GB with batch=1 + fp16 AMP ✔
+
+    For img_size=(128,128,128) [16+ GB GPU] and feature_size=24:
+      Bottleneck: 384 channels, spatial 4×4×4
+      Peak VRAM: ~10–12 GB — OOM on 8 GB cards
 
     Grad-CAM target: swin_encoder.swinViT.layers4 (last Swin stage)
     """
@@ -337,7 +342,9 @@ def build_swin_transformer_3d(
     Swin Transformer 3D — window-based self-attention, captures long-range
     global context that CNNs miss.  Uses MONAI's SwinUNETR encoder backbone.
 
-    feature_size=24 → 'Swin-Tiny' scale, memory-efficient on A100/V100.
+    feature_size=24 → 'Swin-Tiny' scale.
+    Input: (B, 4, 128, 128, 128) — 4-channel BraTS 2021 3D volume.
+    Use config SPATIAL_SIZE to control resolution; must be divisible by 32.
     """
     cfg = MODELS["swin_transformer_3d"]
     return SwinClassifier3D(

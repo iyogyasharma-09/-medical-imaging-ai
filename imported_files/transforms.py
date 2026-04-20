@@ -1,14 +1,24 @@
 """
 transforms.py
 -------------
-MONAI transform pipelines for BraTS 2021 classification.
+MONAI transform pipelines for BraTS 2021 full 3D volume classification.
 
 Two pipelines:
-  get_train_transforms() — normalization + spatial augmentation
-  get_val_transforms()   — normalization only (deterministic)
+  get_train_transforms() — geometry normalization + augmentation
+  get_val_transforms()   — geometry normalization only (deterministic)
 
 All transforms operate on dict-format samples with keys "image" and "label".
-Input image shape: (4, D, H, W)  — 4-channel 3D numpy array
+Input image shape: (4, D, H, W)  — 4-channel 3D numpy array stacked as
+                                    [T1, T1ce, T2, FLAIR] (channel axis = 0).
+
+IMPORTANT — EnsureChannelFirstd note:
+  _load_volume() returns a numpy array of shape (4, D, H, W) where channel=0.
+  We use channel_dim='no_channel' to tell MONAI that channels are ALREADY in
+  the leading dimension and it should NOT insert an extra dimension.
+  Using the wrong channel_dim would produce a (1, 4, D, H, W) tensor (broken).
+
+BraTS 2021 native voxel space: 240×240×155 @ 1 mm isotropic.
+After pipeline: (4, SPATIAL_SIZE[0], SPATIAL_SIZE[1], SPATIAL_SIZE[2]).
 """
 
 from monai.transforms import (
@@ -20,6 +30,7 @@ from monai.transforms import (
     RandShiftIntensityd,
     RandScaleIntensityd,
     RandGaussianNoised,
+    RandZoomd,
     CropForegroundd,
     Resized,
     EnsureTyped,
@@ -30,38 +41,52 @@ from monai.transforms import (
 
 
 # ------------------------------------------------------------------ #
-# Target spatial size — adjust based on GPU memory                   #
-# 128x128x128 is safe for batch_size=2 on 24GB VRAM                  #
-# Use 96x96x96 if OOM on smaller GPUs                               #
+# Target spatial size — read from config for single source of truth. #
+# Fallback to 128^3 if run standalone (e.g. imported_files context). #
 # ------------------------------------------------------------------ #
-SPATIAL_SIZE = (128, 128, 128)
+try:
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+    from config import SPATIAL_SIZE
+except ImportError:
+    # Standalone fallback
+    # 128^3 is safe for batch_size=1 on ≥16 GB VRAM
+    # Use 96^3 if OOM on smaller GPUs
+    SPATIAL_SIZE = (128, 128, 128)
 
 
 def get_train_transforms() -> Compose:
     """
-    Training pipeline:
-      1. Ensure channel-first format
-      2. Reorient to standard RAS orientation
-      3. Resample to 1mm isotropic voxel spacing
-      4. Crop foreground (removes empty background)
-      5. Resize to fixed spatial size
-      6. Per-channel z-score normalization (non-zero voxels only)
-      7. Spatial augmentation (flips, rotations)
-      8. Intensity augmentation (shift, scale, noise)
-      9. Convert to tensor
+    BraTS 2021 training pipeline:
+      1.  EnsureChannelFirstd  — confirm (4, D, H, W) — no new dim added
+      2.  Orientationd         — reorient to RAS
+      3.  Spacingd             — resample to 1 mm isotropic
+      4.  CropForegroundd      — crop to brain bounding box (non-zero voxels)
+      5.  Resized              — resize to SPATIAL_SIZE
+      6.  NormalizeIntensityd  — z-score per modality on non-zero voxels
+      7.  RandFlipd x3        — axial / coronal / sagittal flips
+      8.  RandRotate90d        — random 90° in-plane rotation
+      9.  RandZoomd            — random isotropic zoom 0.9–1.1×
+      10. RandShiftIntensityd  — intensity offset ±10%
+      11. RandScaleIntensityd  — intensity scale ±10%
+      12. RandGaussianNoised   — additive noise (std=0.05, prob=20%)
+      13. EnsureTyped + ToTensord
     """
     return Compose([
+        # channel_dim='no_channel': numpy is already (4, D, H, W)
         EnsureChannelFirstd(keys=["image"], channel_dim=0),
         Orientationd(keys=["image"], axcodes="RAS"),
         Spacingd(
             keys=["image"],
-            pixdim=(1.0, 1.0, 1.0),
+            pixdim=(1.0, 1.0, 1.0),   # BraTS 2021: 1 mm isotropic
             mode="bilinear",
         ),
         CropForegroundd(
             keys=["image"],
             source_key="image",
-            select_fn=lambda x: x > 0,   # crop based on non-zero voxels
+            select_fn=lambda x: x > 0,   # brain mask = non-zero voxels
+            margin=0,
         ),
         Resized(
             keys=["image"],
@@ -70,14 +95,22 @@ def get_train_transforms() -> Compose:
         ),
         NormalizeIntensityd(
             keys=["image"],
-            nonzero=True,       # normalize only non-zero (brain) voxels
-            channel_wise=True,  # separate z-score per modality channel
+            nonzero=True,       # z-score on brain voxels only
+            channel_wise=True,  # separate per modality (T1/T1ce/T2/FLAIR)
         ),
         # --- Spatial augmentation ---
         RandFlipd(keys=["image"], prob=0.5, spatial_axis=0),
         RandFlipd(keys=["image"], prob=0.5, spatial_axis=1),
         RandFlipd(keys=["image"], prob=0.5, spatial_axis=2),
-        RandRotate90d(keys=["image"], prob=0.5, max_k=3),
+        RandRotate90d(keys=["image"], prob=0.5, max_k=3, spatial_axes=(0, 1)),
+        RandZoomd(
+            keys=["image"],
+            prob=0.3,
+            min_zoom=0.9,
+            max_zoom=1.1,
+            mode="trilinear",
+            keep_size=True,
+        ),
         # --- Intensity augmentation ---
         RandShiftIntensityd(keys=["image"], offsets=0.1, prob=0.5),
         RandScaleIntensityd(keys=["image"], factors=0.1, prob=0.5),
@@ -89,9 +122,8 @@ def get_train_transforms() -> Compose:
 
 def get_val_transforms() -> Compose:
     """
-    Validation / test pipeline:
-      Same as training EXCEPT no augmentation steps.
-      Deterministic — same output every run.
+    Validation / test pipeline — deterministic, no augmentation.
+    Identical geometry normalization as training.
     """
     return Compose([
         EnsureChannelFirstd(keys=["image"], channel_dim=0),
@@ -105,6 +137,7 @@ def get_val_transforms() -> Compose:
             keys=["image"],
             source_key="image",
             select_fn=lambda x: x > 0,
+            margin=0,
         ),
         Resized(
             keys=["image"],

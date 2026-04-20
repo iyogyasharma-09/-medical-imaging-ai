@@ -69,8 +69,8 @@ def main(csv_path: str, data_root: str):
         df_test=df_test,
         train_transforms=get_train_transforms(),
         val_transforms=get_val_transforms(),
-        batch_size=2,
-        num_workers=4,
+        batch_size=1,        # 1 is safe for 128^3 volumes on most GPUs
+        num_workers=0,       # 0 on Windows; set 4 on Linux for speed
     )
     print(f"  Train batches : {len(train_loader)}")
     print(f"  Val batches   : {len(val_loader)}")
@@ -83,8 +83,8 @@ def main(csv_path: str, data_root: str):
     batch = next(iter(train_loader))
     images = batch["image"]
     labels = batch["label"]
-    print(f"  Image tensor shape : {tuple(images.shape)}")   # expect (2, 4, 128, 128, 128)
-    print(f"  Label tensor shape : {tuple(labels.shape)}")   # expect (2,)
+    print(f"  Image tensor shape : {tuple(images.shape)}")   # expect (1, 4, 128, 128, 128)
+    print(f"  Label tensor shape : {tuple(labels.shape)}")   # expect (1,)
     print(f"  Label values       : {labels.tolist()}")
     print(f"  Image dtype        : {images.dtype}")
     print(f"  Image min/max      : {images.min():.3f} / {images.max():.3f}")

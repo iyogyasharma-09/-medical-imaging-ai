@@ -4,6 +4,13 @@ __pycache__/
 *.pyo
 *.pyd
 *.egg
+
+# NPU / ONNX exports (large binary artifacts)
+models/*.onnx
+models/*_ov/
+
+# Training live logs (auto-generated, not source)
+results/training_live_log*.txt
 *.egg-info/
 dist/
 build/

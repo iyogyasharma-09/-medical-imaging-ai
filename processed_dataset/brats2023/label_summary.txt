@@ -1,0 +1,17 @@
+============================================================
+BraTS 2023 Preprocessing Summary
+============================================================
+Total complete subjects : 2710
+Train                   : 1645
+Val (our split)         : 352
+Test                    : 353
+Official val (no seg)   : 360
+
+Task distribution (train pool):
+  GLI: 1251
+  MEN: 1000
+  PED: 99
+
+GLI Grade labels (0=LGG, 1=HGG):
+  label=0: 65
+  label=1: 1186

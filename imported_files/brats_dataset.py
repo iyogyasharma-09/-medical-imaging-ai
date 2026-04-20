@@ -1,11 +1,17 @@
 """
 brats_dataset.py
 ----------------
-MONAI-compatible Dataset class for BraTS 2021.
+MONAI-compatible Dataset class for BraTS 2021 full 3D volume pipeline.
 
 Input per subject : 4 NIfTI files → [T1, T1ce, T2, FLAIR] stacked as
-                    a single 4-channel 3D tensor  (C, D, H, W)
+                    a single 4-channel 3D numpy array  (C, D, H, W)
+                    where C=4, native D×H×W ≈ 240×240×155 before resampling.
 Label             : integer from label_grade column (0=LGG, 1=HGG)
+
+Windows note:
+    num_workers defaults to 0 because Python multiprocessing on Windows
+    does not handle NIfTI file handles well. If running on Linux/Mac with
+    enough RAM, you can set num_workers=4 for faster loading.
 """
 
 import torch
@@ -130,18 +136,20 @@ def build_dataloaders(
     df_test:  pd.DataFrame,
     train_transforms,
     val_transforms,
-    batch_size:  int  = 2,
-    num_workers: int  = 4,
+    batch_size:  int  = 1,
+    num_workers: int  = 0,
     label_col:   str  = "label_grade",
 ):
     """
-    Convenience function to build all three DataLoaders.
+    Convenience function to build all three DataLoaders for BraTS 2021 3D.
 
     Args:
-        train_transforms : augmented transform pipeline
-        val_transforms   : deterministic transform pipeline (no augmentation)
-        batch_size       : 2 is safe for 3D volumes on most GPUs
-        num_workers      : set to 0 if debugging to avoid multiprocessing issues
+        train_transforms : augmented transform pipeline (get_train_transforms())
+        val_transforms   : deterministic pipeline (get_val_transforms())
+        batch_size       : 1 is safe on most GPUs for 128^3 volumes;
+                           use 2 only on ≥24 GB VRAM.
+        num_workers      : 0 on Windows (multiprocessing + NIfTI = issues);
+                           set to 4 on Linux for faster data loading.
     """
     from torch.utils.data import DataLoader
 
@@ -156,6 +164,7 @@ def build_dataloaders(
         num_workers=num_workers,
         pin_memory=True,
         persistent_workers=(num_workers > 0),
+        drop_last=True,   # avoids single-sample batches breaking BatchNorm
     )
     val_loader = DataLoader(
         val_ds,

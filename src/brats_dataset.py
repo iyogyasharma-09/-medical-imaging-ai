@@ -1,5 +1,13 @@
 """
-BraTS 2021 NIfTI subject-folder dataset and dataloader helpers.
+BraTS 2021 NIfTI subject-folder Dataset and DataLoader helpers.
+
+Input from _load_volume(): numpy array (4, D, H, W)
+  4 channels = [T1, T1ce, T2, FLAIR], native resolution ~240×240×155.
+  The transform pipeline handles resampling, cropping, and resizing.
+
+Windows note: num_workers defaults to 0 — NIfTI file handles do not
+  survive Python multiprocessing spawning on Windows. Set num_workers=4
+  only on Linux/Mac.
 """
 
 from pathlib import Path
@@ -64,12 +72,51 @@ class BraTSDataset(Dataset):
         return sample
 
 
-def build_dataloaders(df_train: pd.DataFrame, df_val: pd.DataFrame, df_test: pd.DataFrame, train_transforms, val_transforms, batch_size: int = 2, num_workers: int = 0, label_col: str = "label_grade"):
+def build_dataloaders(
+    df_train: pd.DataFrame,
+    df_val: pd.DataFrame,
+    df_test: pd.DataFrame,
+    train_transforms,
+    val_transforms,
+    batch_size: int = 1,
+    num_workers: int = 0,
+    label_col: str = "label_grade",
+):
+    """
+    Build train / val / test DataLoaders for BraTS 2021 full 3D volumes.
+
+    Args:
+        batch_size  : 1 is safe for 128^3 volumes on ≥16 GB VRAM;
+                      use 2 only with 24+ GB VRAM.
+        num_workers : 0 on Windows; 4 on Linux for speed.
+    """
     train_ds = BraTSDataset(df_train, transforms=train_transforms, label_col=label_col)
     val_ds = BraTSDataset(df_val, transforms=val_transforms, label_col=label_col)
     test_ds = BraTSDataset(df_test, transforms=val_transforms, label_col=label_col)
     return (
-        DataLoader(train_ds, batch_size=batch_size, shuffle=True, num_workers=num_workers, pin_memory=True, persistent_workers=bool(num_workers)),
-        DataLoader(val_ds, batch_size=batch_size, shuffle=False, num_workers=num_workers, pin_memory=True, persistent_workers=bool(num_workers)),
-        DataLoader(test_ds, batch_size=1, shuffle=False, num_workers=num_workers, pin_memory=True, persistent_workers=bool(num_workers)),
+        DataLoader(
+            train_ds,
+            batch_size=batch_size,
+            shuffle=True,
+            num_workers=num_workers,
+            pin_memory=True,
+            persistent_workers=bool(num_workers),
+            drop_last=True,   # avoid single-sample batches breaking BatchNorm
+        ),
+        DataLoader(
+            val_ds,
+            batch_size=batch_size,
+            shuffle=False,
+            num_workers=num_workers,
+            pin_memory=True,
+            persistent_workers=bool(num_workers),
+        ),
+        DataLoader(
+            test_ds,
+            batch_size=1,       # always 1 for test to track per-subject results
+            shuffle=False,
+            num_workers=num_workers,
+            pin_memory=True,
+            persistent_workers=bool(num_workers),
+        ),
     )

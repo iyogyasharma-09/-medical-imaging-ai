@@ -1,0 +1,4322 @@
+[
+  {
+    "subject_id": "BraTS-GLI-00001-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00001-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00001-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00001-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00013-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00013-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00013-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00013-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00015-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00015-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00015-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00015-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00027-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00027-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00037-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00037-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00047-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00047-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00079-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00079-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00080-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00080-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00080-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00080-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00082-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00082-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00091-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00091-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00114-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00114-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00119-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00119-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00125-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00125-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00129-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00129-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00135-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00135-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00141-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00141-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00145-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00145-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00153-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00153-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00161-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00161-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00163-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00163-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00174-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00174-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00181-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00181-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00182-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00182-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00190-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00190-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00200-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00200-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00208-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00208-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00213-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00213-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00229-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00229-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00252-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00252-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00256-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00256-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00264-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00264-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00287-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00287-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00307-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00307-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00323-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00323-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00333-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00333-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00335-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00335-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00337-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00337-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00355-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00355-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00372-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00372-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00381-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00381-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00384-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00384-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00422-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00422-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00428-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00428-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00434-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00434-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00438-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00438-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00447-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00447-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00450-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00450-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00458-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00458-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00460-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00460-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00462-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00462-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00462-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00462-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00463-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00463-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00467-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00467-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00467-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00467-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00474-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00474-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00474-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00474-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00489-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00489-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00492-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00492-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00503-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00503-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00503-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00503-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00521-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00521-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00521-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00521-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00535-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00535-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00535-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00535-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00553-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00553-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00553-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00553-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00560-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00560-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00560-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00560-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00573-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00573-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00585-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00585-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00592-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00592-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00595-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00595-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00603-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00603-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00644-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00644-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00647-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00647-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00647-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00647-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00662-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00662-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00671-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00671-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00681-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00681-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00699-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00699-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00699-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00699-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00702-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00702-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00702-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00702-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00712-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00712-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00712-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00712-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00719-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00719-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00719-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00719-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00721-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00721-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00721-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00721-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00749-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00749-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00762-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00762-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00762-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00762-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00769-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00769-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00779-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00779-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00779-001",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00779-001",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00821-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00821-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00822-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00822-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00825-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00825-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00826-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00826-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00829-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00829-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00833-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00833-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-00997-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-00997-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01006-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01006-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01667-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01667-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01668-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01668-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01669-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01669-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01670-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01670-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01671-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01671-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01672-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01672-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01673-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01673-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01674-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01674-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01675-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01675-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01676-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01676-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01677-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01677-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01678-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01678-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01679-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01679-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01680-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01680-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01681-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01681-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01682-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01682-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01683-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01683-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01684-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01684-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01685-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01685-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01686-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01686-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01687-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01687-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01688-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01688-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01689-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01689-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01690-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01690-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01691-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01691-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01692-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01692-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01693-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01693-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01694-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01694-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01695-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01695-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01696-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01696-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01697-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01697-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01698-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01698-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01699-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01699-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01700-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01700-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01701-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01701-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01702-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01702-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01703-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01703-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01704-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01704-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01705-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01705-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01706-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01706-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01707-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01707-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01708-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01708-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01709-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01709-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01710-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01710-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01711-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01711-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01712-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01712-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01713-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01713-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01714-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01714-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01715-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01715-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01716-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01716-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01717-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01717-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01718-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01718-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01719-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01719-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01720-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01720-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01721-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01721-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01722-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01722-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01723-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01723-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01724-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01724-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01725-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01725-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01726-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01726-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01727-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01727-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01728-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01728-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01729-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01729-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01730-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01730-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01731-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01731-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01732-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01732-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01733-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01733-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01734-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01734-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01735-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01735-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01736-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01736-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01737-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01737-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01738-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01738-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01739-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01739-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01740-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01740-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01741-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01741-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01742-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01742-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01743-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01743-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01744-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01744-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01745-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01745-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01746-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01746-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01747-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01747-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01748-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01748-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01749-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01749-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01750-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01750-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01751-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01751-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01752-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01752-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01753-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01753-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01754-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01754-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01755-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01755-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01756-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01756-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01757-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01757-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01758-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01758-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01759-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01759-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01760-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01760-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01761-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01761-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01762-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01762-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01763-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01763-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01764-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01764-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01765-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01765-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01766-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01766-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01767-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01767-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01768-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01768-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01769-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01769-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01770-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01770-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01771-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01771-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01772-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01772-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01773-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01773-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01774-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01774-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01775-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01775-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01776-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01776-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01789-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01789-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-GLI-01790-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData\\BraTS-GLI-01790-000",
+    "task": "GLI",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 0,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00000-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00000-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00002-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00002-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00006-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00006-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00009-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00009-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00015-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00015-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00019-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00019-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00036-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00036-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00058-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00058-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00068-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00068-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00079-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00079-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00089-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00089-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00097-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00097-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00115-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00115-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00116-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00116-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00124-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00124-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00128-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00128-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00134-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00134-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00149-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00149-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00160-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00160-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00171-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00171-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00188-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00188-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00189-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00189-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00193-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00193-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00211-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00211-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00218-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00218-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00252-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00252-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00261-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00261-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00274-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00274-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00280-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00280-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00329-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00329-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00337-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00337-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00339-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00339-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00343-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00343-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00355-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00355-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00373-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00373-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00374-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00374-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00386-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00386-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00392-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00392-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00407-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00407-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00422-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00422-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00449-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00449-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00452-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00452-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00464-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00464-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00477-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00477-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00479-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00479-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00486-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00486-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00494-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00494-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00499-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00499-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00500-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00500-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00528-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00528-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00531-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00531-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00536-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00536-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00537-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00537-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00565-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00565-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00581-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00581-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00592-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00592-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00595-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00595-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00605-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00605-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00661-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00661-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00675-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00675-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00699-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00699-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00701-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00701-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00710-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00710-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00732-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00732-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00742-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00742-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00756-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00756-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00778-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00778-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00783-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00783-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00791-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00791-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00793-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00793-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00801-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00801-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00803-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00803-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00814-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00814-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00827-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00827-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00845-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00845-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00847-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00847-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00850-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00850-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00855-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00855-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00860-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00860-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00864-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00864-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00865-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00865-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00871-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00871-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00872-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00872-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00892-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00892-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00937-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00937-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00953-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00953-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00969-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00969-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00975-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00975-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-00988-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-00988-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01004-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01004-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01019-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01019-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01045-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01045-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01056-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01056-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01057-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01057-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01072-003",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01072-003",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01072-004",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01072-004",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01072-006",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01072-006",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01072-007",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01072-007",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01072-008",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01072-008",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01072-009",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01072-009",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01082-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01082-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01086-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01086-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01109-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01109-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01110-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01110-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01111-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01111-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01120-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01120-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01125-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01125-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01145-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01145-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01149-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01149-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01162-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01162-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01204-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01204-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01211-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01211-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01236-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01236-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01239-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01239-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01243-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01243-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01251-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01251-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01253-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01253-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01258-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01258-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01262-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01262-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01263-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01263-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01267-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01267-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01269-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01269-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01273-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01273-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01277-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01277-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01286-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01286-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01287-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01287-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01289-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01289-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01295-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01295-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01311-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01311-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01318-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01318-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01343-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01343-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01346-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01346-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01356-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01356-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01374-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01374-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01378-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01378-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01386-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01386-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01391-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01391-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01397-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01397-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01402-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01402-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01418-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01418-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  },
+  {
+    "subject_id": "BraTS-MEN-01428-000",
+    "data_path": "C:\\mri\\mri-\\dataset\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\ASNR-MICCAI-BraTS2023-MEN-Challenge-ValidationData\\BraTS-MEN-01428-000",
+    "task": "MEN",
+    "split": "val",
+    "complete": true,
+    "missing": [
+      "seg-seg.nii.gz"
+    ],
+    "label": 1,
+    "label_grade": NaN
+  }
+]
