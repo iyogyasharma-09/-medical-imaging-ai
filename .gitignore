@@ -7,6 +7,7 @@ __pycache__/
 
 # NPU / ONNX exports (large binary artifacts)
 models/*.onnx
+models/*.onnx.data
 models/*_ov/
 
 # Training live logs (auto-generated, not source)

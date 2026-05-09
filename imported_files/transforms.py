@@ -21,6 +21,14 @@ BraTS 2021 native voxel space: 240×240×155 @ 1 mm isotropic.
 After pipeline: (4, SPATIAL_SIZE[0], SPATIAL_SIZE[1], SPATIAL_SIZE[2]).
 """
 
+
+def _select_nonzero(x):
+    """Brain mask selector — picklable named function (replaces lambda x: x > 0).
+    Required for multiprocessing DataLoader workers on Windows (spawn context).
+    """
+    return x > 0
+
+
 from monai.transforms import (
     Compose,
     ToTensord,
@@ -85,7 +93,7 @@ def get_train_transforms() -> Compose:
         CropForegroundd(
             keys=["image"],
             source_key="image",
-            select_fn=lambda x: x > 0,   # brain mask = non-zero voxels
+            select_fn=_select_nonzero,  # brain mask = non-zero voxels (picklable)
             margin=0,
         ),
         Resized(
@@ -136,7 +144,7 @@ def get_val_transforms() -> Compose:
         CropForegroundd(
             keys=["image"],
             source_key="image",
-            select_fn=lambda x: x > 0,
+            select_fn=_select_nonzero,
             margin=0,
         ),
         Resized(

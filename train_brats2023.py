@@ -77,6 +77,7 @@ from config import (
     MEDICALNET_WEIGHTS_PATH,
     MODELS,
     MODELS_DIR,
+    NUM_WORKERS,
     RANDOM_SEED,
     REGISTRY_PATH,
     RESULTS_DIR,
@@ -155,15 +156,19 @@ def build_dataloaders(
     val_ds   = BraTS2023Dataset(df_val,   transforms=get_val_transforms(),   label_col=label_col)
     test_ds  = BraTS2023Dataset(df_test,  transforms=get_val_transforms(),   label_col=label_col)
 
+    nw = NUM_WORKERS
+    print(f"  num_workers      : {nw}")
     train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True,
-                              num_workers=num_workers, pin_memory=True,
-                              persistent_workers=bool(num_workers), drop_last=True)
+                              num_workers=nw, pin_memory=True,
+                              persistent_workers=bool(nw),
+                              multiprocessing_context="spawn" if nw > 0 else None,
+                              drop_last=True)
     val_loader   = DataLoader(val_ds,   batch_size=batch_size, shuffle=False,
-                              num_workers=num_workers, pin_memory=True,
-                              persistent_workers=bool(num_workers))
+                              num_workers=nw, pin_memory=True,
+                              persistent_workers=bool(nw),
+                              multiprocessing_context="spawn" if nw > 0 else None)
     test_loader  = DataLoader(test_ds,  batch_size=1,          shuffle=False,
-                              num_workers=num_workers, pin_memory=True,
-                              persistent_workers=bool(num_workers))
+                              num_workers=0,  pin_memory=True)
     return train_loader, val_loader, test_loader, full_weights
 
 

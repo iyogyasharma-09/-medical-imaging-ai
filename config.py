@@ -92,14 +92,15 @@ RANDOM_SEED = 42
 MIN_NONZERO_FRAC = 0.10
 MIN_INFORMATIVE_SLICES = 8
 
-BATCH_SIZE = 1                    # RTX A1000 8 GB: batch=1 required for 3D volumes
-EPOCHS = 30                       # more epochs compensate for effective batch=4 (via accumulation)
+BATCH_SIZE = 2                    # SwinUNETR 3D: batch=2 = 7.1GB (88% of 8GB) — true max
+EPOCHS = 30
 LEARNING_RATE = 1e-4
 WEIGHT_DECAY = 1e-4
-EARLY_STOPPING_PATIENCE = 6      # slightly more patience for smaller effective batch
+EARLY_STOPPING_PATIENCE = 6
 EARLY_STOPPING_MIN_DELTA = 0.0
-GRADIENT_ACCUMULATION_STEPS = 4  # effective batch = 1 × 4 = 4; compensates for batch_size=1
-USE_MIXED_PRECISION = True        # fp16 AMP critical on 8 GB — saves ~30–40% VRAM
+GRADIENT_ACCUMULATION_STEPS = 1
+USE_MIXED_PRECISION = True
+NUM_WORKERS = 4                   # 4 parallel NIfTI loaders; keeps GPU constantly fed
 
 # Model registry
 #   1. resnet18_medicalnet — MONAI ResNet18 3D + MedicalNet pretrained weights
