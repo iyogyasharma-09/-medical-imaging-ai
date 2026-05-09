@@ -126,9 +126,10 @@ def verify_metadata():
         n_labeled = df_gli["label_grade"].notna().sum()
         n_lgg     = (df_gli["label_grade"] == 0).sum()
         n_hgg     = (df_gli["label_grade"] == 1).sum()
-        missing_files = df_gli["data_path"].apply(
-            lambda p: not Path(p).exists()
-        ).sum()
+        path_col = next((c for c in ["data_path","subject_dir","path"] if c in df_gli.columns), None)
+        missing_files = df_gli[path_col].apply(
+            lambda p: not Path(str(p)).exists()
+        ).sum() if path_col else 0
 
         # Track subject IDs for leakage check
         for sid in df_gli["subject_id"].tolist():

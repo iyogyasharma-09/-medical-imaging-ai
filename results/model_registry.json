@@ -1,0 +1,35 @@
+{
+  "resnet18_medicalnet": {
+    "model_name": "resnet18_medicalnet",
+    "val_accuracy": 0.946524064171123,
+    "mean_uncertainty": 0.0006490309606306255,
+    "checkpoint_path": "C:\\mri\\mri-\\models\\resnet18_medicalnet_lgg_hgg_3d.pt",
+    "task": "GLI",
+    "label_col": "label_grade",
+    "trained_on_device": "cuda",
+    "onnx_path": "C:\\mri\\mri-\\models\\resnet18_medicalnet_lgg_hgg_3d.onnx",
+    "openvino_path": "C:\\mri\\mri-\\models\\resnet18_medicalnet_lgg_hgg_3d_ov/model.xml"
+  },
+  "densenet121_3d": {
+    "model_name": "densenet121_3d",
+    "val_accuracy": 0.946524064171123,
+    "mean_uncertainty": 0.00137104163877666,
+    "checkpoint_path": "C:\\mri\\mri-\\models\\densenet121_3d_lgg_hgg_3d.pt",
+    "task": "GLI",
+    "label_col": "label_grade",
+    "trained_on_device": "cuda",
+    "onnx_path": "C:\\mri\\mri-\\models\\densenet121_3d_lgg_hgg_3d.onnx",
+    "openvino_path": "C:\\mri\\mri-\\models\\densenet121_3d_lgg_hgg_3d_ov/model.xml"
+  },
+  "swin_transformer_3d": {
+    "model_name": "swin_transformer_3d",
+    "val_accuracy": 0.946524064171123,
+    "mean_uncertainty": 0.0033192834816873074,
+    "checkpoint_path": "C:\\mri\\mri-\\models\\swin_transformer_3d_lgg_hgg_3d.pt",
+    "task": "GLI",
+    "label_col": "label_grade",
+    "trained_on_device": "cuda",
+    "onnx_path": "C:\\mri\\mri-\\models\\swin_transformer_3d_lgg_hgg_3d.onnx",
+    "openvino_path": "C:\\mri\\mri-\\models\\swin_transformer_3d_lgg_hgg_3d_ov/model.xml"
+  }
+}

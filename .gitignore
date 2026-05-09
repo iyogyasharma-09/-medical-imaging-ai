@@ -37,8 +37,9 @@ models/*.bin
 # Dataset — never commit raw NIfTI data
 dataset/
 
-# Results & generated outputs (reproducible from code)
-results/
+# Results — exclude raw logs; track JSON reports + plots
+results/**/*.txt
+results/gradcam/
 gradcam_results/
 
 # Temp files
