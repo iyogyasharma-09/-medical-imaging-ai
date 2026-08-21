@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-08-14 11:56:38",
+  "preflight_status": "PASSED",
+  "archive_integrity_intact": true,
+  "configurations_audited": 9,
+  "audit_details": [
+    {
+      "protocol": "A",
+      "model_key": "resnet18_medicalnet",
+      "model_name": "ResNet18 MedicalNet",
+      "prediction_file": "locked_test\\protocol_A\\resnet18_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "5bb4bdf666aca237f76fef62ed9d1687685947fb12d032ed69e619054c3ac3ab"
+    },
+    {
+      "protocol": "A",
+      "model_key": "densenet121_3d",
+      "model_name": "DenseNet121 3D",
+      "prediction_file": "locked_test\\protocol_A\\densenet121_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "051c64ba7ab4a3716eef542eecc58d62c980d6abe1f5983e5c058cdd48c8730d"
+    },
+    {
+      "protocol": "A",
+      "model_key": "swin_transformer_3d",
+      "model_name": "SwinUNETR 3D",
+      "prediction_file": "locked_test\\protocol_A\\swin_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "f232d43c3bbe2c9d233dd80bd8fc26bb43c170e456b63a3ea674f2ecdaeb694d"
+    },
+    {
+      "protocol": "B",
+      "model_key": "resnet18_medicalnet",
+      "model_name": "ResNet18 MedicalNet",
+      "prediction_file": "locked_test\\protocol_B\\resnet18_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "7c5f45c1f8beb3486b2fbbcc119773ba3ce385082a0cc0db30e4a257be03a099"
+    },
+    {
+      "protocol": "B",
+      "model_key": "densenet121_3d",
+      "model_name": "DenseNet121 3D",
+      "prediction_file": "locked_test\\protocol_B\\densenet121_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "d6f99a6c141748b8566c91123a0b53fc2e77115d497f59f285466ab3ccf11734"
+    },
+    {
+      "protocol": "B",
+      "model_key": "swin_transformer_3d",
+      "model_name": "SwinUNETR 3D",
+      "prediction_file": "locked_test\\protocol_B\\swin_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "c085604868854ebd69efe53706b4e6412086671e6ce10fb668e24d8af8e817ce"
+    },
+    {
+      "protocol": "C",
+      "model_key": "resnet18_medicalnet",
+      "model_name": "ResNet18 MedicalNet",
+      "prediction_file": "locked_test\\protocol_C\\resnet18_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "7151a184b30b59c1bc7d2879f5de64578207f80a48073b83a6efb6d5a7fcfdd9"
+    },
+    {
+      "protocol": "C",
+      "model_key": "densenet121_3d",
+      "model_name": "DenseNet121 3D",
+      "prediction_file": "locked_test\\protocol_C\\densenet121_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "23ab3609521386179a694c0c7147e3c7074ecb69a625aae097527a19aed88bb1"
+    },
+    {
+      "protocol": "C",
+      "model_key": "swin_transformer_3d",
+      "model_name": "SwinUNETR 3D",
+      "prediction_file": "locked_test\\protocol_C\\swin_predictions.csv",
+      "subject_count": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "columns_valid": true,
+      "sha256": "773f6cc7f4f2f1a84e989391c5f279876c3a8a49b4edfa709e08083bbbda0b62"
+    }
+  ]
+}

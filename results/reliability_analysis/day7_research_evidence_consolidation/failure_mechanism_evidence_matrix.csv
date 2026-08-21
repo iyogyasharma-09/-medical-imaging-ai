@@ -1,0 +1,15 @@
+Mechanism_ID,Candidate_Mechanism,Evidence_For,Evidence_Against,Current_Status,Confidence
+1,Data Leakage across Partitions,None,"Strict pairwise patient intersection is 0 across all Train, Val, Test, and CV partitions.",ESTABLISHED_ABSENT,HIGH
+2,Dataset / Label / NIfTI File Corruption,None,"All 1,251 GLI NIfTI volumes verified intact, non-empty, correctly mapped (LGG=0, HGG=1).",ESTABLISHED_ABSENT,HIGH
+3,Preprocessing / Augmentation Inconsistency,None,Deterministic MONAI geometry and intensity pipeline applied identically across all runs.,ESTABLISHED_ABSENT,HIGH
+4,Evaluation Script / Metric Formula Inconsistency,None,Identical confusion matrix TN/(TN+FP) formula and default threshold 0.50 across all evaluations.,ESTABLISHED_ABSENT,HIGH
+5,Checkpoint Selection & Early Stopping Trajectory,Early Run 1 stopped at Ep 7 (restoring Ep 1 with 0.0 recall); Canonical Run 3 trained to Ep 25 (restoring Ep 19 with 0.75 recall); CV Fold 4 restored Ep 1 with 0.0 recall.,None,ESTABLISHED,HIGH
+6,Test-Set Contamination / Post-Hoc Sifting,None,Locked test was isolated prior to training; checkpoints selected strictly on intra-run validation metrics.,ESTABLISHED_ABSENT,HIGH
+7,Patient-Partition Sampling Variability,"Across 5 stratified CV folds with identical code and seed, LGG recall spanned 0.00% to 80.00% (Mean 50.55% +/- 32.74%).",None,STRONGLY_SUPPORTED,HIGH
+8,Training Optimization Stochasticity (GPU / Worker RNG),cuDNN non-deterministic kernels and multi-worker augmentation RNG were active during training.,"Top-level random seed 42 was set across Python, NumPy, PyTorch.",PLAUSIBLE,MODERATE
+9,Severe Class Imbalance (19:1 HGG:LGG Ratio),"95% majority prevalence dominates unweighted cross-entropy loss gradients, creating flat minority loss surfaces.",None,ESTABLISHED,HIGH
+10,Fixed Decision-Threshold Collapse (tau = 0.50),"Continuous ROC-AUC is >= 0.86 across all models, but default 0.50 threshold forces predictions into majority class.",None,STRONGLY_SUPPORTED,HIGH
+11,Model Representation / Capacity Limitation,SwinUNETR collapsed to 0% sensitivity under Protocols A and B.,"ResNet18 achieved ROC-AUC of 0.916 +/- 0.045 in CV and 0.9830 in locked test, proving strong latent representation.",NOT_SUPPORTED_FOR_CNNS / PLAUSIBLE_FOR_SCRATCH_TRANSFORMERS,MODERATE
+12,Optimization Plateau / Local Minima in Transformers,SwinUNETR required stronger minority gradients (Protocol C) to escape the majority local minimum.,None,STRONGLY_SUPPORTED,HIGH
+13,Probability Calibration Drift Under Weighting,"Class weighting increased Brier score from 0.0496 to 0.1042 in ResNet18, indicating worse probability calibration.",None,STRONGLY_SUPPORTED,HIGH
+14,Static Class-Weighting Inflexibility,"Static weighting applies fixed multipliers to all majority samples regardless of difficulty, causing gradient distortion in CNNs.",None,ESTABLISHED,HIGH

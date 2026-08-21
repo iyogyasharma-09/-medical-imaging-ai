@@ -1,9 +1,12 @@
 """
-Compatibility entry point for preparing the BraTS 3D dataset.
+preprocess_all.py
+-----------------
+[LEGACY - BraTS 2021 Preprocessing Entry Point]
 
-The project no longer merges legacy 2D image archives into `processed_dataset/`.
-Instead, it reconstructs patient volumes from raw BraTS H5 slices and writes
-patient-aware train/val/test manifests.
+NOTE: For active BraTS 2023 research, use:
+    python preprocess_brats2023.py
+
+This script delegates to src/split_dataset.py for BraTS 2021 legacy dataset manifest creation.
 """
 
 import argparse

@@ -1,0 +1,9 @@
+Potential_Leakage_Point,How_Prevented,Evidence_Artifact,Audit_Status
+Train / Test Data Contamination,Strict subject-level disjoint split via SHA-verified manifests; zero subject overlap,"train_manifest.json, test_manifest.json",PASSED (Zero Leakage)
+Test-Based Checkpoint Selection,Early stopping checkpoint selection monitored strictly on validation Macro-F1,train_brats2023.py (EarlyStopping class),PASSED (Zero Leakage)
+Test-Based Temperature Parameter Fitting,Temperature T* optimized exclusively on validation NLL; frozen prior to test forward pass,"run_focal_temperature_scaling.py, temperature_parameters.json",PASSED (Zero Leakage)
+Test-Based Decision Threshold Optimization,"Threshold sweeps reported strictly as descriptive operating curves, not deployment rules",threshold_operating_points.csv,PASSED (Zero Leakage)
+Preprocessing Statistics Leakage,Z-score intensity normalization computed independently per individual 3D volume on non-zero voxels,imported_files/transforms.py,PASSED (Zero Leakage)
+Class Weight Calculation Leakage,Class weights w_c computed strictly from training split label counts,train_brats2023.py (compute_protocol_weights),PASSED (Zero Leakage)
+Baseline Checkpoint Overwrite / Mutation,Baseline models preserved in protocol_archives with immutable SHA-256 cryptographic hashes,protocol_integrity_manifest.json,PASSED (Zero Leakage)
+Repeated Interactive Test Exposure,Test set evaluated in batch read-only forward pass under torch.no_grad() and model.eval(),evaluate_locked_test.py,PASSED (Zero Leakage)

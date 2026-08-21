@@ -1,0 +1,17 @@
+target_class,bin_index,bin_range,bin_lower,bin_upper,n_samples,mean_predicted_prob,observed_fraction,calibration_gap,direction
+HGG,3,"(0.2, 0.3]",0.2,0.3,1,0.2711,0.0,0.2711,overconfident
+HGG,4,"(0.3, 0.4]",0.3,0.4,3,0.3737,0.0,0.3737,overconfident
+HGG,5,"(0.4, 0.5]",0.4,0.5,6,0.4521,0.8333,0.3812,underconfident
+HGG,6,"(0.5, 0.6]",0.5,0.6,7,0.5525,0.5714,0.019,underconfident
+HGG,7,"(0.6, 0.7]",0.6,0.7,15,0.6431,0.8,0.1569,underconfident
+HGG,8,"(0.7, 0.8]",0.7,0.8,18,0.7493,0.9444,0.1951,underconfident
+HGG,9,"(0.8, 0.9]",0.8,0.9,40,0.8618,1.0,0.1382,underconfident
+HGG,10,"(0.9, 1.0]",0.9,1.0,98,0.9654,1.0,0.0346,underconfident
+LGG,1,"[0.0, 0.1]",0.0,0.1,98,0.0346,0.0,0.0346,overconfident
+LGG,2,"(0.1, 0.2]",0.1,0.2,40,0.1382,0.0,0.1382,overconfident
+LGG,3,"(0.2, 0.3]",0.2,0.3,18,0.2507,0.0556,0.1951,overconfident
+LGG,4,"(0.3, 0.4]",0.3,0.4,15,0.3569,0.2,0.1569,overconfident
+LGG,5,"(0.4, 0.5]",0.4,0.5,7,0.4475,0.4286,0.019,overconfident
+LGG,6,"(0.5, 0.6]",0.5,0.6,6,0.5479,0.1667,0.3812,overconfident
+LGG,7,"(0.6, 0.7]",0.6,0.7,3,0.6263,1.0,0.3737,underconfident
+LGG,8,"(0.7, 0.8]",0.7,0.8,1,0.7289,1.0,0.2711,underconfident

@@ -1,0 +1,10 @@
+Protocol,Model,model_key,ECE,Brier Score,Mean Confidence,Median Confidence,Conf (Correct),Conf (Incorrect),Conf (LGG Cases),Conf (HGG Cases)
+A,ResNet18 MedicalNet,resnet18_medicalnet,0.0276,0.0496,0.9517,0.9968,0.9583,0.7111,0.7634,0.9646
+A,DenseNet121 3D,densenet121_3d,0.0308,0.0829,0.9383,0.9871,0.949,0.7478,0.814,0.9468
+A,SwinUNETR 3D,swin_transformer_3d,0.0345,0.1214,0.9706,0.9709,0.9708,0.9686,0.9686,0.9708
+B,ResNet18 MedicalNet,resnet18_medicalnet,0.0394,0.1042,0.9401,0.994,0.9614,0.711,0.8458,0.9465
+B,DenseNet121 3D,densenet121_3d,0.054,0.1045,0.9031,0.9709,0.9265,0.6516,0.7425,0.9141
+B,SwinUNETR 3D,swin_transformer_3d,0.0046,0.1194,0.9408,0.9408,0.9408,0.9403,0.9403,0.9408
+C,ResNet18 MedicalNet,resnet18_medicalnet,0.0142,0.1019,0.9375,0.9925,0.9539,0.7341,0.7792,0.9483
+C,DenseNet121 3D,densenet121_3d,0.0353,0.1123,0.9225,0.9698,0.9387,0.7352,0.7824,0.932
+C,SwinUNETR 3D,swin_transformer_3d,0.0359,0.0704,0.9513,0.9983,0.9652,0.7042,0.6871,0.9693

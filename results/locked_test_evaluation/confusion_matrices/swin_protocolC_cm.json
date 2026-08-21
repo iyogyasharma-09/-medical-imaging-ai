@@ -1,0 +1,25 @@
+{
+  "model": "SwinUNETR 3D",
+  "protocol": "C",
+  "confusion_matrix": {
+    "tn": 3,
+    "fp": 9,
+    "fn": 1,
+    "tp": 175,
+    "matrix": [
+      [
+        3,
+        9
+      ],
+      [
+        1,
+        175
+      ]
+    ]
+  },
+  "lgg_recall": 0.25,
+  "hgg_recall": 0.9943181818181818,
+  "accuracy": 0.9468085106382979,
+  "f1_macro": 0.6736111111111112,
+  "auc": 0.9734848484848484
+}

@@ -45,6 +45,22 @@ LABEL_NAMES = {0: "LGG", 1: "HGG"}
 
 # ── Evaluate one split ────────────────────────────────────────────────────────
 
+def compute_ece(y_true, y_prob, n_bins=10):
+    confidences = np.max(y_prob, axis=1)
+    predictions = np.argmax(y_prob, axis=1)
+    accuracies = (predictions == y_true)
+    bin_boundaries = np.linspace(0, 1, n_bins + 1)
+    ece = 0.0
+    for i in range(n_bins):
+        bin_lower, bin_upper = bin_boundaries[i], bin_boundaries[i + 1]
+        in_bin = (confidences > bin_lower) & (confidences <= bin_upper)
+        prop_in_bin = np.mean(in_bin)
+        if prop_in_bin > 0:
+            accuracy_in_bin = np.mean(accuracies[in_bin])
+            avg_confidence_in_bin = np.mean(confidences[in_bin])
+            ece += np.abs(accuracy_in_bin - avg_confidence_in_bin) * prop_in_bin
+    return float(ece)
+
 def evaluate_split(model, loader, device, criterion):
     model.eval()
     losses, y_true, y_prob = [], [], []
@@ -64,17 +80,19 @@ def evaluate_split(model, loader, device, criterion):
     y_pred = y_prob.argmax(axis=1)
 
     acc = accuracy_score(y_true, y_pred)
-    f1  = f1_score(y_true, y_pred, average="weighted", zero_division=0)
+    f1_w = f1_score(y_true, y_pred, average="weighted", zero_division=0)
+    f1_m = f1_score(y_true, y_pred, average="macro", zero_division=0)
     try:
         auc = roc_auc_score(y_true, y_prob[:, 1])
     except Exception:
         auc = 0.0
 
     cm = confusion_matrix(y_true, y_pred)
-    # Sensitivity (recall for LGG=0) and Specificity (recall for HGG=1)
     tn, fp, fn, tp = cm.ravel() if cm.shape == (2, 2) else (0, 0, 0, 0)
-    sensitivity = tp / (tp + fn) if (tp + fn) > 0 else 0.0   # HGG recall
-    specificity = tn / (tn + fp) if (tn + fp) > 0 else 0.0   # LGG recall
+    hgg_recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0   # HGG recall (sensitivity)
+    lgg_recall = tn / (tn + fp) if (tn + fp) > 0 else 0.0   # LGG recall (specificity)
+    precision  = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+    ece_val    = compute_ece(y_true, y_prob)
 
     lgg_n = int((y_true == 0).sum())
     hgg_n = int((y_true == 1).sum())
@@ -85,10 +103,13 @@ def evaluate_split(model, loader, device, criterion):
         "n_subjects":    len(y_true),
         "loss":          float(np.mean(losses)),
         "accuracy":      float(acc),
-        "f1_weighted":   float(f1),
+        "f1_weighted":   float(f1_w),
+        "f1_macro":      float(f1_m),
         "auc":           float(auc),
-        "sensitivity":   float(sensitivity),   # HGG recall
-        "specificity":   float(specificity),   # LGG recall
+        "lgg_recall":    float(lgg_recall),
+        "hgg_recall":    float(hgg_recall),
+        "precision":     float(precision),
+        "ece":           float(ece_val),
         "confusion_matrix": cm.tolist(),
         "per_class": {
             "LGG": {"n": lgg_n, "correct": lgg_correct,
@@ -105,7 +126,6 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Device: {device}\n")
 
-    # Load manifests
     def get_loader(manifest_path):
         df = load_manifest(manifest_path, label_col="label_grade")
         df = df[df["task"] == "GLI"].reset_index(drop=True)
@@ -125,14 +145,18 @@ def main():
         print(f"{'='*60}")
 
         ckpt = torch.load(str(ckpt_path), map_location="cpu", weights_only=False)
-        cw   = torch.tensor(ckpt["class_weights"], dtype=torch.float32, device=device)
+        cw_raw = ckpt.get("class_weights", None)
+        cw = torch.tensor(cw_raw, dtype=torch.float32, device=device) if cw_raw is not None else None
         model = get_model(model_name, num_classes=2)
         model.load_state_dict(ckpt["model_state_dict"])
         model = model.to(device)
         criterion = nn.CrossEntropyLoss(weight=cw)
 
-        print(f"  Epochs trained : {len(ckpt.get('history', []))}")
-        print(f"  Best val acc   : {ckpt.get('best_val_accuracy', '?'):.4f}\n")
+        best_val_macro_f1  = ckpt.get('best_val_macro_f1', '?')
+        best_val_lgg_recall = ckpt.get('best_val_lgg_recall', '?')
+        print(f"  Epochs trained     : {len(ckpt.get('history', []))}")
+        print(f"  Best val Macro-F1  : {best_val_macro_f1}")
+        print(f"  Best val LGG Recall: {best_val_lgg_recall}\n")
 
         print("  [VAL] Running...")
         val_r  = evaluate_split(model, val_loader,  device, criterion)
@@ -144,18 +168,23 @@ def main():
             print(f"\n  {split_name} | n={r['n_subjects']}")
             print(f"    Loss        : {r['loss']:.4f}")
             print(f"    Accuracy    : {r['accuracy']:.4f}  ({r['accuracy']*100:.2f}%)")
+            print(f"    Macro-F1    : {r['f1_macro']:.4f}")
             print(f"    F1 (wtd)    : {r['f1_weighted']:.4f}")
             print(f"    AUC         : {r['auc']:.4f}")
-            print(f"    Sensitivity : {r['sensitivity']:.4f}  (HGG recall)")
-            print(f"    Specificity : {r['specificity']:.4f}  (LGG recall)")
+            print(f"    LGG Recall  : {r['lgg_recall']:.4f}")
+            print(f"    HGG Recall  : {r['hgg_recall']:.4f}")
+            print(f"    Precision   : {r['precision']:.4f}")
+            print(f"    ECE         : {r['ece']:.4f}")
             print(f"    LGG  {r['per_class']['LGG']['correct']:>3}/{r['per_class']['LGG']['n']:>3}"
                   f"  recall={r['per_class']['LGG']['recall']:.3f}")
             print(f"    HGG  {r['per_class']['HGG']['correct']:>3}/{r['per_class']['HGG']['n']:>3}"
                   f"  recall={r['per_class']['HGG']['recall']:.3f}")
 
         all_results[model_name] = {
-            "epochs_trained":    len(ckpt.get("history", [])),
-            "best_val_accuracy": ckpt.get("best_val_accuracy"),
+            "epochs_trained":     len(ckpt.get("history", [])),
+            "best_val_macro_f1":  ckpt.get("best_val_macro_f1"),
+            "best_val_lgg_recall": ckpt.get("best_val_lgg_recall"),
+            "best_val_accuracy":  ckpt.get("best_val_accuracy"),
             "val":  val_r,
             "test": test_r,
         }
@@ -163,18 +192,18 @@ def main():
         torch.cuda.empty_cache()
 
     # Summary table
-    print(f"\n\n{'='*72}")
+    print(f"\n\n{'='*82}")
     print(f"  FINAL EVALUATION SUMMARY")
-    print(f"{'='*72}")
-    print(f"  {'Model':<26} {'Split':<5} {'Acc':>7} {'AUC':>7} {'F1':>7} {'Sens':>7} {'Spec':>7}")
-    print(f"  {'-'*67}")
+    print(f"{'='*82}")
+    print(f"  {'Model':<24} {'Split':<5} {'Acc':>7} {'MacroF1':>8} {'LGGRec':>8} {'AUC':>7} {'ECE':>7}")
+    print(f"  {'-'*77}")
     for mname, r in all_results.items():
         for split in ["val", "test"]:
             s = r[split]
-            print(f"  {mname:<26} {split.upper():<5} {s['accuracy']:>7.4f} "
-                  f"{s['auc']:>7.4f} {s['f1_weighted']:>7.4f} "
-                  f"{s['sensitivity']:>7.4f} {s['specificity']:>7.4f}")
-    print(f"{'='*72}")
+            print(f"  {mname:<24} {split.upper():<5} {s['accuracy']:>7.4f} "
+                  f"{s['f1_macro']:>8.4f} {s['lgg_recall']:>8.4f} "
+                  f"{s['auc']:>7.4f} {s['ece']:>7.4f}")
+    print(f"{'='*82}")
 
     out = RESULTS_DIR / "evaluation_report.json"
     out.write_text(json.dumps(all_results, indent=2))

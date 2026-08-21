@@ -1,0 +1,38 @@
+{
+  "consolidation_metadata": {
+    "report_name": "DAY 7 \u2014 AUDIT 7: RESEARCH EVIDENCE CONSOLIDATION & SCIENTIFIC CLAIMS AUDIT",
+    "timestamp": "2026-08-19 10:40:17",
+    "audit_type": "FINAL_READ_ONLY_EVIDENCE_CONSOLIDATION",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "project": "BraTS 2023 Adult Glioma (GLI) 3D Grading Pipeline"
+  },
+  "audits_consolidated": [
+    "Audit 1: Protocol A/B/C Forensic Provenance Audit",
+    "Audit 2: LGG Recall Anomaly & Failure-Mechanism Forensic Audit",
+    "Audit 3: Controlled Class-Weighting Effect & Experimental Interpretation Audit",
+    "Audit 4: Locked-Test Result Provenance & Evaluation Integrity Audit",
+    "Audit 5: Cross-Validation Scope, Reliability & Generalizability Audit",
+    "Audit 6: Decision-Threshold Analysis Provenance & Methodological Validity Audit"
+  ],
+  "master_evidence_summary": {
+    "dataset_isolation_proven": true,
+    "locked_test_artifacts_verified": "39/39 (100%)",
+    "canonical_checkpoints_traceable": "9/9 (100%)",
+    "historical_discrepancy_resolved": "Different training durations & checkpoint epochs (Ep 1 vs Ep 19)",
+    "cv_metrics_resnet18_protA": {
+      "accuracy": "0.9530 +/- 0.0066",
+      "macro_f1": "0.7145 +/- 0.1290",
+      "lgg_recall": "0.5055 +/- 0.3274 (0.00 - 0.80)",
+      "roc_auc": "0.9163 +/- 0.0446 (0.86 - 0.96)"
+    },
+    "class_weighting_findings": "Static weighting degraded CNNs (75% -> 41.7%) while rescuing SwinUNETR (0% -> 25%)",
+    "threshold_analysis_findings": "Latent representations separable (AUC >= 0.86); validation-derived tau* recovers sensitivity at the cost of specificity"
+  },
+  "recommended_next_experiments_ranked": [
+    "1. Focal Loss Controlled 5-Fold Benchmark (Priority: CRITICAL)",
+    "2. Cross-Validation Across Remaining 8 Models/Protocols (Priority: VERY_HIGH)",
+    "3. Multi-Seed Fixed-Split Ablation (Priority: HIGH)",
+    "4. Temperature Scaling Probability Calibration (Priority: MODERATE)",
+    "5. External Clinical Validation (Priority: LONG_TERM)"
+  ]
+}

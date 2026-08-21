@@ -1,0 +1,603 @@
+{
+  "experiment": "Calibrated Operating-Point Analysis (Focal Loss ResNet18 + Frozen T*=0.4923)",
+  "cohort": "BraTS 2023 GLI Locked Test (188 subjects: 12 LGG, 176 HGG)",
+  "frozen_temperature_T": 0.49225,
+  "discrimination": {
+    "roc_auc": 0.9541,
+    "invariance_confirmed": true
+  },
+  "key_operating_points": {
+    "default_0_50": {
+      "threshold_tau_lgg": 0.5,
+      "threshold_theta_hgg": 0.5,
+      "lgg_recall": 0.4167,
+      "hgg_recall": 0.9716,
+      "lgg_precision": 0.5,
+      "hgg_precision": 0.9607,
+      "accuracy": 0.9362,
+      "macro_f1": 0.7103,
+      "weighted_f1": 0.9334,
+      "balanced_accuracy": 0.6941,
+      "sensitivity_lgg": 0.4167,
+      "specificity_hgg": 0.9716,
+      "tn": 5,
+      "fp": 7,
+      "fn": 5,
+      "tp": 171,
+      "confusion_matrix": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          171
+        ]
+      ]
+    },
+    "max_macro_f1": {
+      "threshold_tau_lgg": 0.35,
+      "threshold_theta_hgg": 0.65,
+      "macro_f1": 0.7685,
+      "lgg_recall": 0.6667,
+      "hgg_recall": 0.9545,
+      "accuracy": 0.9362,
+      "balanced_accuracy": 0.8106,
+      "confusion_matrix": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          168
+        ]
+      ]
+    },
+    "max_balanced_accuracy": {
+      "threshold_tau_lgg": 0.1,
+      "threshold_theta_hgg": 0.9,
+      "balanced_accuracy": 0.9176,
+      "lgg_recall": 1.0,
+      "hgg_recall": 0.8352,
+      "macro_f1": 0.6815,
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          29,
+          147
+        ]
+      ]
+    },
+    "closest_lgg_recall_50": {
+      "target": 0.5,
+      "threshold_tau_lgg": 0.45,
+      "lgg_recall": 0.4167,
+      "hgg_recall": 0.9716,
+      "absolute_diff": 0.0833
+    },
+    "closest_lgg_recall_60": {
+      "target": 0.6,
+      "threshold_tau_lgg": 0.4,
+      "lgg_recall": 0.5833,
+      "hgg_recall": 0.9602,
+      "absolute_diff": 0.0167
+    },
+    "closest_lgg_recall_70": {
+      "target": 0.7,
+      "threshold_tau_lgg": 0.35,
+      "lgg_recall": 0.6667,
+      "hgg_recall": 0.9545,
+      "absolute_diff": 0.0333
+    },
+    "closest_lgg_recall_80": {
+      "target": 0.8,
+      "threshold_tau_lgg": 0.2,
+      "lgg_recall": 0.8333,
+      "hgg_recall": 0.8864,
+      "absolute_diff": 0.0333
+    },
+    "max_lgg_recall_100": {
+      "threshold_tau_lgg": 0.1,
+      "lgg_recall": 1.0,
+      "hgg_recall": 0.8352,
+      "macro_f1": 0.6815,
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          29,
+          147
+        ]
+      ]
+    }
+  },
+  "raw_vs_calibrated_shift_summary": {
+    "at_050": "Identical metrics and confusion matrix at threshold 0.50 (LGG Recall=41.67%, HGG Recall=97.16%).",
+    "threshold_shift": "Because T* < 1 sharpens the probabilities, achieving target minority recall requires lower numerical thresholds on P(LGG) (e.g. Max Macro-F1 shifted from tau=0.40 raw to tau=0.35 calibrated; 100% LGG Recall shifted from tau=0.25 raw to tau=0.10 calibrated).",
+    "peak_macro_f1": "Calibrated probabilities achieved a slightly higher peak Macro-F1 (0.7685 at tau=0.35) than raw probabilities (0.7571 at tau=0.40)."
+  },
+  "all_calibrated_thresholds": [
+    {
+      "threshold_tau_lgg": 0.1,
+      "threshold_theta_hgg": 0.9,
+      "lgg_recall": 1.0,
+      "hgg_recall": 0.8352,
+      "lgg_precision": 0.2927,
+      "hgg_precision": 1.0,
+      "accuracy": 0.8457,
+      "macro_f1": 0.6815,
+      "weighted_f1": 0.881,
+      "balanced_accuracy": 0.9176,
+      "sensitivity_lgg": 1.0,
+      "specificity_hgg": 0.8352,
+      "tn": 12,
+      "fp": 0,
+      "fn": 29,
+      "tp": 147,
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          29,
+          147
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.15,
+      "threshold_theta_hgg": 0.85,
+      "lgg_recall": 0.9167,
+      "hgg_recall": 0.8807,
+      "lgg_precision": 0.3438,
+      "hgg_precision": 0.9936,
+      "accuracy": 0.883,
+      "macro_f1": 0.7169,
+      "weighted_f1": 0.906,
+      "balanced_accuracy": 0.8987,
+      "sensitivity_lgg": 0.9167,
+      "specificity_hgg": 0.8807,
+      "tn": 11,
+      "fp": 1,
+      "fn": 21,
+      "tp": 155,
+      "confusion_matrix": [
+        [
+          11,
+          1
+        ],
+        [
+          21,
+          155
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.2,
+      "threshold_theta_hgg": 0.8,
+      "lgg_recall": 0.8333,
+      "hgg_recall": 0.8864,
+      "lgg_precision": 0.3333,
+      "hgg_precision": 0.9873,
+      "accuracy": 0.883,
+      "macro_f1": 0.7052,
+      "weighted_f1": 0.9049,
+      "balanced_accuracy": 0.8598,
+      "sensitivity_lgg": 0.8333,
+      "specificity_hgg": 0.8864,
+      "tn": 10,
+      "fp": 2,
+      "fn": 20,
+      "tp": 156,
+      "confusion_matrix": [
+        [
+          10,
+          2
+        ],
+        [
+          20,
+          156
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.25,
+      "threshold_theta_hgg": 0.75,
+      "lgg_recall": 0.75,
+      "hgg_recall": 0.9261,
+      "lgg_precision": 0.4091,
+      "hgg_precision": 0.9819,
+      "accuracy": 0.9149,
+      "macro_f1": 0.7413,
+      "weighted_f1": 0.9262,
+      "balanced_accuracy": 0.8381,
+      "sensitivity_lgg": 0.75,
+      "specificity_hgg": 0.9261,
+      "tn": 9,
+      "fp": 3,
+      "fn": 13,
+      "tp": 163,
+      "confusion_matrix": [
+        [
+          9,
+          3
+        ],
+        [
+          13,
+          163
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.3,
+      "threshold_theta_hgg": 0.7,
+      "lgg_recall": 0.6667,
+      "hgg_recall": 0.9489,
+      "lgg_precision": 0.4706,
+      "hgg_precision": 0.9766,
+      "accuracy": 0.9309,
+      "macro_f1": 0.7571,
+      "weighted_f1": 0.9363,
+      "balanced_accuracy": 0.8078,
+      "sensitivity_lgg": 0.6667,
+      "specificity_hgg": 0.9489,
+      "tn": 8,
+      "fp": 4,
+      "fn": 9,
+      "tp": 167,
+      "confusion_matrix": [
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          167
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.35,
+      "threshold_theta_hgg": 0.65,
+      "lgg_recall": 0.6667,
+      "hgg_recall": 0.9545,
+      "lgg_precision": 0.5,
+      "hgg_precision": 0.9767,
+      "accuracy": 0.9362,
+      "macro_f1": 0.7685,
+      "weighted_f1": 0.9404,
+      "balanced_accuracy": 0.8106,
+      "sensitivity_lgg": 0.6667,
+      "specificity_hgg": 0.9545,
+      "tn": 8,
+      "fp": 4,
+      "fn": 8,
+      "tp": 168,
+      "confusion_matrix": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          168
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.4,
+      "threshold_theta_hgg": 0.6,
+      "lgg_recall": 0.5833,
+      "hgg_recall": 0.9602,
+      "lgg_precision": 0.5,
+      "hgg_precision": 0.9713,
+      "accuracy": 0.9362,
+      "macro_f1": 0.7521,
+      "weighted_f1": 0.9384,
+      "balanced_accuracy": 0.7718,
+      "sensitivity_lgg": 0.5833,
+      "specificity_hgg": 0.9602,
+      "tn": 7,
+      "fp": 5,
+      "fn": 7,
+      "tp": 169,
+      "confusion_matrix": [
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          169
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.45,
+      "threshold_theta_hgg": 0.55,
+      "lgg_recall": 0.4167,
+      "hgg_recall": 0.9716,
+      "lgg_precision": 0.5,
+      "hgg_precision": 0.9607,
+      "accuracy": 0.9362,
+      "macro_f1": 0.7103,
+      "weighted_f1": 0.9334,
+      "balanced_accuracy": 0.6941,
+      "sensitivity_lgg": 0.4167,
+      "specificity_hgg": 0.9716,
+      "tn": 5,
+      "fp": 7,
+      "fn": 5,
+      "tp": 171,
+      "confusion_matrix": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          171
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.5,
+      "threshold_theta_hgg": 0.5,
+      "lgg_recall": 0.4167,
+      "hgg_recall": 0.9716,
+      "lgg_precision": 0.5,
+      "hgg_precision": 0.9607,
+      "accuracy": 0.9362,
+      "macro_f1": 0.7103,
+      "weighted_f1": 0.9334,
+      "balanced_accuracy": 0.6941,
+      "sensitivity_lgg": 0.4167,
+      "specificity_hgg": 0.9716,
+      "tn": 5,
+      "fp": 7,
+      "fn": 5,
+      "tp": 171,
+      "confusion_matrix": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          171
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.55,
+      "threshold_theta_hgg": 0.45,
+      "lgg_recall": 0.3333,
+      "hgg_recall": 0.9773,
+      "lgg_precision": 0.5,
+      "hgg_precision": 0.9556,
+      "accuracy": 0.9362,
+      "macro_f1": 0.6831,
+      "weighted_f1": 0.9301,
+      "balanced_accuracy": 0.6553,
+      "sensitivity_lgg": 0.3333,
+      "specificity_hgg": 0.9773,
+      "tn": 4,
+      "fp": 8,
+      "fn": 4,
+      "tp": 172,
+      "confusion_matrix": [
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          172
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.6,
+      "threshold_theta_hgg": 0.4,
+      "lgg_recall": 0.3333,
+      "hgg_recall": 0.983,
+      "lgg_precision": 0.5714,
+      "hgg_precision": 0.9558,
+      "accuracy": 0.9415,
+      "macro_f1": 0.6951,
+      "weighted_f1": 0.9342,
+      "balanced_accuracy": 0.6581,
+      "sensitivity_lgg": 0.3333,
+      "specificity_hgg": 0.983,
+      "tn": 4,
+      "fp": 8,
+      "fn": 3,
+      "tp": 173,
+      "confusion_matrix": [
+        [
+          4,
+          8
+        ],
+        [
+          3,
+          173
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.65,
+      "threshold_theta_hgg": 0.35,
+      "lgg_recall": 0.3333,
+      "hgg_recall": 0.9943,
+      "lgg_precision": 0.8,
+      "hgg_precision": 0.9563,
+      "accuracy": 0.9521,
+      "macro_f1": 0.7228,
+      "weighted_f1": 0.9427,
+      "balanced_accuracy": 0.6638,
+      "sensitivity_lgg": 0.3333,
+      "specificity_hgg": 0.9943,
+      "tn": 4,
+      "fp": 8,
+      "fn": 1,
+      "tp": 175,
+      "confusion_matrix": [
+        [
+          4,
+          8
+        ],
+        [
+          1,
+          175
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.7,
+      "threshold_theta_hgg": 0.3,
+      "lgg_recall": 0.25,
+      "hgg_recall": 1.0,
+      "lgg_precision": 1.0,
+      "hgg_precision": 0.9514,
+      "accuracy": 0.9521,
+      "macro_f1": 0.6875,
+      "weighted_f1": 0.9384,
+      "balanced_accuracy": 0.625,
+      "sensitivity_lgg": 0.25,
+      "specificity_hgg": 1.0,
+      "tn": 3,
+      "fp": 9,
+      "fn": 0,
+      "tp": 176,
+      "confusion_matrix": [
+        [
+          3,
+          9
+        ],
+        [
+          0,
+          176
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.75,
+      "threshold_theta_hgg": 0.25,
+      "lgg_recall": 0.25,
+      "hgg_recall": 1.0,
+      "lgg_precision": 1.0,
+      "hgg_precision": 0.9514,
+      "accuracy": 0.9521,
+      "macro_f1": 0.6875,
+      "weighted_f1": 0.9384,
+      "balanced_accuracy": 0.625,
+      "sensitivity_lgg": 0.25,
+      "specificity_hgg": 1.0,
+      "tn": 3,
+      "fp": 9,
+      "fn": 0,
+      "tp": 176,
+      "confusion_matrix": [
+        [
+          3,
+          9
+        ],
+        [
+          0,
+          176
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.8,
+      "threshold_theta_hgg": 0.2,
+      "lgg_recall": 0.0833,
+      "hgg_recall": 1.0,
+      "lgg_precision": 1.0,
+      "hgg_precision": 0.9412,
+      "accuracy": 0.9415,
+      "macro_f1": 0.5618,
+      "weighted_f1": 0.9176,
+      "balanced_accuracy": 0.5417,
+      "sensitivity_lgg": 0.0833,
+      "specificity_hgg": 1.0,
+      "tn": 1,
+      "fp": 11,
+      "fn": 0,
+      "tp": 176,
+      "confusion_matrix": [
+        [
+          1,
+          11
+        ],
+        [
+          0,
+          176
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.85,
+      "threshold_theta_hgg": 0.15,
+      "lgg_recall": 0.0833,
+      "hgg_recall": 1.0,
+      "lgg_precision": 1.0,
+      "hgg_precision": 0.9412,
+      "accuracy": 0.9415,
+      "macro_f1": 0.5618,
+      "weighted_f1": 0.9176,
+      "balanced_accuracy": 0.5417,
+      "sensitivity_lgg": 0.0833,
+      "specificity_hgg": 1.0,
+      "tn": 1,
+      "fp": 11,
+      "fn": 0,
+      "tp": 176,
+      "confusion_matrix": [
+        [
+          1,
+          11
+        ],
+        [
+          0,
+          176
+        ]
+      ]
+    },
+    {
+      "threshold_tau_lgg": 0.9,
+      "threshold_theta_hgg": 0.1,
+      "lgg_recall": 0.0,
+      "hgg_recall": 1.0,
+      "lgg_precision": 0.0,
+      "hgg_precision": 0.9362,
+      "accuracy": 0.9362,
+      "macro_f1": 0.4835,
+      "weighted_f1": 0.9053,
+      "balanced_accuracy": 0.5,
+      "sensitivity_lgg": 0.0,
+      "specificity_hgg": 1.0,
+      "tn": 0,
+      "fp": 12,
+      "fn": 0,
+      "tp": 176,
+      "confusion_matrix": [
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          176
+        ]
+      ]
+    }
+  ]
+}

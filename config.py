@@ -100,6 +100,14 @@ EARLY_STOPPING_PATIENCE = 6
 EARLY_STOPPING_MIN_DELTA = 0.0
 GRADIENT_ACCUMULATION_STEPS = 1
 USE_MIXED_PRECISION = True
+
+# Training protocol for class-imbalance handling
+#   "A" — No class weighting (standard CrossEntropyLoss)
+#   "B" — Inverse-frequency class weights: w_c = N / (K * n_c)
+#   "C" — Protocol B with minority-class weight × 1.25
+#   "D" — Protocol B with minority-class weight × 0.75
+TRAINING_PROTOCOL = "A"
+
 NUM_WORKERS = 4                   # 4 parallel NIfTI loaders; keeps GPU constantly fed
 
 # Model registry

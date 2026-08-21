@@ -1,0 +1,20 @@
+{
+  "frozen_temperature_T": 0.49225,
+  "optimization_dataset": "BraTS 2023 GLI Validation Split (n=187)",
+  "optimization_loss": "Negative Log-Likelihood (CrossEntropyLoss)",
+  "optimization_algorithm": "Scipy Bounded Scalar Minimization",
+  "optimization_success": true,
+  "optimization_evaluations": 16,
+  "validation_metrics": {
+    "n_subjects": 187,
+    "lgg_subjects": 10,
+    "hgg_subjects": 177,
+    "initial_nll_T1": 0.209868,
+    "calibrated_nll_Topt": 0.167382,
+    "delta_nll": -0.042487,
+    "raw_confidence_ece": 0.0829,
+    "calibrated_confidence_ece": 0.0175,
+    "raw_brier_score": 0.0584,
+    "calibrated_brier_score": 0.0501
+  }
+}

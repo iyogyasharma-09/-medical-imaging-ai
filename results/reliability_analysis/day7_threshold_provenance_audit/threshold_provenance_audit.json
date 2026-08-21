@@ -1,0 +1,128 @@
+{
+  "audit_metadata": {
+    "audit_name": "DAY 7 \u2014 AUDIT 6: DECISION-THRESHOLD ANALYSIS PROVENANCE & METHODOLOGICAL VALIDITY AUDIT",
+    "timestamp": "2026-08-19 10:35:46",
+    "audit_type": "STRICT_READ_ONLY_FORENSIC_METHODOLOGICAL",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "methodological_status": "STRICT_VALIDATION_TUNED_OUT_OF_SAMPLE_TESTED"
+  },
+  "threshold_pipeline_verification": {
+    "optimization_dataset": "Validation Cohort (N=187: 10 LGG, 177 HGG)",
+    "out_of_sample_evaluation_dataset": "Locked Test Cohort (N=188: 12 LGG, 176 HGG)",
+    "checkpoints_used": "Frozen Canonical Protocol A/B/C Checkpoints",
+    "test_set_contamination": "VERIFIED_ABSENT",
+    "temporal_timing": "Post-Hoc Exploratory Operating-Point Sensitivity Analysis (Day 6)"
+  },
+  "artifacts_inventory": [
+    {
+      "filename": "balanced_accuracy_vs_threshold.png",
+      "relative_path": "results/reliability_analysis/threshold_analysis/balanced_accuracy_vs_threshold.png",
+      "size_bytes": 193330,
+      "sha256": "8542ee7e94c67cebc5c97631bdda07af0537ea2fda0234e68eec5c65dd7ccbf4",
+      "artifact_type": "Plot",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "lgg_recall_vs_threshold.png",
+      "relative_path": "results/reliability_analysis/threshold_analysis/lgg_recall_vs_threshold.png",
+      "size_bytes": 178346,
+      "sha256": "05998698b93cd1a1ccbbfe0f6064976b7365ae5e561134f8d55b689767ae0ac4",
+      "artifact_type": "Plot",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "macro_f1_vs_threshold.png",
+      "relative_path": "results/reliability_analysis/threshold_analysis/macro_f1_vs_threshold.png",
+      "size_bytes": 186508,
+      "sha256": "7217b27ebb58647a753309551733990c846444a569c7fd3d830d39f5b4ab2405",
+      "artifact_type": "Plot",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "roc_operating_points.png",
+      "relative_path": "results/reliability_analysis/threshold_analysis/roc_operating_points.png",
+      "size_bytes": 225598,
+      "sha256": "46c985a95cd112a70ae45fb3e8a9aa6548fcabc6acf8b1f67d227615fb53f072",
+      "artifact_type": "Plot",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "specificity_vs_threshold.png",
+      "relative_path": "results/reliability_analysis/threshold_analysis/specificity_vs_threshold.png",
+      "size_bytes": 175793,
+      "sha256": "aaa599fcb1ab98c95f2c38bb0937cade207645bd47cb8f02e17980e3f1c95067",
+      "artifact_type": "Plot",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "threshold_analysis_manifest.json",
+      "relative_path": "results/reliability_analysis/threshold_analysis/threshold_analysis_manifest.json",
+      "size_bytes": 2728,
+      "sha256": "e9ff830ec88b3f5e7f2a03c9a71c1f606aae9f59136b70e1ca191815232269bc",
+      "artifact_type": "JSON_Manifest",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "threshold_analysis_report.md",
+      "relative_path": "results/reliability_analysis/threshold_analysis/threshold_analysis_report.md",
+      "size_bytes": 9773,
+      "sha256": "2ce79537530e34531f7c5928242839037c283e44d6bdbe201cc158d0c45a6d01",
+      "artifact_type": "Report",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "threshold_comparison.csv",
+      "relative_path": "results/reliability_analysis/threshold_analysis/threshold_comparison.csv",
+      "size_bytes": 1395,
+      "sha256": "d0469b35cb5aeb9d74271c23680d4a76d7512f00e4492f0360f784100e646483",
+      "artifact_type": "Dataset",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "threshold_interpretation.md",
+      "relative_path": "results/reliability_analysis/threshold_analysis/threshold_interpretation.md",
+      "size_bytes": 5972,
+      "sha256": "dc49ee70f42c41b431d440158ed5edf47cbc5639a0d76d95eac2039595ce0e5e",
+      "artifact_type": "Report",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "threshold_methodology.md",
+      "relative_path": "results/reliability_analysis/threshold_analysis/threshold_methodology.md",
+      "size_bytes": 4089,
+      "sha256": "2bf0c7577097b06fabf78199f32e2072b13b586e5ba0cc8df8e8cc6713623cb7",
+      "artifact_type": "Report",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "threshold_selected_results.csv",
+      "relative_path": "results/reliability_analysis/threshold_analysis/threshold_selected_results.csv",
+      "size_bytes": 2191,
+      "sha256": "910f7c6bcb3e1e5295c2818747c3300342fd6b9aa0c3d810160e24b33eef2210",
+      "artifact_type": "Dataset",
+      "provenance_status": "VERIFIED_PRESENT"
+    },
+    {
+      "filename": "threshold_sweep_results.csv",
+      "relative_path": "results/reliability_analysis/threshold_analysis/threshold_sweep_results.csv",
+      "size_bytes": 127691,
+      "sha256": "beff03e9f78ee0c65793e59ad211200c03d15e49edbd9d25c81386c3737bc3c7",
+      "artifact_type": "Dataset",
+      "provenance_status": "VERIFIED_PRESENT"
+    }
+  ],
+  "direct_questions_verdict": {
+    "Q1_threshold_selection_without_test_labels": "YES (VERIFIED). Grid search and optimization rules operated strictly on validation probabilities.",
+    "Q2_selected_from_validation_data": "YES (VERIFIED). Rules A, B, and C tuned tau* exclusively on N=187 validation data.",
+    "Q3_evaluated_legitimately_on_locked_test": "YES (VERIFIED). Frozen tau* applied to locked-test probabilities out-of-sample.",
+    "Q4_test_leakage": "NO (VERIFIED ABSENT). Zero test-set influence during threshold selection.",
+    "Q5_what_analysis_demonstrates": "Demonstrates that models possess latent class-separating representation (ROC-AUC >= 0.86) that can be accessed at alternative decision operating points.",
+    "Q6_demonstrates_improved_sensitivity": "YES. LGG Recall increased in models where default 0.50 threshold compressed minority predictions.",
+    "Q7_demonstrates_sensitivity_specificity_tradeoff": "YES. Sensitivity gains were accompanied by reductions in HGG specificity.",
+    "Q8_demonstrates_improved_representation": "NO. Threshold tuning alters the operating point on a fixed ROC curve; representation is unchanged.",
+    "Q9_demonstrates_improved_calibration": "NO. Threshold optimization is not probability calibration (ECE/Brier score are unchanged).",
+    "Q10_proves_clinically_better": "NO. It explores the sensitivity/specificity trade-off; clinical preference depends on utility functions.",
+    "Q11_reporting_guidance": "Report default tau = 0.50 as the primary confirmatory locked-test result; report tau* as secondary exploratory sensitivity analysis.",
+    "Q12_unresolved_questions": "Stability of validation-derived tau* across 5-fold cross-validation partitions."
+  }
+}

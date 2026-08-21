@@ -1,0 +1,25 @@
+{
+  "model": "ResNet18 MedicalNet",
+  "protocol": "A",
+  "confusion_matrix": {
+    "tn": 9,
+    "fp": 3,
+    "fn": 2,
+    "tp": 174,
+    "matrix": [
+      [
+        9,
+        3
+      ],
+      [
+        2,
+        174
+      ]
+    ]
+  },
+  "lgg_recall": 0.75,
+  "hgg_recall": 0.9886363636363636,
+  "accuracy": 0.973404255319149,
+  "f1_macro": 0.8842221948515827,
+  "auc": 0.9829545454545454
+}

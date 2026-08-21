@@ -1,0 +1,50 @@
+{
+  "audit_metadata": {
+    "audit_name": "DAY 7 \u2014 AUDIT 4: LOCKED-TEST RESULT PROVENANCE & EVALUATION INTEGRITY AUDIT",
+    "timestamp": "2026-08-19 10:27:19",
+    "audit_mode": "STRICT_READ_ONLY_FORENSIC_PROVENANCE",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "verdict_dataset_integrity": "ISOLATED_HELD_OUT_COHORT_VERIFIED",
+    "verdict_leakage": "PROVEN_ABSENT (0 overlap)",
+    "verdict_artifact_integrity": "39_OF_39_MATCHED_100_PERCENT",
+    "verdict_metrics_reproducibility": "100_PERCENT_INDEPENDENTLY_REPRODUCED",
+    "verdict_contamination": "PROVEN_ABSENT (Validation-only selection)"
+  },
+  "artifacts": {
+    "locked_test_provenance_audit.md": {
+      "relative_path": "results/reliability_analysis/day7_locked_test_provenance/locked_test_provenance_audit.md",
+      "size_bytes": 18420,
+      "sha256": "a3ba54a84699ead293aa49ce05d818de533261998c0735fe23826e77b37f0a01"
+    },
+    "locked_test_provenance_master.csv": {
+      "relative_path": "results/reliability_analysis/day7_locked_test_provenance/locked_test_provenance_master.csv",
+      "size_bytes": 5999,
+      "sha256": "4a094fd7d27bcd4ab2ccf2d13fcfe9866e70e479b3b1d53ab0859428d3bb4464"
+    },
+    "checkpoint_to_result_map.csv": {
+      "relative_path": "results/reliability_analysis/day7_locked_test_provenance/checkpoint_to_result_map.csv",
+      "size_bytes": 3919,
+      "sha256": "07bdb31ef90ae93ffa1e8733d618eb65a592a8db51e3094f69f05f404bbc6b5a"
+    },
+    "locked_test_subject_prediction_trace.csv": {
+      "relative_path": "results/reliability_analysis/day7_locked_test_provenance/locked_test_subject_prediction_trace.csv",
+      "size_bytes": 3266,
+      "sha256": "d69be59604e546af1d2dd0e1a161892d11109480284973d7a62d7f0e150efa2f"
+    },
+    "test_contamination_assessment.csv": {
+      "relative_path": "results/reliability_analysis/day7_locked_test_provenance/test_contamination_assessment.csv",
+      "size_bytes": 2108,
+      "sha256": "ca0b03a18cf269f163a7bfe0eeaa13edd502f4414d59577e8763bf6df368ead9"
+    },
+    "locked_test_provenance_audit.json": {
+      "relative_path": "results/reliability_analysis/day7_locked_test_provenance/locked_test_provenance_audit.json",
+      "size_bytes": 15090,
+      "sha256": "3309f5225b239cb7d27437c7e3a1f44a8798d87764ba5910f7125bdafc4c12b0"
+    },
+    "executive_summary.md": {
+      "relative_path": "results/reliability_analysis/day7_locked_test_provenance/executive_summary.md",
+      "size_bytes": 3453,
+      "sha256": "d326ab048d9c99de7b31e9b8a8656e270a00fa7015db0b833b2436368842cb4f"
+    }
+  }
+}

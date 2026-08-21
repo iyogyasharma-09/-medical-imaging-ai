@@ -1,0 +1,38 @@
+[
+  {
+    "Model": "ResNet18 MedicalNet",
+    "Protocol A Macro-F1": 0.8842,
+    "Protocol C Macro-F1": 0.6884,
+    "\u0394 Macro-F1": -0.1958,
+    "Protocol A LGG Recall": 0.75,
+    "Protocol C LGG Recall": 0.4167,
+    "\u0394 LGG Recall": -0.3333,
+    "Protocol A AUC": 0.983,
+    "Protocol C AUC": 0.9167,
+    "\u0394 AUC": -0.0663
+  },
+  {
+    "Model": "DenseNet121 3D",
+    "Protocol A Macro-F1": 0.7934,
+    "Protocol C Macro-F1": 0.6527,
+    "\u0394 Macro-F1": -0.1407,
+    "Protocol A LGG Recall": 0.6667,
+    "Protocol C LGG Recall": 0.3333,
+    "\u0394 LGG Recall": -0.3334,
+    "Protocol A AUC": 0.9422,
+    "Protocol C AUC": 0.9013,
+    "\u0394 AUC": -0.0409
+  },
+  {
+    "Model": "SwinUNETR 3D",
+    "Protocol A Macro-F1": 0.4835,
+    "Protocol C Macro-F1": 0.6736,
+    "\u0394 Macro-F1": 0.1901,
+    "Protocol A LGG Recall": 0.0,
+    "Protocol C LGG Recall": 0.25,
+    "\u0394 LGG Recall": 0.25,
+    "Protocol A AUC": 0.9337,
+    "Protocol C AUC": 0.9735,
+    "\u0394 AUC": 0.0398
+  }
+]

@@ -1,0 +1,19 @@
+Claim_ID,Candidate_Claim,Classification,Empirical_Evidence,Primary_Source_Audit
+CLAIM_01,The locked test set was isolated from model development.,SAFE_TO_CLAIM,Pairwise patient intersection is strictly 0; locked test was never passed to training dataloaders.,"Audit 1, Audit 4"
+CLAIM_02,Canonical locked-test results are traceable to frozen checkpoints selected using validation criteria.,SAFE_TO_CLAIM,All 9 checkpoints match recorded SHA-256 hashes and restore epochs of peak validation performance.,"Audit 1, Audit 4"
+CLAIM_03,ResNet18 Protocol A achieved 97.34% accuracy and 0.9830 ROC-AUC on the locked test.,SAFE_TO_CLAIM,Exact mathematical reproduction from raw locked_test/protocol_A/resnet18_predictions.csv.,Audit 4
+CLAIM_04,ResNet18 Protocol A achieved 75% LGG Recall on the locked test.,SAFE_TO_CLAIM,Directly calculated as 9 of 12 locked-test LGG patients correctly classified.,"Audit 2, Audit 4"
+CLAIM_05,The 75% LGG Recall should be interpreted as universally representative performance.,NOT_SUPPORTED,Cross-validation reveals that average expected sensitivity across development partitions is 50.55% +/- 32.74%.,"Audit 2, Audit 5"
+CLAIM_06,Five-fold CV revealed substantial variability in LGG sensitivity.,SAFE_TO_CLAIM,Phase 6 CV LGG Recall ranged from 0.00% to 80.00% across 5 stratified folds (SD = 32.74%).,Audit 5
+CLAIM_07,Overall discrimination was substantially more stable than minority-class sensitivity.,SAFE_TO_CLAIM,ROC-AUC CV = 4.87% (0.9163 +/- 0.0446) vs LGG Recall CV = 64.77% (0.5055 +/- 0.3274).,Audit 5
+CLAIM_08,Patient partitioning contributes to observed minority-class variability.,SAFE_TO_CLAIM,Identical training pipeline produced 0% recall in Fold 4 and 80% recall in Fold 5 under different patient subsets.,"Audit 2, Audit 5"
+CLAIM_09,Patient partitioning is the sole cause of the variability.,CLAIM_WITH_CAUTION,"Patient distribution is a major contributor, but optimization dynamics and early stopping rules also interact.","Audit 2, Audit 5"
+CLAIM_10,Training stochasticity is the primary cause of variability.,UNRESOLVED,Multi-seed fixed-split training has not been decoupled from patient partition variance.,"Audit 2, Audit 5"
+CLAIM_11,Static class weighting universally improves minority detection.,NOT_SUPPORTED,Directly contradicted in 6 of 9 project configurations on the controlled benchmark.,Audit 3
+CLAIM_12,Class-weighting effects differed across architectures.,SAFE_TO_CLAIM,"CNN sensitivity declined under weighting, while SwinUNETR sensitivity improved under Protocol C.",Audit 3
+CLAIM_13,Threshold optimization can recover minority sensitivity in some configurations.,SAFE_TO_CLAIM,Validation-tuned tau* increased SwinUNETR Prot A recall from 0% to 100% and ResNet18 recall from 75% to 91.7%.,Audit 6
+CLAIM_14,Threshold optimization improves model representation.,NOT_SUPPORTED,ROC-AUC is invariant to threshold shifts; thresholding moves along the existing ROC curve.,Audit 6
+CLAIM_15,Threshold optimization calibrates probabilities.,NOT_SUPPORTED,"Threshold tuning alters decision cutoffs but leaves predicted probability distributions (ECE, Brier) unchanged.",Audit 6
+CLAIM_16,Threshold optimization proves clinical superiority.,NOT_SUPPORTED,Sensitivity gains are accompanied by increased majority false positives; clinical preference depends on utility costs.,Audit 6
+CLAIM_17,Focal Loss will solve the minority-class instability.,NOT_SUPPORTED,Unproven hypothesis; Focal Loss has not yet been experimentally trained or evaluated on this pipeline.,"Audit 3, Audit 5"
+CLAIM_18,Focal Loss is a scientifically justified next experiment.,SAFE_TO_CLAIM,Motivated by evidence that static class weighting fails to down-weight easy majority examples dynamically.,"Audit 3, Audit 6"

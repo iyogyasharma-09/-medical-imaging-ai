@@ -1,0 +1,48 @@
+{
+  "audit_metadata": {
+    "audit_name": "DAY 7 \u2014 AUDIT 6: DECISION-THRESHOLD ANALYSIS PROVENANCE & METHODOLOGICAL VALIDITY AUDIT",
+    "timestamp": "2026-08-19 10:36:22",
+    "audit_mode": "STRICT_READ_ONLY_FORENSIC_METHODOLOGICAL",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "verdict_pipeline_provenance": "VALIDATION_TUNED_OUT_OF_SAMPLE_TESTED",
+    "verdict_test_contamination": "VERIFIED_ABSENT",
+    "verdict_reporting_guidance": "PRIMARY_DEFAULT_0.50_VS_SECONDARY_EXPLORATORY_TAU_STAR"
+  },
+  "artifacts": {
+    "threshold_provenance_audit.md": {
+      "relative_path": "results/reliability_analysis/day7_threshold_provenance_audit/threshold_provenance_audit.md",
+      "size_bytes": 17735,
+      "sha256": "9f3fdecaea1a3483cd918b08e4578165058e923617412fbd066ce8eda90b7648"
+    },
+    "threshold_selection_trace.csv": {
+      "relative_path": "results/reliability_analysis/day7_threshold_provenance_audit/threshold_selection_trace.csv",
+      "size_bytes": 2447,
+      "sha256": "17bc500bedb73af6f2a63cb68f58841f035db85cfee6b8d6ba92de384c7d8e28"
+    },
+    "threshold_validation_test_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_threshold_provenance_audit/threshold_validation_test_matrix.csv",
+      "size_bytes": 2361,
+      "sha256": "e2c95a1beade273f2c95d791ccf3b17387cc743639000e7684fde3f9ba01af71"
+    },
+    "threshold_contamination_assessment.csv": {
+      "relative_path": "results/reliability_analysis/day7_threshold_provenance_audit/threshold_contamination_assessment.csv",
+      "size_bytes": 1496,
+      "sha256": "197338e8ab843172bcabb38c964ff150c0ab32c61bb1c4553ef737ae8396603e"
+    },
+    "threshold_claim_evidence_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_threshold_provenance_audit/threshold_claim_evidence_matrix.csv",
+      "size_bytes": 2451,
+      "sha256": "81b3d862ca687d0c894c067d427c0a1de3a0bb6bf9bee66b32f8f78aaee30f84"
+    },
+    "threshold_provenance_audit.json": {
+      "relative_path": "results/reliability_analysis/day7_threshold_provenance_audit/threshold_provenance_audit.json",
+      "size_bytes": 6941,
+      "sha256": "291167b05a6d1906cfaaea63fbc85f287acb9238c4d5cec035af144a4cd08542"
+    },
+    "executive_summary.md": {
+      "relative_path": "results/reliability_analysis/day7_threshold_provenance_audit/executive_summary.md",
+      "size_bytes": 4253,
+      "sha256": "8c1e0dc6911153de00ae69755e81ed63ec6657687485d6d9cc9a8f9133d3299c"
+    }
+  }
+}

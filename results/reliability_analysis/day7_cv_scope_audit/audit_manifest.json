@@ -1,0 +1,53 @@
+{
+  "audit_metadata": {
+    "audit_name": "DAY 7 \u2014 AUDIT 5: CROSS-VALIDATION SCOPE, RELIABILITY & GENERALIZABILITY AUDIT",
+    "timestamp": "2026-08-19 10:31:31",
+    "audit_mode": "STRICT_READ_ONLY_FORENSIC_STATISTICAL_RELIABILITY",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "verdict_cv_design": "VALID_STRATIFIED_5_FOLD_DEVELOPMENT_COHORT",
+    "verdict_metrics_stability": "ROC_AUC_STABLE (0.9163 +/- 0.0446) / LGG_RECALL_UNSTABLE (0.5055 +/- 0.3274)",
+    "verdict_generalizability": "RESTRICTED_TO_RESNET18_PROTOCOL_A"
+  },
+  "artifacts": {
+    "cv_scope_reliability_audit.md": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/cv_scope_reliability_audit.md",
+      "size_bytes": 17501,
+      "sha256": "f6060a64ad4384f42429fcf7ce0d1660694ad28d83711d286823f2d2ce39f684"
+    },
+    "cv_fold_composition.csv": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/cv_fold_composition.csv",
+      "size_bytes": 352,
+      "sha256": "97d3e87755a2eb83ebcb4fa74ad0717e492a02bd24fdbd8341837ea0ebc82a51"
+    },
+    "cv_metric_reliability_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/cv_metric_reliability_matrix.csv",
+      "size_bytes": 959,
+      "sha256": "6a059cba8933789ec90bcedfc5f62f9d82909869c414eee9c4fd3a8414e482bb"
+    },
+    "cv_variability_analysis.csv": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/cv_variability_analysis.csv",
+      "size_bytes": 518,
+      "sha256": "7838494a334ad013c6f5c1453845f34614f0a91e72d1652ad0064f65c6831eef"
+    },
+    "cv_generalizability_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/cv_generalizability_matrix.csv",
+      "size_bytes": 1491,
+      "sha256": "1b068697fb00ec55db585d71605d1adb1f80aec594b27706c70f46a13a739d30"
+    },
+    "cv_claim_evidence_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/cv_claim_evidence_matrix.csv",
+      "size_bytes": 2285,
+      "sha256": "f7ba06dc20afa8a9547252853ee1f219a17b9928bb6bb0f9015f14ac29f65761"
+    },
+    "cv_scope_reliability_audit.json": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/cv_scope_reliability_audit.json",
+      "size_bytes": 3360,
+      "sha256": "a7e7a217d7467f30347a495e015447a86e50aa7dd9f70b3118f6a3b0e99c7c1e"
+    },
+    "executive_summary.md": {
+      "relative_path": "results/reliability_analysis/day7_cv_scope_audit/executive_summary.md",
+      "size_bytes": 3545,
+      "sha256": "b2baf5d1adf92ef64d94435cdea9846a48d966395f40a9fccd6e8524ce1b2372"
+    }
+  }
+}

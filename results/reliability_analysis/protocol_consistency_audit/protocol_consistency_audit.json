@@ -1,0 +1,183 @@
+{
+  "audit_type": "Protocol Consistency Audit",
+  "audit_date": "2026-08-17",
+  "executive_verdict": "CONSISTENT",
+  "verdict_explanation": "The Protocol A ResNet18 locked-test result (LGG Recall=0.75, Macro-F1=0.8842) is LEGITIMATE. The earlier zero-LGG-recall result came from a completely different checkpoint (7-epoch, from evaluate_models.py loading the transient models/ directory checkpoint, NOT the canonical 25-epoch Protocol A archived checkpoint). The locked-test pipeline correctly loaded the archived Protocol A checkpoint and produced reproducible results. The two results are NOT comparable because they come from different model weights.",
+
+  "protocol_a_class_weight_verdict": {
+    "answer": "Protocol A did NOT use class weighting",
+    "evidence": {
+      "checkpoint_metadata_class_weights": null,
+      "checkpoint_metadata_training_protocol": "A",
+      "compute_protocol_weights_returns_none_for_A": true,
+      "loss_function": "nn.CrossEntropyLoss(weight=None)",
+      "weighted_sampler": "None detected",
+      "class_balanced_sampling": "None detected",
+      "hidden_weighting": "None detected",
+      "config_py_TRAINING_PROTOCOL": "A",
+      "config_comment": "A — No class weighting (standard CrossEntropyLoss)"
+    }
+  },
+
+  "discrepancy_analysis": {
+    "resnet18_lgg_recall_0": {
+      "source": "evaluate_models.py → evaluation_log.txt",
+      "checkpoint_used": "models/resnet18_medicalnet_lgg_hgg_3d.pt (7-epoch version, overwritten during sequential training)",
+      "checkpoint_epochs": 7,
+      "confusion_matrix": {"tn": 0, "fp": 12, "fn": 0, "tp": 176},
+      "lgg_recall": 0.0,
+      "dataset": "188 GLI test subjects (12 LGG, 176 HGG)",
+      "threshold": "argmax (equivalent to 0.5)",
+      "explanation": "The models/ directory contained a 7-epoch checkpoint at the time evaluate_models.py was run. This was likely the initial Protocol B training checkpoint (or intermediate overwrite). The model had not yet learned to distinguish LGG from HGG."
+    },
+    "resnet18_lgg_recall_0_4167": {
+      "source": "evaluate_models.py → evaluation_report.json",
+      "checkpoint_used": "models/resnet18_medicalnet_lgg_hgg_3d.pt (11-epoch version)",
+      "checkpoint_epochs": 11,
+      "confusion_matrix": {"tn": 5, "fp": 7, "fn": 6, "tp": 170},
+      "lgg_recall": 0.4167,
+      "dataset": "188 GLI test subjects (12 LGG, 176 HGG)",
+      "threshold": "argmax (equivalent to 0.5)",
+      "explanation": "A later run of evaluate_models.py after the checkpoint was updated to an 11-epoch version. This is an intermediate checkpoint, still not the final 25-epoch Protocol A."
+    },
+    "resnet18_lgg_recall_0_75": {
+      "source": "evaluate_locked_test.py → locked_test results",
+      "checkpoint_used": "protocol_archives/protocol_A/resnet18_medicalnet_lgg_hgg_3d.pt (25-epoch, canonical)",
+      "checkpoint_epochs": 25,
+      "confusion_matrix": {"tn": 9, "fp": 3, "fn": 2, "tp": 174},
+      "lgg_recall": 0.75,
+      "dataset": "188 GLI test subjects (12 LGG, 176 HGG)",
+      "threshold": "prob_hgg >= 0.5",
+      "explanation": "The canonical 25-epoch Protocol A checkpoint, loaded from the frozen protocol archives. This is the correct and authoritative result."
+    },
+    "root_cause": "CHECKPOINT IDENTITY MISMATCH between evaluation pipelines. evaluate_models.py loaded from the mutable models/ directory; evaluate_locked_test.py loaded from the immutable protocol_archives/. The models/ directory was overwritten multiple times during sequential protocol training."
+  },
+
+  "threshold_comparison": {
+    "locked_test_all_9": "0.5 (prob_hgg >= 0.5)",
+    "evaluate_models": "0.5 (argmax equivalent)",
+    "training_validation": "0.5 (argmax equivalent)",
+    "threshold_tuning_performed": false,
+    "verdict": "All existing results use threshold 0.5. No threshold discrepancy."
+  },
+
+  "dataset_comparison": {
+    "test_set": {
+      "total_subjects": 188,
+      "lgg_count": 12,
+      "hgg_count": 176,
+      "manifest": "processed_dataset/brats2023/test_manifest.json"
+    },
+    "val_set": {
+      "total_subjects": 187,
+      "lgg_count": 10,
+      "hgg_count": 177
+    },
+    "train_set": {
+      "total_subjects": 876,
+      "lgg_count": 43,
+      "hgg_count": 833
+    },
+    "overlaps": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "same_test_set_used_everywhere": true
+  },
+
+  "label_mapping": {
+    "lgg_label": 0,
+    "hgg_label": 1,
+    "defined_in": "config.py (TARGET_TO_CLASS = {0: 'lgg', 1: 'hgg'})",
+    "consistent_across_training": true,
+    "consistent_across_evaluation": true,
+    "consistent_across_locked_test": true,
+    "inversion_detected": false
+  },
+
+  "preprocessing_comparison": {
+    "modalities": ["t1n", "t1c", "t2w", "t2f"],
+    "spatial_size": [96, 96, 96],
+    "normalization": "z-score, channel-wise, nonzero voxels",
+    "orientation": "RAS",
+    "spacing": "1mm isotropic",
+    "crop": "foreground (nonzero)",
+    "consistent_across_pipelines": true
+  },
+
+  "metric_calculation": {
+    "lgg_recall_formula": "TN / (TN + FP) where TN=cm[0,0], FP=cm[0,1] from confusion_matrix(labels=[0,1])",
+    "equivalent_to": "recall_score(y_true, y_pred, average=None)[0]",
+    "verified_match": true,
+    "f1_macro": "f1_score(y_true, y_pred, average='macro', zero_division=0)",
+    "auc": "roc_auc_score(y_true, y_prob_hgg)",
+    "consistent_across_pipelines": true
+  },
+
+  "checkpoint_integrity": {
+    "protocol_A_resnet18": {
+      "sha256": "4C9DA69F2BF7BD7FD767CEC41482F9F80F82241C92C2D4147ECFC2F4628DC631",
+      "models_dir_sha256": "4C9DA69F2BF7BD7FD767CEC41482F9F80F82241C92C2D4147ECFC2F4628DC631",
+      "match": true,
+      "integrity_manifest_entry": "NOT IN MANIFEST (manifest only has B and C)"
+    },
+    "protocol_A_densenet121": {
+      "sha256": "B74310952C26AB95ADA0A43CC285812D8A85693823EFC8B5EAB446926A956F75",
+      "models_dir_sha256": "B74310952C26AB95ADA0A43CC285812D8A85693823EFC8B5EAB446926A956F75",
+      "match": true
+    },
+    "protocol_A_swin": {
+      "sha256": "9902D819E3D38EAA17170AC85B286C40C470CFDE827D80D3C935E36D3FF06F63",
+      "models_dir_sha256": "9902D819E3D38EAA17170AC85B286C40C470CFDE827D80D3C935E36D3FF06F63",
+      "match": true
+    },
+    "protocol_B_resnet18": {
+      "sha256": "C30FDF777B06DFEB01BE50747D6592FC645D071F47CDA28FEBDD695F3FA24DD1",
+      "manifest_match": true
+    },
+    "protocol_B_densenet121": {
+      "sha256": "BFB7792111AF196863A827E2E81BB914520A2870C52C75650DB3389CDCD45A67",
+      "manifest_match": true
+    },
+    "protocol_B_swin": {
+      "sha256": "BBA4F1EDAF72182059A7ED572D99B4098CD283BC27C0815BD5C5B67EDEC4B4B1",
+      "manifest_match": true
+    },
+    "protocol_C_resnet18": {
+      "sha256": "3D5B2989204F35F7C809628F71337DCA629B1C1D83327E0D2E5C5768ED103160",
+      "manifest_match": true
+    },
+    "protocol_C_densenet121": {
+      "sha256": "B519A8ACAC0F1D54B990A4D08E374E1CEBDA8470794D50FDB0C54F0089CF7FFA",
+      "manifest_match": true
+    },
+    "protocol_C_swin": {
+      "sha256": "2346CDA6D0563779279B8B53BA43586C3A2A6A392120A5CC84B8EB48E510A0FF",
+      "manifest_match": true
+    }
+  },
+
+  "prediction_provenance": {
+    "locked_test_evaluation_resnet18_protocolA": {
+      "prediction_file": "locked_test_evaluation/predictions/resnet18_protocolA_test_predictions.csv",
+      "sha256": "5BB4BDF666ACA237F76FEF62ED9D1687685947FB12D032ED69E619054C3AC3AB",
+      "locked_test_copy_sha256": "5BB4BDF666ACA237F76FEF62ED9D1687685947FB12D032ED69E619054C3AC3AB",
+      "match": true,
+      "checkpoint_used": "protocol_archives/protocol_A/resnet18_medicalnet_lgg_hgg_3d.pt",
+      "generated_by": "evaluate_locked_test.py",
+      "timestamp": "2026-08-14 11:31:34",
+      "n_predictions": 188,
+      "n_lgg_predicted": 11,
+      "n_hgg_predicted": 177,
+      "threshold": 0.5
+    }
+  },
+
+  "scientific_consequence": {
+    "can_resnet18_protocol_a_be_called_project_winner": "YES — with caveat",
+    "explanation": "ResNet18 Protocol A's locked-test result (Macro-F1=0.8842, LGG Recall=0.75, AUC=0.983) is the strongest canonical configuration, and the result is verified as legitimate from the correct 25-epoch checkpoint. However, this is a single-split evaluation on a heavily imbalanced test set (12 LGG vs 176 HGG). Completing 5-fold cross-validation would strengthen the conclusion."
+  },
+
+  "recommended_next_action": "Proceed with 5-fold cross-validation for ResNet18 Protocol A to validate the single-split finding. Do NOT retrain or modify the canonical checkpoints."
+}

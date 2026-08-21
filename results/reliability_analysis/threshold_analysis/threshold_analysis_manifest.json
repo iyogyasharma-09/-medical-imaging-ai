@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-08-17 12:37:30",
+  "total_artifacts": 11,
+  "experiment": "Phase 7 \u2014 Decision-Threshold Sensitivity & Operating-Point Analysis",
+  "cohorts": "Validation Set (N=187) and Locked Test Set (N=188)",
+  "artifacts_sha256": [
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\threshold_methodology.md",
+      "size_bytes": 4089,
+      "sha256": "2bf0c7577097b06fabf78199f32e2072b13b586e5ba0cc8df8e8cc6713623cb7"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\threshold_sweep_results.csv",
+      "size_bytes": 127691,
+      "sha256": "beff03e9f78ee0c65793e59ad211200c03d15e49edbd9d25c81386c3737bc3c7"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\threshold_selected_results.csv",
+      "size_bytes": 2191,
+      "sha256": "910f7c6bcb3e1e5295c2818747c3300342fd6b9aa0c3d810160e24b33eef2210"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\threshold_comparison.csv",
+      "size_bytes": 1395,
+      "sha256": "d0469b35cb5aeb9d74271c23680d4a76d7512f00e4492f0360f784100e646483"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\threshold_interpretation.md",
+      "size_bytes": 5972,
+      "sha256": "dc49ee70f42c41b431d440158ed5edf47cbc5639a0d76d95eac2039595ce0e5e"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\threshold_analysis_report.md",
+      "size_bytes": 9773,
+      "sha256": "2ce79537530e34531f7c5928242839037c283e44d6bdbe201cc158d0c45a6d01"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\lgg_recall_vs_threshold.png",
+      "size_bytes": 178346,
+      "sha256": "05998698b93cd1a1ccbbfe0f6064976b7365ae5e561134f8d55b689767ae0ac4"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\specificity_vs_threshold.png",
+      "size_bytes": 175793,
+      "sha256": "aaa599fcb1ab98c95f2c38bb0937cade207645bd47cb8f02e17980e3f1c95067"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\macro_f1_vs_threshold.png",
+      "size_bytes": 186508,
+      "sha256": "7217b27ebb58647a753309551733990c846444a569c7fd3d830d39f5b4ab2405"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\balanced_accuracy_vs_threshold.png",
+      "size_bytes": 193330,
+      "sha256": "8542ee7e94c67cebc5c97631bdda07af0537ea2fda0234e68eec5c65dd7ccbf4"
+    },
+    {
+      "relative_path": "reliability_analysis\\threshold_analysis\\roc_operating_points.png",
+      "size_bytes": 225598,
+      "sha256": "46c985a95cd112a70ae45fb3e8a9aa6548fcabc6acf8b1f67d227615fb53f072"
+    }
+  ]
+}

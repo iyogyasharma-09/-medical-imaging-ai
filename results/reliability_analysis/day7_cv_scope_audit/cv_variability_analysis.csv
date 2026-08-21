@@ -1,0 +1,7 @@
+Metric,Mean,SD,Min,Max,Range,Coefficient_of_Variation_pct,Stability_Category
+Accuracy,0.953,0.0066,0.9437,0.9624,0.0187,0.69,Highly Stable (CV < 2%)
+Macro_F1,0.7145,0.129,0.4879,0.7952,0.3073,18.06,Moderately Variable (CV 10-25%)
+LGG_Recall,0.5055,0.3274,0.0,0.8,0.8,64.77,Extremely Unstable (CV > 50%)
+HGG_Recall,0.9762,0.0196,0.9604,1.0,0.0396,2.01,Stable (CV < 10%)
+ROC_AUC,0.9163,0.0446,0.8629,0.9634,0.1005,4.87,Stable (CV < 10%)
+Val_Loss,0.1727,0.0725,0.109,0.292,0.183,42.0,Extremely Unstable (CV > 50%)

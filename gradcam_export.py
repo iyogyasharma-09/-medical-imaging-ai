@@ -1,15 +1,10 @@
 """
 gradcam_export.py
 -----------------
+[LEGACY - BraTS 2021 Format Entry Point]
+
 Generate and save Grad-CAM overlay images for representative test subjects.
-
-Selects --n_subjects subjects from the test split (balanced across classes),
-runs Grad-CAM for each trained backbone, and saves PNG overlays to:
-    results/gradcam/<subject_id>_<model_name>.png
-
-Usage (on GPU machine):
-    python gradcam_export.py
-    python gradcam_export.py --n_subjects 6 --label-col label_grade
+NOTE: This script relies on src/ legacy loaders expecting BraTS 2021 CSV data.
 """
 
 import argparse

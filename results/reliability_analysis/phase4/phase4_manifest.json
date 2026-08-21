@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-14 12:10:56",
+  "total_files": 11,
+  "files_sha256": [
+    {
+      "filename": "reliability_analysis\\phase4\\ablation_master_table.csv",
+      "size_bytes": 995,
+      "sha256": "f6a36580c29da19e070b6e779f39c40d40c45a132ed2ce45a6d3e643002bb3f0"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\ablation_delta_table.csv",
+      "size_bytes": 1160,
+      "sha256": "17a9b2ac75d982d44ace4a496b000ed2c6e0240b20a0966c8710a6499927e6d7"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\architecture_weighting_comparison.csv",
+      "size_bytes": 492,
+      "sha256": "ed302e074d46817ef5493b9eb9fd007d6e426918214b74b2752d749eef215f3c"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\ablation_methodology.md",
+      "size_bytes": 1379,
+      "sha256": "1afcd7e73d56e1fb502fd4155e687614ad97933ccfcb0d98309cad21fde58544"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\ablation_interpretation.md",
+      "size_bytes": 5224,
+      "sha256": "fa7efa93fa66f541fcd81429d90b6bc2871a2018cfd48dd7e4048326be76b03c"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\plots\\macro_f1_ablation.png",
+      "size_bytes": 101043,
+      "sha256": "47929e27af3885c0326d5f98036aaa886d3e426c27aa21033555c49140ff45aa"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\plots\\lgg_recall_ablation.png",
+      "size_bytes": 112707,
+      "sha256": "fef53ab1c76e5b01ee14b46bff6799d2cea5933a99d268ee92c2b793cb09d4bc"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\plots\\auc_ablation.png",
+      "size_bytes": 118683,
+      "sha256": "aed2c45f412ac1ebc0cd014f13c9cb4e3d29d47767638f7d58ec182be8672f9e"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\plots\\ece_ablation.png",
+      "size_bytes": 118213,
+      "sha256": "b8a2288719dd294d90c345922b08e445e5d4b97c622884083240754713c311bd"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\plots\\brier_ablation.png",
+      "size_bytes": 112473,
+      "sha256": "165cffbbcbd2af6ac8f4b645e21d83f0505a927691e2fa7fc2f7e59bdfcf7f70"
+    },
+    {
+      "filename": "reliability_analysis\\phase4\\plots\\high_conf_error_ablation.png",
+      "size_bytes": 126064,
+      "sha256": "5047acad547821109f933d7f2cf5da72fe30121fe46f03ddce09e320dca4d474"
+    }
+  ]
+}

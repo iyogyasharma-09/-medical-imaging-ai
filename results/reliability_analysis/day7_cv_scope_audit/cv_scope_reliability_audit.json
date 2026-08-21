@@ -1,0 +1,76 @@
+{
+  "audit_metadata": {
+    "audit_name": "DAY 7 \u2014 AUDIT 5: CROSS-VALIDATION SCOPE, RELIABILITY & GENERALIZABILITY AUDIT",
+    "timestamp": "2026-08-19 10:30:51",
+    "audit_type": "STRICT_READ_ONLY_FORENSIC_STATISTICAL_RELIABILITY",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "architecture_audited": "ResNet18 MedicalNet",
+    "protocol_audited": "Protocol A (Unweighted)",
+    "cohort": "BraTS 2023 Development Cohort (N = 1,063)"
+  },
+  "cv_design_verification": {
+    "total_development_subjects": 1063,
+    "development_lgg_count": 53,
+    "development_hgg_count": 1010,
+    "number_of_folds": 5,
+    "stratification_method": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+    "subject_level_split_verified": true,
+    "train_val_overlap_all_folds": 0,
+    "coverage_all_subjects_exact": true,
+    "locked_test_subjects_excluded": true
+  },
+  "cv_metrics_summary": {
+    "accuracy": {
+      "mean": 0.953,
+      "sd": 0.0066,
+      "min": 0.9437,
+      "max": 0.9624,
+      "range": 0.0187,
+      "cv_pct": 0.69
+    },
+    "macro_f1": {
+      "mean": 0.7145,
+      "sd": 0.129,
+      "min": 0.4879,
+      "max": 0.7952,
+      "range": 0.3073,
+      "cv_pct": 18.05
+    },
+    "lgg_recall": {
+      "mean": 0.5055,
+      "sd": 0.3274,
+      "min": 0.0,
+      "max": 0.8,
+      "range": 0.8,
+      "cv_pct": 64.77
+    },
+    "hgg_recall": {
+      "mean": 0.9762,
+      "sd": 0.0196,
+      "min": 0.9604,
+      "max": 1.0,
+      "range": 0.0396,
+      "cv_pct": 2.01
+    },
+    "roc_auc": {
+      "mean": 0.9163,
+      "sd": 0.0446,
+      "min": 0.8629,
+      "max": 0.9634,
+      "range": 0.1005,
+      "cv_pct": 4.87
+    }
+  },
+  "direct_questions_verdict": {
+    "Q1_cv_internally_valid": "YES (VERIFIED). Strict subject-level StratifiedKFold, 0 leakage, 100% development coverage.",
+    "Q2_cv_reproducible": "YES (VERIFIED). Metrics and restored states 100% verified from checkpoints and histories.",
+    "Q3_cv_reveals_hidden_instability": "YES. Accuracy is steady at 95.3% while LGG Recall swings from 0.0% to 80.0%.",
+    "Q4_overall_discrimination_more_stable": "YES. ROC-AUC CV = 4.87% (0.916 +/- 0.045) vs LGG Recall CV = 64.77% (0.506 +/- 0.327).",
+    "Q5_explains_historical_discrepancy": "PARTIALLY. Proves 0.00% recall occurs naturally on unfavorable splits/early stopping (Fold 4), while 75-80% occurs on favorable splits/longer training (Fold 5).",
+    "Q6_establishes_patient_distribution_effects": "YES. Different patient partitions produce divergent sensitivity under identical pipelines.",
+    "Q7_establishes_stochasticity_as_primary_cause": "NO. Multi-seed fixed-split variance has not been decoupled.",
+    "Q8_establishes_locked_test_as_favorable": "NO. It shows 75.0% lies in the upper tail of the CV distribution, but does not prove statistical bias.",
+    "Q9_strongest_defensible_interpretation": "ResNet18 MedicalNet learns strong, stable latent representations (ROC-AUC = 0.9163 +/- 0.0446), but fixed-threshold minority sensitivity is highly variable across patient partitions (0.5055 +/- 0.3274).",
+    "Q10_future_experiments_needed": "1. 5-seed fixed-split ablation to isolate optimization stochasticity; 2. 5-fold CV on Protocols B & C and DenseNet/Swin; 3. Evaluation of Focal Loss under 5-fold CV."
+  }
+}

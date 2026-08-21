@@ -1,26 +1,20 @@
 """
 run_all.py
 ----------
-Master orchestration script for the full pipeline.
+[LEGACY - BraTS 2021 Pipeline Entry Point]
 
-Steps (in order):
+NOTE: For active BraTS 2023 research, execute the pipeline steps directly:
+  1. python preprocess_brats2023.py
+  2. python train_brats2023.py
+  3. python evaluate_models.py
+  4. python advanced_analysis.py
+  5. python plot_results.py
+
+Steps (in order for BraTS 2021 legacy):
   1. Dataset audit     (always — no GPU required)
   2. Training          (skip with --skip-train if checkpoints already exist)
   3. Evaluation        (skip with --skip-eval)
   4. Grad-CAM export   (skip with --skip-gradcam)
-
-Usage:
-    # Full run on GPU machine:
-    python run_all.py
-
-    # Audit only (safe on any machine, no GPU, no data needed beyond CSV):
-    python run_all.py --skip-train --skip-eval --skip-gradcam
-
-    # After training on another machine, copy checkpoints then:
-    python run_all.py --skip-train
-
-    # Change number of epochs or models:
-    python run_all.py --epochs 30 --models resnet50_3d densenet121_3d
 """
 
 import argparse

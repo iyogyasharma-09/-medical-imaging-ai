@@ -1,0 +1,280 @@
+{
+  "experiment": "ResNet18 MedicalNet + Focal Loss (alpha=1.0, gamma=2.0)",
+  "cohort": "BraTS 2023 GLI Locked Test (188 subjects: 12 LGG, 176 HGG)",
+  "discrimination": {
+    "roc_auc": 0.9541
+  },
+  "calibration_metrics": {
+    "brier_score": 0.0497,
+    "confidence_ece": 0.0975,
+    "confidence_mce": 0.1991,
+    "hgg_prob_ece": 0.0989,
+    "hgg_prob_mce": 0.3812,
+    "lgg_prob_ece": 0.0989,
+    "lgg_prob_mce": 0.3812,
+    "n_bins": 10,
+    "binning_method": "uniform 10 equal-width bins on [0, 1]"
+  },
+  "hgg_calibration_bins": [
+    {
+      "target_class": "HGG",
+      "bin_index": 3,
+      "bin_range": "(0.2, 0.3]",
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "n_samples": 1,
+      "mean_predicted_prob": 0.2711,
+      "observed_fraction": 0.0,
+      "calibration_gap": 0.2711,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "HGG",
+      "bin_index": 4,
+      "bin_range": "(0.3, 0.4]",
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "n_samples": 3,
+      "mean_predicted_prob": 0.3737,
+      "observed_fraction": 0.0,
+      "calibration_gap": 0.3737,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "HGG",
+      "bin_index": 5,
+      "bin_range": "(0.4, 0.5]",
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "n_samples": 6,
+      "mean_predicted_prob": 0.4521,
+      "observed_fraction": 0.8333,
+      "calibration_gap": 0.3812,
+      "direction": "underconfident"
+    },
+    {
+      "target_class": "HGG",
+      "bin_index": 6,
+      "bin_range": "(0.5, 0.6]",
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "n_samples": 7,
+      "mean_predicted_prob": 0.5525,
+      "observed_fraction": 0.5714,
+      "calibration_gap": 0.019,
+      "direction": "underconfident"
+    },
+    {
+      "target_class": "HGG",
+      "bin_index": 7,
+      "bin_range": "(0.6, 0.7]",
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "n_samples": 15,
+      "mean_predicted_prob": 0.6431,
+      "observed_fraction": 0.8,
+      "calibration_gap": 0.1569,
+      "direction": "underconfident"
+    },
+    {
+      "target_class": "HGG",
+      "bin_index": 8,
+      "bin_range": "(0.7, 0.8]",
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "n_samples": 18,
+      "mean_predicted_prob": 0.7493,
+      "observed_fraction": 0.9444,
+      "calibration_gap": 0.1951,
+      "direction": "underconfident"
+    },
+    {
+      "target_class": "HGG",
+      "bin_index": 9,
+      "bin_range": "(0.8, 0.9]",
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "n_samples": 40,
+      "mean_predicted_prob": 0.8618,
+      "observed_fraction": 1.0,
+      "calibration_gap": 0.1382,
+      "direction": "underconfident"
+    },
+    {
+      "target_class": "HGG",
+      "bin_index": 10,
+      "bin_range": "(0.9, 1.0]",
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "n_samples": 98,
+      "mean_predicted_prob": 0.9654,
+      "observed_fraction": 1.0,
+      "calibration_gap": 0.0346,
+      "direction": "underconfident"
+    }
+  ],
+  "lgg_calibration_bins": [
+    {
+      "target_class": "LGG",
+      "bin_index": 1,
+      "bin_range": "[0.0, 0.1]",
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "n_samples": 98,
+      "mean_predicted_prob": 0.0346,
+      "observed_fraction": 0.0,
+      "calibration_gap": 0.0346,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "LGG",
+      "bin_index": 2,
+      "bin_range": "(0.1, 0.2]",
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "n_samples": 40,
+      "mean_predicted_prob": 0.1382,
+      "observed_fraction": 0.0,
+      "calibration_gap": 0.1382,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "LGG",
+      "bin_index": 3,
+      "bin_range": "(0.2, 0.3]",
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "n_samples": 18,
+      "mean_predicted_prob": 0.2507,
+      "observed_fraction": 0.0556,
+      "calibration_gap": 0.1951,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "LGG",
+      "bin_index": 4,
+      "bin_range": "(0.3, 0.4]",
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "n_samples": 15,
+      "mean_predicted_prob": 0.3569,
+      "observed_fraction": 0.2,
+      "calibration_gap": 0.1569,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "LGG",
+      "bin_index": 5,
+      "bin_range": "(0.4, 0.5]",
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "n_samples": 7,
+      "mean_predicted_prob": 0.4475,
+      "observed_fraction": 0.4286,
+      "calibration_gap": 0.019,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "LGG",
+      "bin_index": 6,
+      "bin_range": "(0.5, 0.6]",
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "n_samples": 6,
+      "mean_predicted_prob": 0.5479,
+      "observed_fraction": 0.1667,
+      "calibration_gap": 0.3812,
+      "direction": "overconfident"
+    },
+    {
+      "target_class": "LGG",
+      "bin_index": 7,
+      "bin_range": "(0.6, 0.7]",
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "n_samples": 3,
+      "mean_predicted_prob": 0.6263,
+      "observed_fraction": 1.0,
+      "calibration_gap": 0.3737,
+      "direction": "underconfident"
+    },
+    {
+      "target_class": "LGG",
+      "bin_index": 8,
+      "bin_range": "(0.7, 0.8]",
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "n_samples": 1,
+      "mean_predicted_prob": 0.7289,
+      "observed_fraction": 1.0,
+      "calibration_gap": 0.2711,
+      "direction": "underconfident"
+    }
+  ],
+  "confidence_calibration_bins": [
+    {
+      "bin_index": 6,
+      "bin_range": "(0.5, 0.6]",
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "n_samples": 13,
+      "mean_confidence": 0.5504,
+      "mean_accuracy": 0.3846,
+      "calibration_gap": 0.1657
+    },
+    {
+      "bin_index": 7,
+      "bin_range": "(0.6, 0.7]",
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "n_samples": 18,
+      "mean_confidence": 0.6403,
+      "mean_accuracy": 0.8333,
+      "calibration_gap": 0.1931
+    },
+    {
+      "bin_index": 8,
+      "bin_range": "(0.7, 0.8]",
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "n_samples": 19,
+      "mean_confidence": 0.7483,
+      "mean_accuracy": 0.9474,
+      "calibration_gap": 0.1991
+    },
+    {
+      "bin_index": 9,
+      "bin_range": "(0.8, 0.9]",
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "n_samples": 40,
+      "mean_confidence": 0.8618,
+      "mean_accuracy": 1.0,
+      "calibration_gap": 0.1382
+    },
+    {
+      "bin_index": 10,
+      "bin_range": "(0.9, 1.0]",
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "n_samples": 98,
+      "mean_confidence": 0.9654,
+      "mean_accuracy": 1.0,
+      "calibration_gap": 0.0346
+    }
+  ],
+  "ce_baseline_comparison": {
+    "brier_score": 0.0248,
+    "confidence_ece": 0.0276,
+    "hgg_prob_ece": 0.0369,
+    "delta_brier": 0.0249,
+    "delta_confidence_ece": 0.0699
+  },
+  "scientific_interpretation": {
+    "overall_calibration_assessment": "Moderately calibrated overall (Brier=0.0497, ECE=0.0975), but exhibits distinct compression and regional calibration distortion.",
+    "probability_compression": "The model compresses LGG predicted probabilities into the range [0.0003, 0.7289]. No subject reaches P(LGG) > 0.73, and P(HGG) never drops below 0.2711.",
+    "hgg_regime": "In the high-probability HGG regime (P(HGG) in [0.70, 0.90]), the model is somewhat underconfident (empirical HGG rate is 97-100%, higher than predicted).",
+    "intermediate_regime": "In the intermediate range P(HGG) in [0.40, 0.50], 5 of 6 cases are actually HGG, creating the peak calibration gap (MCE=0.3812).",
+    "relationship_to_thresholds": "Calibration explains why threshold 0.50 yields low LGG recall: because the probability scale is compressed, shifting the decision threshold to tau=0.40 or 0.35 aligns the operating boundary with the empirical class transition."
+  }
+}

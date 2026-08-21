@@ -1,0 +1,15 @@
+{
+  "model_key": "swin_transformer_3d",
+  "model_name": "SwinUNETR 3D",
+  "protocol": "C",
+  "n_test_subjects": 188,
+  "lgg_subjects": 12,
+  "hgg_subjects": 176,
+  "accuracy": 0.9468,
+  "f1_macro": 0.6736,
+  "f1_weighted": 0.9341,
+  "lgg_recall": 0.25,
+  "hgg_recall": 0.9943,
+  "precision": 0.9511,
+  "auc": 0.9735
+}

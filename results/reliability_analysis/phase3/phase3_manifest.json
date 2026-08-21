@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-14 12:04:43",
+  "total_files": 9,
+  "files_sha256": [
+    {
+      "filename": "reliability_analysis\\phase3\\phase3_metric_justification.md",
+      "size_bytes": 4811,
+      "sha256": "5a4135cfc73d636dc776a41846dd48ab38c3a36f7dc607e39d79d724b4740545"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\metric_redundancy_analysis.csv",
+      "size_bytes": 378,
+      "sha256": "5807193ba935e6d46669ad2de3567d88e920ea8ce880874f6c585ff9d3e2da99"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\metric_redundancy_analysis.md",
+      "size_bytes": 1940,
+      "sha256": "558269eb7734db1abfd193bc2f09811c6b631d84349d6055ff773dd53c727211"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\reliability_dimensions.md",
+      "size_bytes": 2015,
+      "sha256": "5f5169e206826d7cb1b84e9e54050265cf844c54ff84574565cbb33168d753c5"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\candidate_formulations.md",
+      "size_bytes": 1781,
+      "sha256": "1c6c95dd832ed42c1bd7c931a98def389b537c81265b6e68dfe1f7ad4b4fd9c4"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\formulation_sensitivity.csv",
+      "size_bytes": 1144,
+      "sha256": "2aea01df1e00f399ca9297c9d8614d84cd4e9540c00e3e52b6b8c7200714894b"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\formulation_sensitivity.md",
+      "size_bytes": 2217,
+      "sha256": "6a1ca03dc2ca62120e7227d76cf222d3864e13fdab766b2173e7c043b8d82c62"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\ablation_preparation.md",
+      "size_bytes": 1071,
+      "sha256": "6799142776ce1a5439002dc50b27b138b14dd5ba8f073ae398452fc4424579f1"
+    },
+    {
+      "filename": "reliability_analysis\\phase3\\phase3_final_recommendation.md",
+      "size_bytes": 1452,
+      "sha256": "90f33d0b5e2d11a2a6b903f50a921c4e432658765a1b81872f337a857f76c9db"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "experiment": "Post-Hoc Temperature Scaling for Focal Loss ResNet18",
+  "frozen_temperature_T": 0.49225,
+  "test_cohort": "BraTS 2023 GLI Locked Test (188 subjects: 12 LGG, 176 HGG)",
+  "calibration_comparison": {
+    "brier_score": {
+      "focal_uncalibrated": 0.0497,
+      "focal_temperature_scaled": 0.0394,
+      "delta": -0.0103,
+      "ce_baseline": 0.0248
+    },
+    "confidence_ece": {
+      "focal_uncalibrated": 0.0975,
+      "focal_temperature_scaled": 0.0341,
+      "delta": -0.0634,
+      "ce_baseline": 0.0276
+    },
+    "confidence_mce": {
+      "focal_uncalibrated": 0.1991,
+      "focal_temperature_scaled": 0.2212,
+      "delta": 0.0221,
+      "ce_baseline": 0.2864
+    },
+    "hgg_prob_ece": {
+      "focal_uncalibrated": 0.0989,
+      "focal_temperature_scaled": 0.0362,
+      "delta": -0.0627,
+      "ce_baseline": 0.0369
+    },
+    "hgg_prob_mce": {
+      "focal_uncalibrated": 0.3812,
+      "focal_temperature_scaled": 0.4075,
+      "delta": 0.0263,
+      "ce_baseline": 0.4472
+    },
+    "lgg_prob_ece": {
+      "focal_uncalibrated": 0.0989,
+      "focal_temperature_scaled": 0.0362,
+      "delta": -0.0627,
+      "ce_baseline": 0.0369
+    }
+  },
+  "classification_comparison_at_threshold_050": {
+    "accuracy": {
+      "raw": 0.9361702127659575,
+      "calibrated": 0.9361702127659575,
+      "ce_baseline": 0.9734
+    },
+    "macro_f1": {
+      "raw": 0.7103235747303543,
+      "calibrated": 0.7103235747303543,
+      "ce_baseline": 0.8842
+    },
+    "balanced_accuracy": {
+      "raw": 0.6941287878787878,
+      "calibrated": 0.6941287878787878
+    },
+    "lgg_recall": {
+      "raw": 0.4166666666666667,
+      "calibrated": 0.4166666666666667,
+      "ce_baseline": 0.75
+    },
+    "hgg_recall": {
+      "raw": 0.9715909090909091,
+      "calibrated": 0.9715909090909091,
+      "ce_baseline": 0.9886
+    },
+    "roc_auc": {
+      "raw": 0.9540719696969696,
+      "calibrated": 0.9540719696969696,
+      "ce_baseline": 0.983
+    },
+    "confusion_matrix_raw": {
+      "tn": 5,
+      "fp": 7,
+      "fn": 5,
+      "tp": 171
+    },
+    "confusion_matrix_calibrated": {
+      "tn": 5,
+      "fp": 7,
+      "fn": 5,
+      "tp": 171
+    }
+  },
+  "test_nll": {
+    "raw_T1": 0.187769,
+    "calibrated_Topt": 0.12769,
+    "delta": -0.060079
+  }
+}

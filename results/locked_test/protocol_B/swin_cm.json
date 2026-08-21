@@ -1,0 +1,28 @@
+{
+  "model_name": "SwinUNETR 3D",
+  "protocol": "B",
+  "n_test_subjects": 188,
+  "lgg_count": 12,
+  "hgg_count": 176,
+  "confusion_matrix": {
+    "tn": 0,
+    "fp": 12,
+    "fn": 0,
+    "tp": 176,
+    "matrix": [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        176
+      ]
+    ]
+  },
+  "lgg_recall": 0.0,
+  "hgg_recall": 1.0,
+  "accuracy": 0.9361702127659575,
+  "f1_macro": 0.4835164835164835,
+  "auc": 0.8643465909090909
+}

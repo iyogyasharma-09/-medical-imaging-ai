@@ -1,0 +1,32 @@
+# Master Experimental Results Table
+
+Complete consolidated locked-test results across Raw, Calibrated, and Threshold-Swept evaluation types.
+
+| Model | Protocol | Loss | Evaluation_Type | Threshold | Temperature_T | Accuracy | Macro_F1 | Balanced_Accuracy | LGG_Recall | HGG_Recall | ROC_AUC | ECE | Brier_Score | NLL | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ResNet18 MedicalNet | Protocol A | Standard Unweighted CE | RAW | 0.5 | 1.0 | 0.9734 | 0.8842 | 0.8693 | 0.75 | 0.9886 | 0.983 | 0.0276 | 0.0248 | 0.0828 | Uncalibrated raw output evaluated at default tau=0.50 |
+| ResNet18 MedicalNet | Protocol A | Standard Unweighted CE | CALIBRATED | 0.5 | 1.0622 | 0.9734 | 0.8842 | 0.8693 | 0.75 | 0.9886 | 0.983 | 0.0334 | 0.025 | 0.0851 | Post-hoc temperature scaled (T*=1.0622) evaluated at tau=0.50 |
+| DenseNet121 3D | Protocol A | Standard Unweighted CE | RAW | 0.5 | 1.0 | 0.9468 | 0.7934 | 0.8163 | 0.6667 | 0.9659 | 0.9422 | 0.0308 | 0.0414 | 0.138 | Uncalibrated raw output evaluated at default tau=0.50 |
+| DenseNet121 3D | Protocol A | Standard Unweighted CE | CALIBRATED | 0.5 | 1.0233 | 0.9468 | 0.7934 | 0.8163 | 0.6667 | 0.9659 | 0.9422 | 0.033 | 0.0415 | 0.1386 | Post-hoc temperature scaled (T*=1.0233) evaluated at tau=0.50 |
+| SwinUNETR 3D | Protocol A | Standard Unweighted CE | RAW | 0.5 | 1.0 | 0.9362 | 0.4835 | 0.5 | 0.0 | 1.0 | 0.933 | 0.0345 | 0.0607 | 0.2488 | Uncalibrated raw output evaluated at default tau=0.50 |
+| SwinUNETR 3D | Protocol A | Standard Unweighted CE | CALIBRATED | 0.5 | 1.2101 | 0.9362 | 0.4835 | 0.5 | 0.0 | 1.0 | 0.933 | 0.0112 | 0.0595 | 0.235 | Post-hoc temperature scaled (T*=1.2101) evaluated at tau=0.50 |
+| ResNet18 MedicalNet | Protocol B | Inverse-Frequency CE | RAW | 0.5 | 1.0 | 0.9149 | 0.7267 | 0.7992 | 0.6667 | 0.9318 | 0.8939 | 0.0394 | 0.0521 | 0.1845 | Uncalibrated raw output evaluated at default tau=0.50 |
+| ResNet18 MedicalNet | Protocol B | Inverse-Frequency CE | CALIBRATED | 0.5 | 1.4408 | 0.9149 | 0.7267 | 0.7992 | 0.6667 | 0.9318 | 0.8939 | 0.0474 | 0.0528 | 0.1847 | Post-hoc temperature scaled (T*=1.4408) evaluated at tau=0.50 |
+| DenseNet121 3D | Protocol B | Inverse-Frequency CE | RAW | 0.5 | 1.0 | 0.9149 | 0.7102 | 0.7604 | 0.5833 | 0.9375 | 0.946 | 0.054 | 0.0522 | 0.17 | Uncalibrated raw output evaluated at default tau=0.50 |
+| DenseNet121 3D | Protocol B | Inverse-Frequency CE | CALIBRATED | 0.5 | 0.9703 | 0.9149 | 0.7102 | 0.7604 | 0.5833 | 0.9375 | 0.946 | 0.0523 | 0.0521 | 0.1681 | Post-hoc temperature scaled (T*=0.9703) evaluated at tau=0.50 |
+| SwinUNETR 3D | Protocol B | Inverse-Frequency CE | RAW | 0.5 | 1.0 | 0.9362 | 0.4835 | 0.5 | 0.0 | 1.0 | 0.8667 | 0.0046 | 0.0597 | 0.237 | Uncalibrated raw output evaluated at default tau=0.50 |
+| SwinUNETR 3D | Protocol B | Inverse-Frequency CE | CALIBRATED | 0.5 | 0.9614 | 0.9362 | 0.4835 | 0.5 | 0.0 | 1.0 | 0.8667 | 0.0105 | 0.0598 | 0.2378 | Post-hoc temperature scaled (T*=0.9614) evaluated at tau=0.50 |
+| ResNet18 MedicalNet | Protocol C | Adjusted Minority CE | RAW | 0.5 | 1.0 | 0.9255 | 0.6884 | 0.6884 | 0.4167 | 0.9602 | 0.9167 | 0.0142 | 0.051 | 0.1629 | Uncalibrated raw output evaluated at default tau=0.50 |
+| ResNet18 MedicalNet | Protocol C | Adjusted Minority CE | CALIBRATED | 0.5 | 1.0749 | 0.9255 | 0.6884 | 0.6884 | 0.4167 | 0.9602 | 0.9167 | 0.0099 | 0.0507 | 0.163 | Post-hoc temperature scaled (T*=1.0749) evaluated at tau=0.50 |
+| DenseNet121 3D | Protocol C | Adjusted Minority CE | RAW | 0.5 | 1.0 | 0.9202 | 0.6527 | 0.6468 | 0.3333 | 0.9602 | 0.901 | 0.0353 | 0.0561 | 0.1877 | Uncalibrated raw output evaluated at default tau=0.50 |
+| DenseNet121 3D | Protocol C | Adjusted Minority CE | CALIBRATED | 0.5 | 0.965 | 0.9202 | 0.6527 | 0.6468 | 0.3333 | 0.9602 | 0.901 | 0.0277 | 0.0562 | 0.1873 | Post-hoc temperature scaled (T*=0.9650) evaluated at tau=0.50 |
+| SwinUNETR 3D | Protocol C | Adjusted Minority CE | RAW | 0.5 | 1.0 | 0.9468 | 0.6736 | 0.6222 | 0.25 | 0.9943 | 0.9735 | 0.0359 | 0.0352 | 0.1081 | Uncalibrated raw output evaluated at default tau=0.50 |
+| SwinUNETR 3D | Protocol C | Adjusted Minority CE | CALIBRATED | 0.5 | 0.9952 | 0.9468 | 0.6736 | 0.6222 | 0.25 | 0.9943 | 0.9735 | 0.0358 | 0.0352 | 0.1081 | Post-hoc temperature scaled (T*=0.9952) evaluated at tau=0.50 |
+| ResNet18 MedicalNet (Focal) | Focal Loss | Focal Loss (alpha=1.0, gamma=2.0) | RAW | 0.5 | 1.0 | 0.9362 | 0.7103 | 0.6941 | 0.4167 | 0.9716 | 0.9541 | 0.0975 | 0.0497 | 0.1878 | Uncalibrated raw output evaluated at default tau=0.50 |
+| ResNet18 MedicalNet (Focal) | Focal Loss | Focal Loss (alpha=1.0, gamma=2.0) | CALIBRATED | 0.5 | 0.4922 | 0.9362 | 0.7103 | 0.6941 | 0.4167 | 0.9716 | 0.9541 | 0.0341 | 0.0394 | 0.1277 | Post-hoc temperature scaled (T*=0.4922) evaluated at tau=0.50 |
+| ResNet18 MedicalNet (Focal) | Focal Loss | Focal Loss (alpha=1.0, gamma=2.0) | THRESHOLD_SWEPT | 0.35 | 0.4922 | 0.9362 | 0.7685 | 0.8106 | 0.6667 | 0.9545 | 0.9541 | 0.0341 | 0.0394 | 0.1277 | Focal ResNet18 Max Macro-F1 Operating Point |
+| ResNet18 MedicalNet (Focal) | Focal Loss | Focal Loss (alpha=1.0, gamma=2.0) | THRESHOLD_SWEPT | 0.1 | 0.4922 | 0.8457 | 0.6815 | 0.9176 | 1.0 | 0.8352 | 0.9541 | 0.0341 | 0.0394 | 0.1277 | Focal ResNet18 Max Balanced Acc / 100% LGG Recall Operating Point |
+| SwinUNETR 3D | Protocol C | Adjusted Minority CE | THRESHOLD_SWEPT | 0.25 | 0.9952 | 0.9468 | 0.7934 | 0.8163 | 0.6667 | 0.9659 | 0.9735 | 0.0358 | 0.0352 | 0.1081 | SwinUNETR Protocol C Max Macro-F1 Operating Point |
+| SwinUNETR 3D | Protocol C | Adjusted Minority CE | THRESHOLD_SWEPT | 0.1 | 0.9952 | 0.9202 | 0.7854 | 0.9574 | 1.0 | 0.9148 | 0.9735 | 0.0358 | 0.0352 | 0.1081 | SwinUNETR Protocol C Max Balanced Acc / 100% LGG Recall Operating Point |
+| ResNet18 MedicalNet | Protocol A | Standard Unweighted CE | THRESHOLD_SWEPT | 0.15 | 1.0622 | 0.9309 | 0.8052 | 0.9631 | 1.0 | 0.9261 | 0.983 | 0.0334 | 0.025 | 0.0851 | ResNet18 Protocol A Max Balanced Acc / 100% LGG Recall Operating Point |
+| DenseNet121 3D | Protocol B | Inverse-Frequency CE | THRESHOLD_SWEPT | 0.2 | 0.9703 | 0.8617 | 0.7001 | 0.9261 | 1.0 | 0.8523 | 0.946 | 0.0523 | 0.0521 | 0.1681 | DenseNet121 Protocol B Max Balanced Acc / 100% LGG Recall Operating Point |

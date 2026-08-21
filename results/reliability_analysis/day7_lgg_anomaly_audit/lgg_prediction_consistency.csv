@@ -1,0 +1,13 @@
+subject_id,true_label,prob_lgg_protA,pred_protA,correct_protA,prob_lgg_protB,pred_protB,correct_protB,prob_lgg_protC,pred_protC,correct_protC,protocols_correct_count,case_difficulty_category
+BraTS-GLI-01516-000,0,0.2291,1,False,0.0171,1,False,0.032,1,False,0,Consistently Difficult
+BraTS-GLI-01519-000,0,0.272,1,False,0.8109,0,True,0.2618,1,False,1,Boundary / Variable
+BraTS-GLI-01529-000,0,0.8162,0,True,0.2976,1,False,0.5938,0,True,2,Boundary / Variable
+BraTS-GLI-01531-000,0,0.9818,0,True,0.7709,0,True,0.8958,0,True,3,Highly Consistent (Easy)
+BraTS-GLI-01526-000,0,0.8554,0,True,0.9714,0,True,0.8134,0,True,3,Highly Consistent (Easy)
+BraTS-GLI-01489-000,0,0.6219,0,True,0.7305,0,True,0.1763,1,False,2,Boundary / Variable
+BraTS-GLI-01482-000,0,0.5305,0,True,0.0031,1,False,0.074,1,False,1,Boundary / Variable
+BraTS-GLI-01530-000,0,0.1525,1,False,0.1274,1,False,0.1089,1,False,0,Consistently Difficult
+BraTS-GLI-01478-000,0,0.9003,0,True,0.8619,0,True,0.3603,1,False,2,Boundary / Variable
+BraTS-GLI-01527-000,0,0.8834,0,True,0.816,0,True,0.317,1,False,2,Boundary / Variable
+BraTS-GLI-01491-000,0,0.5248,0,True,0.9691,0,True,0.715,0,True,3,Highly Consistent (Easy)
+BraTS-GLI-01532-000,0,0.7004,0,True,0.6637,0,True,0.6625,0,True,3,Highly Consistent (Easy)

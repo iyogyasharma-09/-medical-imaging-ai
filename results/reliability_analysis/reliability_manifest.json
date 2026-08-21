@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-14 11:56:39",
+  "total_files": 9,
+  "files_sha256": [
+    {
+      "filename": "reliability_analysis\\preflight_audit.json",
+      "size_bytes": 3690,
+      "sha256": "f78c9940633fe3139790df106677d19a3797f33325f09b218a6341c426f528b8"
+    },
+    {
+      "filename": "reliability_analysis\\locked_test_baseline.csv",
+      "size_bytes": 809,
+      "sha256": "21c35c7706dd9c6d46e1d23ecc94a6a24bc84bf3f81034b27800331483e5cb53"
+    },
+    {
+      "filename": "reliability_analysis\\locked_test_baseline.json",
+      "size_bytes": 2566,
+      "sha256": "511b82225381191af089cd8ec56fa9aaa8c0d996ed0438c5f4c9d1397a99beaf"
+    },
+    {
+      "filename": "reliability_analysis\\calibration_results.csv",
+      "size_bytes": 976,
+      "sha256": "7818a489c958d4089222cefc40d6efc5e61661ac72ede60aea54b96ccf73d45f"
+    },
+    {
+      "filename": "reliability_analysis\\calibration_results.json",
+      "size_bytes": 3132,
+      "sha256": "6ea11c172570d56ecb39d93e9b36ce3ba251148a5a8f9955baa5761875e4d60b"
+    },
+    {
+      "filename": "reliability_analysis\\high_confidence_errors.csv",
+      "size_bytes": 779,
+      "sha256": "6f525f1ccfd9d09a444cb1e2ada767f8768fce9c1d724bb3fddd7861f6ba9416"
+    },
+    {
+      "filename": "reliability_analysis\\analysis_report.md",
+      "size_bytes": 10062,
+      "sha256": "6d00da52edab1bbb74541901dda0bd26c5e14ec35757b133d1e1a20c7c38e420"
+    },
+    {
+      "filename": "reliability_analysis\\README.md",
+      "size_bytes": 842,
+      "sha256": "27c86c679244ea51f2d2a69ba09d90d1bc741277dd9f981c6cebe2bd88e186eb"
+    },
+    {
+      "filename": "reliability_analysis\\plots\\calibration_diagrams_all_9.png",
+      "size_bytes": 652256,
+      "sha256": "6e20edbafc2796e74ef64daefe5808b46dacb7d55e3084bc333411ebdc0d5bc4"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-08-17 12:15:00",
+  "total_artifacts": 20,
+  "experiment": "Phase 6 \u2014 5-Fold Cross-Validation for ResNet18 MedicalNet (Protocol A)",
+  "cohort": "Development Cohort (1,063 GLI Subjects)",
+  "artifacts_sha256": [
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\cv_preflight_audit.json",
+      "size_bytes": 202,
+      "sha256": "e6712cec3e1d309dd1363a7e27355d7317bfb4556d1a6615346a15a19fd1cf20"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\cv_split_manifest.json",
+      "size_bytes": 32803,
+      "sha256": "4d5878e303d0cf4c5bf419eb540d6796f80dfac177df4b15a254c76fbaf6e885"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\phase6_fold_metrics.csv",
+      "size_bytes": 455,
+      "sha256": "00c6b5a2965c4df9469ba2f5e3fc3d95e4637c8b91170b83d6c506c1fb01925f"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\phase6_cv_summary.csv",
+      "size_bytes": 363,
+      "sha256": "8ed6683b3fb38d852c496b58600939210396d0a1ea3207c552f81f0b0ec97c25"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\phase6_checkpoint_selection_audit.md",
+      "size_bytes": 6001,
+      "sha256": "9ef1ef1eafa09c4679c22ac515a984064fd37c750857afd06dbee9e22609d169"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\phase6_checkpoint_selection_audit.csv",
+      "size_bytes": 897,
+      "sha256": "ea64770a93485b063488274db119b5105746026b216353bc19c17fb02a0b7bda"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\phase6_cv_final_report.md",
+      "size_bytes": 14130,
+      "sha256": "5f8ed4dee3f816b6fb3eae18d382d0986edd53043d2eacd89d85732d808166d6"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\cv_variability_plot.png",
+      "size_bytes": 136140,
+      "sha256": "f94d2c4ec55b5740c438bd0279ebd1e054e181f1b68bc015372e99bb885d020a"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\cv_lgg_recall_plot.png",
+      "size_bytes": 113536,
+      "sha256": "41d1b845a2fbd512bbb5bba12ebdfaf05c4d86415c502f712168edbdf1872875"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\cv_auc_plot.png",
+      "size_bytes": 145455,
+      "sha256": "b79684741d4f17ca28a450eb74e349b4c20214952eec8c7146e1c859e3fb5dfb"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_1\\best_model.pth",
+      "size_bytes": 132993147,
+      "sha256": "b1f75ee8630beccfa79705d2f3c5fd506e1d30070d500bc0762139827ec5f7e1"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_1\\history.json",
+      "size_bytes": 2610,
+      "sha256": "6366dc4e6233cdea7c54ca483e0a55694f73dff279022e32a058b9f32191577c"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_2\\best_model.pth",
+      "size_bytes": 132993147,
+      "sha256": "965886247f853ac86114d83b5c23e9c763bd54fb3e7c2146526447b9efb7878b"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_2\\history.json",
+      "size_bytes": 1806,
+      "sha256": "a9cc1ab0b0549119cd8ae013ce0c706061c24b59fa409721f0872c48a4ada1fd"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_3\\best_model.pth",
+      "size_bytes": 132993147,
+      "sha256": "756d372866c6d58ba4a7870b6e33e29541c6776aab19a68286e4b34edeabb852"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_3\\history.json",
+      "size_bytes": 1998,
+      "sha256": "8871ed603ddf27694772ffd8dba2c7b4017344758999e9ff1bee5b206e3471d3"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_4\\best_model.pth",
+      "size_bytes": 132993147,
+      "sha256": "834845512177a1b6f8a54030d1e7ddbe59a9010b069496a0e948705bcb22e9aa"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_4\\history.json",
+      "size_bytes": 1185,
+      "sha256": "b1908de1a0bd720ed18aba78b7ef92af1ffbd976928ddb071b010cf8c2656629"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_5\\best_model.pth",
+      "size_bytes": 132993147,
+      "sha256": "51ca38ac7dea58cbb7f547d6d1346357fa68a73a652f83e633ebc1d467ec238b"
+    },
+    {
+      "relative_path": "reliability_analysis\\phase6_cv\\fold_5\\history.json",
+      "size_bytes": 1781,
+      "sha256": "644dcd9462fb72c8bc8c1640a6634ab0b7008b35c4ffd8f06fd264c01688edf4"
+    }
+  ]
+}

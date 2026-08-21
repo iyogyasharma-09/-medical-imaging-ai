@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-08-14 11:45:31",
+  "total_artifacts": 39,
+  "artifacts_sha256": [
+    {
+      "relative_path": "locked_test\\protocol_A\\resnet18_predictions.csv",
+      "size_bytes": 13207,
+      "sha256": "5bb4bdf666aca237f76fef62ed9d1687685947fb12d032ed69e619054c3ac3ab"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\resnet18_cm.json",
+      "size_bytes": 488,
+      "sha256": "9f931d388d106e01721611f2c3f4ba014eedbb229e1085f76d617a26d42511f1"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\resnet18_metrics.json",
+      "size_bytes": 337,
+      "sha256": "be03c468fac0785301e4352d250e04f933c7bb8524f70503a773775818f9c1f3"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\resnet18_eval.log",
+      "size_bytes": 286,
+      "sha256": "33ad958febf985fd6666db6ca25925aaf0adef8f5584848c5672ee334a4ef970"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\densenet121_predictions.csv",
+      "size_bytes": 13064,
+      "sha256": "051c64ba7ab4a3716eef542eecc58d62c980d6abe1f5983e5c058cdd48c8730d"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\densenet121_cm.json",
+      "size_bytes": 498,
+      "sha256": "009cac6f5e666f444dc1fa1fe4448851de7f696dc50486e4d38208de346cc2c7"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\densenet121_metrics.json",
+      "size_bytes": 329,
+      "sha256": "9f952879018ea14577685df1eeb43210a5a55c2e328478b1c6181dc2a92c03b2"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\densenet121_eval.log",
+      "size_bytes": 281,
+      "sha256": "bff7a5d7617b61a367483820936ded189a6531b5d9240101f06df67e829f888f"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\swin_predictions.csv",
+      "size_bytes": 12902,
+      "sha256": "f232d43c3bbe2c9d233dd80bd8fc26bb43c170e456b63a3ea674f2ecdaeb694d"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\swin_cm.json",
+      "size_bytes": 468,
+      "sha256": "6dba1a3ddcb536c598d9481a5f8d80e0e4232aef4ab760ef1f1eef23fd065c75"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\swin_metrics.json",
+      "size_bytes": 327,
+      "sha256": "2bb6d899b740eabf4caf678f93e4eed776d34e53e0389a476369bb59af735c8c"
+    },
+    {
+      "relative_path": "locked_test\\protocol_A\\swin_eval.log",
+      "size_bytes": 280,
+      "sha256": "ad9b7c97d31a418652dd581e1f520ec58c81e58c8a7110ccbc170dfa85f27796"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\resnet18_predictions.csv",
+      "size_bytes": 13135,
+      "sha256": "7c5f45c1f8beb3486b2fbbcc119773ba3ce385082a0cc0db30e4a257be03a099"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\resnet18_cm.json",
+      "size_bytes": 505,
+      "sha256": "5af9b4263b934e2d3de7fe668466c1e878c2fbe2f85790f8b1b8d3c00435931f"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\resnet18_metrics.json",
+      "size_bytes": 340,
+      "sha256": "ee7f02d55c0eecbf82831bb8f4e68bd59a7ce5cc201f9903b07fdaec7deb43a3"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\resnet18_eval.log",
+      "size_bytes": 287,
+      "sha256": "5d17b42c4e0fe596bc5c05d2a1fb638153e4f181409d7573ac1292e13dcae47f"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\densenet121_predictions.csv",
+      "size_bytes": 12948,
+      "sha256": "d6f99a6c141748b8566c91123a0b53fc2e77115d497f59f285466ab3ccf11734"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\densenet121_cm.json",
+      "size_bytes": 488,
+      "sha256": "578a001629af5723252b783dee764461e4fb6adad5b517b24c3222e06e193b64"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\densenet121_metrics.json",
+      "size_bytes": 329,
+      "sha256": "612786ca10b64d0f8b138605f30ca7b2aff4ff63ce867a0f2072137e9abc5e84"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\densenet121_eval.log",
+      "size_bytes": 282,
+      "sha256": "bf73ed4bd021a931175591439f057b505134a24c4714b198a475b54db115efc8"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\swin_predictions.csv",
+      "size_bytes": 12776,
+      "sha256": "c085604868854ebd69efe53706b4e6412086671e6ce10fb668e24d8af8e817ce"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\swin_cm.json",
+      "size_bytes": 468,
+      "sha256": "f097bad786d7b5f6f010172700274a7e7301356c93e65f6b4611fb76a8347e8a"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\swin_metrics.json",
+      "size_bytes": 327,
+      "sha256": "2a1019bf1590db9bc608a3973178553d5a0891378e1aad6faba8c73c720bc37d"
+    },
+    {
+      "relative_path": "locked_test\\protocol_B\\swin_eval.log",
+      "size_bytes": 280,
+      "sha256": "9764dc3b6cae5ca8e2a2b20ee20858764e40b091198b49ca28745d49a267db85"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\resnet18_predictions.csv",
+      "size_bytes": 13052,
+      "sha256": "7151a184b30b59c1bc7d2879f5de64578207f80a48073b83a6efb6d5a7fcfdd9"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\resnet18_cm.json",
+      "size_bytes": 502,
+      "sha256": "9f139ab4d4ef5decce91e963f35ea2adcb57cfd51e3bb815d45b8dc5f8dbeaae"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\resnet18_metrics.json",
+      "size_bytes": 340,
+      "sha256": "6438314d6cc5a5b35010c8202de870c5d92a6fe7b1bb7081beb8e7fb91ce45b0"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\resnet18_eval.log",
+      "size_bytes": 286,
+      "sha256": "3afe998716b796cf34e18a075db5e82cae26b90b04badbcea4df59b3f7d379fd"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\densenet121_predictions.csv",
+      "size_bytes": 12917,
+      "sha256": "23ab3609521386179a694c0c7147e3c7074ecb69a625aae097527a19aed88bb1"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\densenet121_cm.json",
+      "size_bytes": 497,
+      "sha256": "748116539aeba2fc3d364d000647ca4fe88cd5b2694d4fa6555797155e9518ac"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\densenet121_metrics.json",
+      "size_bytes": 330,
+      "sha256": "7295b5023ec0a6888978631e2d6fc00bfacdb2d43a6b7776795d37508373d028"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\densenet121_eval.log",
+      "size_bytes": 281,
+      "sha256": "6874311277faf25c9d347e4165a7fe79a0ef511ba01db46302754665ea23c89e"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\swin_predictions.csv",
+      "size_bytes": 13180,
+      "sha256": "773f6cc7f4f2f1a84e989391c5f279876c3a8a49b4edfa709e08083bbbda0b62"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\swin_cm.json",
+      "size_bytes": 482,
+      "sha256": "149882624975006950d5c5f65dcb4416510c26949aa7ac71eee2c6a3277e057d"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\swin_metrics.json",
+      "size_bytes": 331,
+      "sha256": "16673e3ef851676efd9c3a280714ecc12fbedc6921e99109848bf5141af07b2f"
+    },
+    {
+      "relative_path": "locked_test\\protocol_C\\swin_eval.log",
+      "size_bytes": 279,
+      "sha256": "a404cfc515e102a4312913b5a447cd645eaf325f9e55d84bc25a3316cccd84b2"
+    },
+    {
+      "relative_path": "locked_test\\test_results_all_9.csv",
+      "size_bytes": 855,
+      "sha256": "683c2987b7e7dc3871a85fa31f3fb3133f90e848a839a8004b375260f6c725ab"
+    },
+    {
+      "relative_path": "locked_test\\test_results_all_9.json",
+      "size_bytes": 2859,
+      "sha256": "5eee96372d93e3168f1b285baaefc28a277a9dbc063366c50dadfb6f7cc3a261"
+    },
+    {
+      "relative_path": "locked_test\\locked_test_manifest.json",
+      "size_bytes": 1675,
+      "sha256": "e000e6dcf68a5266b7f5c7268eb9d06515a13dc157220edd069dcfb5c1277616"
+    }
+  ]
+}

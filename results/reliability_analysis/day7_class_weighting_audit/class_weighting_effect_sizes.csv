@@ -1,0 +1,7 @@
+Architecture,model_key,Comparison,Delta_Accuracy_pp,Delta_Macro_F1_pp,Delta_LGG_Recall_pp,Delta_HGG_Recall_pp,Delta_ROC_AUC,Delta_ECE,Delta_Brier_Score,LGG_Cases_Correct_A,LGG_Cases_Correct_B,Delta_LGG_Cases,LGG_Cases_Correct_C
+ResNet18 MedicalNet,resnet18_medicalnet,Protocol A -> Protocol B (Unweighted -> Inverse-Frequency),-5.85,-15.75,-8.33,-5.68,-0.0891,0.0118,0.0546,9,8.0,-1,
+ResNet18 MedicalNet,resnet18_medicalnet,Protocol A -> Protocol C (Unweighted -> Minority x 1.25),-4.79,-19.58,-33.33,-2.84,-0.0663,-0.0134,0.0523,9,,-4,5.0
+DenseNet121 3D,densenet121_3d,Protocol A -> Protocol B (Unweighted -> Inverse-Frequency),-3.19,-8.32,-8.34,-2.84,0.0038,0.0232,0.0216,8,7.0,-1,
+DenseNet121 3D,densenet121_3d,Protocol A -> Protocol C (Unweighted -> Minority x 1.25),-2.66,-14.07,-33.34,-0.57,-0.0409,0.0045,0.0294,8,,-4,4.0
+SwinUNETR 3D,swin_transformer_3d,Protocol A -> Protocol B (Unweighted -> Inverse-Frequency),0.0,0.0,0.0,0.0,-0.0694,-0.0299,-0.002,0,0.0,0,
+SwinUNETR 3D,swin_transformer_3d,Protocol A -> Protocol C (Unweighted -> Minority x 1.25),1.06,19.01,25.0,-0.57,0.0398,0.0014,-0.051,0,,3,3.0

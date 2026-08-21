@@ -1,0 +1,12 @@
+Research_Area,Current_Status,Evidence_Strength,Next_Requirement
+Dataset Integrity & Partition Isolation,COMPLETE_VERIFIED,DEFINITIVE (0 subject overlap across all splits),None (Fully established)
+Canonical Protocol A/B/C Benchmarking,COMPLETE_VERIFIED,DEFINITIVE (9/9 canonical checkpoints archived & evaluated),None (Fully established)
+Locked-Test Result Provenance,COMPLETE_VERIFIED,DEFINITIVE (39/39 artifacts match recorded SHA-256),None (Fully established)
+Historical 0 -> 0.75 ResNet Provenance,RESOLVED,STRONG (Traced to 7-epoch vs 25-epoch checkpoint states),None (Documented in paper)
+ResNet18 Protocol A Cross-Validation,COMPLETE_VERIFIED,"STRONG (5 folds, 1,063 development subjects)",Extend CV to Protocols B/C and DenseNet/Swin
+Controlled Class-Weighting Interpretation,COMPLETE_VERIFIED,STRONG (Empirical divergence between CNNs and Transformers),Layer-wise gradient analysis
+Decision-Threshold Operating-Point Analysis,COMPLETE_VERIFIED,"STRONG (Validation-tuned, out-of-sample evaluated)",Evaluate threshold stability across CV folds
+Probability Calibration Profiling,COMPLETE_VERIFIED,STRONG (ECE and Brier score calculated for all 9 models),Evaluate temperature scaling on calibrated probabilities
+Optimization Stochasticity vs Partition Variance,UNRESOLVED,MODERATE (RNG seed 42 set; GPU non-determinism unquantified),5-seed repeated training on fixed split
+Focal Loss Formulation & Evaluation,PLANNED_MOTIVATED,THEORETICALLY_JUSTIFIED (Not yet experimentally tested),Execute controlled Focal Loss 5-fold CV
+External Hospital Cohort Validation,FUTURE_WORK,PENDING (Internal BraTS locked test evaluated),Acquire independent multi-center clinical MRI dataset

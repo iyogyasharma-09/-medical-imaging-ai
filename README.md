@@ -32,10 +32,12 @@ It handles raw 3D NIfTI MRI data (`t1c`, `t1n`, `t2f`, `t2w` sequences), stackin
 * `models/`: Stores exported ONNX and OpenVINO checkpoints (PyTorch weights `.pt` are ignored by git).
 * `dataset/`: Directory for BraTS 2023 NIfTI files (ignored by git to prevent massive uploads).
 
-## Usage
+## Usage (Active BraTS 2023 Pipeline)
 
-1. **Prepare Data:** Extract BraTS 2023 data into `dataset/` and run `brats2023_dataset.py` to generate manifests.
+1. **Prepare Data:** Extract BraTS 2023 data into `dataset/` and run `python preprocess_brats2023.py` to generate manifests.
 2. **Train:** `python train_brats2023.py`
 3. **Evaluate:** `python evaluate_models.py`
 4. **Analyze:** `python advanced_analysis.py`
 5. **Plot:** `python plot_results.py`
+
+*Note: Root scripts `run_all.py`, `train.py`, `evaluate.py`, and `preprocess_all.py` are legacy BraTS 2021 entry points preserved for backward compatibility and should not be used for BraTS 2023 experiments.*

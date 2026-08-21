@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-08-14 12:15:27",
+  "total_files": 12,
+  "files_sha256": [
+    {
+      "filename": "research_consolidation\\master_results_table.csv",
+      "size_bytes": 1639,
+      "sha256": "017d79c2708f3d1bca38b103bc0f693aa7ffbf426c5870c3fc2051451489af81"
+    },
+    {
+      "filename": "research_consolidation\\master_results_table.md",
+      "size_bytes": 2587,
+      "sha256": "fe10ebb5a75cdf941d8291de875a51ba60a96d3585073b2d33fa0fdc5a72fe91"
+    },
+    {
+      "filename": "research_consolidation\\architecture_comparison.csv",
+      "size_bytes": 429,
+      "sha256": "0219cd69b7caad2fdb4545602b1f2b17f1a098a525bd37cb43003867fa328c98"
+    },
+    {
+      "filename": "research_consolidation\\architecture_comparison.md",
+      "size_bytes": 2147,
+      "sha256": "e6f10f67545201146bde8b77630c5ef125a31ea4a296029c3a61c7203b65acc7"
+    },
+    {
+      "filename": "research_consolidation\\protocol_comparison.csv",
+      "size_bytes": 1160,
+      "sha256": "17a9b2ac75d982d44ace4a496b000ed2c6e0240b20a0966c8710a6499927e6d7"
+    },
+    {
+      "filename": "research_consolidation\\protocol_comparison.md",
+      "size_bytes": 2314,
+      "sha256": "802a3c23d2a709e0b330651a4a007ac0ff1fcb266a968498ecd5d9791942e60d"
+    },
+    {
+      "filename": "research_consolidation\\ablation_paper_finding.md",
+      "size_bytes": 1605,
+      "sha256": "c11a10889443bf710dea4bf2797ec0838da010f87255222d5e71ff7b68320e90"
+    },
+    {
+      "filename": "research_consolidation\\calibration_paper_finding.md",
+      "size_bytes": 1380,
+      "sha256": "5abfb7336d8bb45f120359da4ba94d682299b84b03a244157bdb858e3915dbc1"
+    },
+    {
+      "filename": "research_consolidation\\reliability_framework.md",
+      "size_bytes": 1268,
+      "sha256": "319832b37ad69523f962ad0217796f30f483002455a3cdd1f5dbf0ac25f8883d"
+    },
+    {
+      "filename": "research_consolidation\\paper_results_draft.md",
+      "size_bytes": 2788,
+      "sha256": "95ec480c7a7c6ce097a1d68f2af0c9032d95e06ea6279403cb28c8a541c944bd"
+    },
+    {
+      "filename": "research_consolidation\\research_journal_day5_day6.md",
+      "size_bytes": 1108,
+      "sha256": "fb9671623834665984cb49f121f9b7ee75a5b6f39912511d1833fd6f57b5cebc"
+    },
+    {
+      "filename": "research_consolidation\\limitations_and_next_steps.md",
+      "size_bytes": 1102,
+      "sha256": "c19174d3c019c2b9b506c3220621ecfbd86a9a40fed158ca4895dc9373bbcecd"
+    }
+  ]
+}

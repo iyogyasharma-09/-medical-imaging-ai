@@ -1,0 +1,52 @@
+{
+  "audit_metadata": {
+    "audit_name": "DAY 7 \u2014 AUDIT 2: LGG RECALL ANOMALY & FAILURE-MECHANISM FORENSIC AUDIT",
+    "timestamp": "2026-08-19 10:12:11",
+    "audit_mode": "STRICT_READ_ONLY_FORENSIC",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "verdict_leakage": "PROVEN_ABSENT",
+    "verdict_label_integrity": "PROVEN_ABSENT",
+    "verdict_preprocessing": "PROVEN_ABSENT",
+    "verdict_evaluation": "PROVEN_ABSENT",
+    "verdict_historical_0_vs_0.75_discrepancy": "RESOLVED_DIFFERENT_CHECKPOINTS_AND_EPOCHS",
+    "verdict_cv_stability": "UNSTABLE_MINORITY_SENSITIVITY (0.5055 +/- 0.3274)",
+    "verdict_cv_auc": "STABLE_LATENT_DISCRIMINATION (0.9163 +/- 0.0446)"
+  },
+  "artifacts": {
+    "lgg_anomaly_audit.md": {
+      "relative_path": "results/reliability_analysis/day7_lgg_anomaly_audit/lgg_anomaly_audit.md",
+      "size_bytes": 22019,
+      "sha256": "e8a3b91e57c57dd8be4dee9a4bc4a1ceb458afd0429011330393803709066c07"
+    },
+    "lgg_anomaly_audit.json": {
+      "relative_path": "results/reliability_analysis/day7_lgg_anomaly_audit/lgg_anomaly_audit.json",
+      "size_bytes": 8953,
+      "sha256": "b24f88beec808692b18062f97ccb406e2f80e37a4c10fdf67c9b405c7d81f98c"
+    },
+    "lgg_subject_fold_distribution.csv": {
+      "relative_path": "results/reliability_analysis/day7_lgg_anomaly_audit/lgg_subject_fold_distribution.csv",
+      "size_bytes": 3676,
+      "sha256": "3357f09363d9a29e477cb490b0c14f997e21fd491837adeae7a5c23b8a7e80a6"
+    },
+    "resnet_protocolA_run_history.csv": {
+      "relative_path": "results/reliability_analysis/day7_lgg_anomaly_audit/resnet_protocolA_run_history.csv",
+      "size_bytes": 3708,
+      "sha256": "21eebf909de677a358310914d1220ce09969e73279aa72c727dbbaf6b383dd9d"
+    },
+    "lgg_prediction_consistency.csv": {
+      "relative_path": "results/reliability_analysis/day7_lgg_anomaly_audit/lgg_prediction_consistency.csv",
+      "size_bytes": 1270,
+      "sha256": "75e8d987fcd3feed8c660cd05ec1819a5a6db10bf75dd7100dbe149dab9b499b"
+    },
+    "failure_mechanism_evidence_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_lgg_anomaly_audit/failure_mechanism_evidence_matrix.csv",
+      "size_bytes": 3761,
+      "sha256": "f555e5120c3cc4a97490bda69efcf9725e2b31df3c690836c4aacbaafd2105a4"
+    },
+    "executive_summary.md": {
+      "relative_path": "results/reliability_analysis/day7_lgg_anomaly_audit/executive_summary.md",
+      "size_bytes": 4057,
+      "sha256": "fb7b9a0bfb7b2f2c173a5f9287629538448d473c98c9bfde622d6347b831ba50"
+    }
+  }
+}

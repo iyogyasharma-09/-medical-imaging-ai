@@ -1,0 +1,23 @@
+Component,Parameter,Configured_Value,Source_File
+Dataset,Task Name,BraTS 2023 Adult Glioma (GLI),config.py
+Dataset,Target Label Column,"label_grade (0=LGG, 1=HGG)",config.py
+Dataset,Training Sample Count,876 subjects,train_manifest.json
+Dataset,Validation Sample Count,"187 subjects (10 LGG, 177 HGG)",val_manifest.json
+Dataset,Locked-Test Sample Count,"188 subjects (12 LGG, 176 HGG)",test_manifest.json
+Input Geometry,Modalities,"T1, T1ce, T2, FLAIR (4 channels)",config.py
+Input Geometry,Spatial Input Resolution,4 x 96 x 96 x 96 voxels,config.py
+Input Geometry,Voxel Spacing,1.0 x 1.0 x 1.0 mm isotropic,transforms.py
+Optimization,Optimizer,AdamW,train_brats2023.py
+Optimization,Initial Learning Rate,1e-4,config.py
+Optimization,Weight Decay,1e-4,config.py
+Optimization,Batch Size,2,config.py
+Optimization,Max Epochs,30,config.py
+Optimization,Early Stopping Patience,6 epochs (Monitored on Val Macro-F1),config.py
+Optimization,Precision,PyTorch AMP float16,config.py
+Optimization,Dropout Probability,0.40,config.py
+Focal Loss,Alpha Multiplier,1.0,train_brats2023_focal.py
+Focal Loss,Gamma Focusing Parameter,2.0,train_brats2023_focal.py
+Calibration,Optimization Objective,Validation Negative Log-Likelihood (NLL),run_focal_temperature_scaling.py
+Calibration,Optimization Algorithm,"Bounded minimize_scalar (bounds=[0.01, 10.0])",run_focal_temperature_scaling.py
+Calibration,Focal Frozen Temperature T*,0.4923,temperature_parameter.json
+Uncertainty,Metric Formulation,Shannon Predictive Entropy (bits),evaluate_locked_test.py

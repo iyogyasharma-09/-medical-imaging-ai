@@ -1,0 +1,71 @@
+{
+  "audit_type": "Protocol Consistency Audit",
+  "audit_date": "2026-08-17T10:05:00+05:30",
+  "audit_mode": "READ-ONLY FORENSIC",
+  "project": "BraTS 2023 Adult Glioma (GLI) 3D Grading",
+  "auditor": "Senior ML/Medical-AI Research Auditor",
+  "artifacts_generated": [
+    "protocol_consistency_audit.md",
+    "protocol_consistency_audit.json",
+    "checkpoint_audit.csv",
+    "evaluation_pipeline_comparison.md",
+    "result_provenance_table.csv",
+    "audit_manifest.json"
+  ],
+  "source_artifacts_inspected": {
+    "checkpoints": {
+      "protocol_A": [
+        "results/protocol_archives/protocol_A/resnet18_medicalnet_lgg_hgg_3d.pt",
+        "results/protocol_archives/protocol_A/densenet121_3d_lgg_hgg_3d.pt",
+        "results/protocol_archives/protocol_A/swin_transformer_3d_lgg_hgg_3d.pt"
+      ],
+      "protocol_B": [
+        "results/protocol_archives/protocol_B/resnet18_medicalnet_lgg_hgg_3d.pt",
+        "results/protocol_archives/protocol_B/densenet121_3d_lgg_hgg_3d.pt",
+        "results/protocol_archives/protocol_B/swin_transformer_3d_lgg_hgg_3d.pt"
+      ],
+      "protocol_C": [
+        "results/protocol_archives/protocol_C/resnet18_medicalnet_lgg_hgg_3d.pt",
+        "results/protocol_archives/protocol_C/densenet121_3d_lgg_hgg_3d.pt",
+        "results/protocol_archives/protocol_C/swin_transformer_3d_lgg_hgg_3d.pt"
+      ],
+      "models_dir": [
+        "models/resnet18_medicalnet_lgg_hgg_3d.pt",
+        "models/densenet121_3d_lgg_hgg_3d.pt",
+        "models/swin_transformer_3d_lgg_hgg_3d.pt"
+      ]
+    },
+    "evaluation_scripts": [
+      "evaluate_models.py",
+      "evaluate_locked_test.py",
+      "run_day5_phase1_locked_test.py",
+      "train_brats2023.py"
+    ],
+    "prediction_files": [
+      "results/locked_test_evaluation/predictions/*.csv",
+      "results/locked_test/protocol_*/predictions.csv"
+    ],
+    "manifests": [
+      "processed_dataset/brats2023/train_manifest.json",
+      "processed_dataset/brats2023/val_manifest.json",
+      "processed_dataset/brats2023/test_manifest.json"
+    ],
+    "result_files": [
+      "results/locked_test/test_results_all_9.json",
+      "results/evaluation_report.json",
+      "results/evaluation_log.txt",
+      "results/reliability_analysis/locked_test_baseline.json",
+      "results/validation_reconciliation_final.json"
+    ]
+  },
+  "safety_verification": {
+    "training_launched": "NO",
+    "cv_launched": "NO",
+    "protocol_d_created": "NO",
+    "protocol_a_modified": "NO",
+    "protocol_b_modified": "NO",
+    "protocol_c_modified": "NO",
+    "locked_test_predictions_modified": "NO",
+    "dataset_modified": "NO"
+  }
+}

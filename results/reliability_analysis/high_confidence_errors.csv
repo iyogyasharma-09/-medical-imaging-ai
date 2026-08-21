@@ -1,0 +1,10 @@
+Protocol,Model,model_key,Total Incorrect,LGG False Positives (FP),HGG False Negatives (FN),Errors Conf >= 0.70,Errors Conf >= 0.80,Errors Conf >= 0.90,Max Error Confidence,Mean Error Confidence
+A,ResNet18 MedicalNet,resnet18_medicalnet,5,3,2,3,1,0,0.8475,0.7111
+A,DenseNet121 3D,densenet121_3d,10,4,6,7,5,1,0.9292,0.7478
+A,SwinUNETR 3D,swin_transformer_3d,12,12,0,12,12,12,0.97,0.9686
+B,ResNet18 MedicalNet,resnet18_medicalnet,16,4,12,7,6,2,0.9969,0.711
+B,DenseNet121 3D,densenet121_3d,16,5,11,5,1,0,0.8128,0.6516
+B,SwinUNETR 3D,swin_transformer_3d,12,12,0,12,12,12,0.9408,0.9403
+C,ResNet18 MedicalNet,resnet18_medicalnet,14,7,7,7,6,2,0.968,0.7341
+C,DenseNet121 3D,densenet121_3d,15,8,7,7,7,2,0.9566,0.7352
+C,SwinUNETR 3D,swin_transformer_3d,10,9,1,5,4,0,0.8658,0.7042

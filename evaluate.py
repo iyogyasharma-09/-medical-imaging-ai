@@ -1,17 +1,12 @@
 """
 evaluate.py
 -----------
-Root-level entry point for evaluation.
+[LEGACY - BraTS 2021 Evaluation Entry Point]
 
-Run on a GPU machine (after training):
-    python evaluate.py
-    python evaluate.py --label-col label_grade
+NOTE: For active BraTS 2023 research, use:
+    python evaluate_models.py
 
-Outputs saved to results/:
-    evaluation_summary.json      — all metrics
-    confusion_<config>.png       — confusion matrices
-    calibration_<config>.png     — reliability diagrams
-    comparison_table.txt         — ASCII comparison table
+This script delegates to src/evaluate_models.py for BraTS 2021 legacy evaluation.
 """
 
 import argparse

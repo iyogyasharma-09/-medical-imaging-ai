@@ -1,0 +1,6 @@
+fold,train_total,train_lgg,train_hgg,train_lgg_pct,val_total,val_lgg,val_hgg,val_lgg_pct,train_val_overlap,val_locked_test_overlap
+fold_1,850,42,808,4.94,213,11,202,5.16,0,0
+fold_2,850,42,808,4.94,213,11,202,5.16,0,0
+fold_3,850,42,808,4.94,213,11,202,5.16,0,0
+fold_4,851,43,808,5.05,212,10,202,4.72,0,0
+fold_5,851,43,808,5.05,212,10,202,4.72,0,0

@@ -40,6 +40,7 @@ USAGE
 
 import argparse
 import json
+import random
 import sys
 import time
 from pathlib import Path
@@ -49,8 +50,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
-from sklearn.utils.class_weight import compute_class_weight
+from sklearn.metrics import accuracy_score, f1_score, recall_score, roc_auc_score
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
@@ -82,6 +82,7 @@ from config import (
     REGISTRY_PATH,
     RESULTS_DIR,
     SPATIAL_SIZE,
+    TRAINING_PROTOCOL,
     USE_MIXED_PRECISION,
     WEIGHT_DECAY,
     create_directories,
@@ -89,6 +90,91 @@ from config import (
 )
 from imported_files.brats2023_dataset import BraTS2023Dataset, load_manifest
 from imported_files.transforms import get_train_transforms, get_val_transforms
+
+
+# ===========================================================================
+# Training protocol — class-imbalance weighting
+# ===========================================================================
+
+def compute_protocol_weights(
+    labels: np.ndarray,
+    protocol: str,
+    num_classes: int,
+    device: torch.device,
+) -> Optional[torch.Tensor]:
+    """
+    Compute class weights for CrossEntropyLoss based on training protocol.
+
+    Protocols
+    ---------
+    A : No class weighting (returns None).
+    B : Inverse-frequency weights:  w_c = N / (K * n_c),
+        then normalized so that sum(weights) = K.
+    C : Protocol B with minority-class weight multiplied by 1.25,
+        then renormalized so that sum(weights) = K.
+    D : Protocol B with minority-class weight multiplied by 0.75,
+        then renormalized so that sum(weights) = K.
+
+    The minority class is the one with the fewest training samples
+    (equivalently, the highest inverse-frequency weight).
+
+    Normalization (Protocols B, C, D)
+    ----------------------------------
+    For Protocols C and D, after applying the multiplier m:
+        w'_minority = m * w_minority
+    For all weighted protocols (B, C, D), weights are rescaled so
+    their sum equals K (number of classes):
+        w_final_c = w_c * K / sum(w)
+    This ensures B, C, and D have the same total weight scale,
+    so they differ only in relative class weighting — not in the
+    absolute magnitude of the loss or effective learning rate.
+    """
+    protocol = protocol.upper()
+    if protocol not in ("A", "B", "C", "D"):
+        raise ValueError(
+            f"Invalid TRAINING_PROTOCOL '{protocol}'. Must be A, B, C, or D."
+        )
+
+    unique, counts = np.unique(labels, return_counts=True)
+    class_counts = dict(zip(unique.tolist(), counts.tolist()))
+
+    print(f"\n[Training Protocol] Selected: Protocol {protocol}")
+    print(f"  Class counts : {class_counts}")
+
+    if protocol == "A":
+        print(f"  Weights      : None (unweighted CrossEntropyLoss)")
+        return None
+
+    # Inverse-frequency: w_c = N / (K * n_c)
+    N = len(labels)
+    K = len(unique)
+    weights = np.array([N / (K * class_counts[c]) for c in sorted(class_counts)])
+
+    # Pad to num_classes if needed (e.g. 3-class with sparse labels)
+    full_weights = np.ones(num_classes, dtype=np.float64)
+    for i, c in enumerate(sorted(class_counts)):
+        full_weights[int(c)] = weights[i]
+
+    if protocol in ("C", "D"):
+        minority_class = int(unique[np.argmin(counts)])
+        multiplier = 1.25 if protocol == "C" else 0.75
+        print(f"  Minority cls : {minority_class} (count={class_counts[minority_class]})")
+        print(f"  Multiplier   : {multiplier}")
+        full_weights[minority_class] *= multiplier
+
+    # Normalize so sum(weights) == K for all weighted protocols (B, C, D).
+    # This ensures the total weight scale is identical across protocols,
+    # so they differ only in relative class weighting — not in the
+    # absolute magnitude of the loss or effective learning rate.
+    #   w_final_c = w_c * K / sum(w)
+    full_weights = full_weights * K / full_weights.sum()
+
+    weight_dict = {
+        int(c): round(float(full_weights[int(c)]), 4) for c in sorted(class_counts)
+    }
+    print(f"  Final weights: {weight_dict}  (sum={full_weights.sum():.4f})")
+
+    return torch.tensor(full_weights, dtype=torch.float32, device=device)
 
 
 # ===========================================================================
@@ -126,7 +212,7 @@ def build_dataloaders(
         label_col : 'label'       → task-based (GLI=0 MEN=1 PED=2)
                     'label_grade' → LGG=0 HGG=1 (GLI only, requires grade mapping)
     Returns:
-        train_loader, val_loader, test_loader, class_weights
+        train_loader, val_loader, test_loader, train_labels
     """
     def _load_and_filter(path: Path) -> "pd.DataFrame":
         import pandas as pd
@@ -142,15 +228,8 @@ def build_dataloaders(
     print(f"\n[Data] Task={task}  label_col={label_col}")
     print(f"  Train: {len(df_train)}  Val: {len(df_val)}  Test: {len(df_test)}")
 
-    # Class weights from training split only
-    labels = df_train[label_col].values.astype(int)
-    unique = np.unique(labels)
-    class_weights = compute_class_weight("balanced", classes=unique, y=labels)
-    # Pad to max_class+1 so indexing works for 3-class
-    full_weights = np.ones(int(unique.max()) + 1)
-    for cls, w in zip(unique, class_weights):
-        full_weights[int(cls)] = w
-    print(f"  Class weights: {dict(zip(unique.tolist(), class_weights.round(3).tolist()))}")
+    # Extract raw training labels for protocol weight computation
+    train_labels = df_train[label_col].values.astype(int)
 
     train_ds = BraTS2023Dataset(df_train, transforms=get_train_transforms(), label_col=label_col)
     val_ds   = BraTS2023Dataset(df_val,   transforms=get_val_transforms(),   label_col=label_col)
@@ -169,7 +248,7 @@ def build_dataloaders(
                               multiprocessing_context="spawn" if nw > 0 else None)
     test_loader  = DataLoader(test_ds,  batch_size=1,          shuffle=False,
                               num_workers=0,  pin_memory=True)
-    return train_loader, val_loader, test_loader, full_weights
+    return train_loader, val_loader, test_loader, train_labels
 
 
 # ===========================================================================
@@ -268,21 +347,45 @@ def get_model(model_name: str, num_classes: int) -> nn.Module:
 # ===========================================================================
 
 class EarlyStopping:
-    def __init__(self, patience=EARLY_STOPPING_PATIENCE, min_delta=EARLY_STOPPING_MIN_DELTA):
-        self.patience   = patience
-        self.min_delta  = min_delta
-        self.best_score = None
-        self.counter    = 0
-        self.best_state = None
+    """
+    Hierarchical early stopping and intra-run checkpoint selection:
+      Primary:     Validation Macro-F1
+      Tie-breaker: Validation LGG Recall (class 0 recall)
+      Tolerance:   Macro-F1 values within 1e-4 tolerance are treated as equivalent,
+                   allowing LGG Recall to break the tie cleanly.
+    """
+    def __init__(self, patience=EARLY_STOPPING_PATIENCE, min_delta=EARLY_STOPPING_MIN_DELTA, tol=1e-4):
+        self.patience        = patience
+        self.min_delta       = min_delta
+        self.tol             = tol
+        self.best_macro_f1   = None
+        self.best_lgg_recall = None
+        self.counter         = 0
+        self.best_state      = None
 
-    def step(self, score: float, model: nn.Module) -> bool:
-        improved = self.best_score is None or score > self.best_score + self.min_delta
+    def step(self, val_metrics: Dict[str, float], model: nn.Module) -> bool:
+        macro_f1   = float(val_metrics["f1_macro"])
+        lgg_recall = float(val_metrics["lgg_recall"])
+
+        improved = False
+        if self.best_macro_f1 is None:
+            improved = True
+        elif macro_f1 > self.best_macro_f1 + self.tol:
+            # Clear primary improvement in Macro-F1 (beyond tolerance)
+            improved = True
+        elif abs(macro_f1 - self.best_macro_f1) <= self.tol:
+            # Macro-F1 is equivalent within tolerance; tie-breaker on LGG Recall
+            if lgg_recall > self.best_lgg_recall + self.min_delta:
+                improved = True
+
         if improved:
-            self.best_score = score
-            self.counter    = 0
-            self.best_state = {k: v.detach().cpu().clone()
+            self.best_macro_f1   = macro_f1
+            self.best_lgg_recall = lgg_recall
+            self.counter         = 0
+            self.best_state      = {k: v.detach().cpu().clone()
                                for k, v in model.state_dict().items()}
             return False
+
         self.counter += 1
         return self.counter >= self.patience
 
@@ -337,10 +440,21 @@ def run_epoch(model, loader, criterion, device, optimizer=None, scaler=None,
     pred = prob.argmax(axis=1)
     n_classes = prob.shape[1]
 
+    f1_w = float(f1_score(true, pred, average="weighted", zero_division=0))
+    f1_m = float(f1_score(true, pred, average="macro", zero_division=0))
+
+    # LGG Recall = recall for class 0 (LGG)
+    # Using recall_score(..., average=None) to get per-class recall
+    recalls = recall_score(true, pred, average=None, zero_division=0)
+    lgg_rec = float(recalls[0]) if len(recalls) > 0 else 0.0
+
     metrics = {
-        "loss":     float(np.mean(losses)),
-        "accuracy": float(accuracy_score(true, pred)),
-        "f1":       float(f1_score(true, pred, average="weighted", zero_division=0)),
+        "loss":        float(np.mean(losses)),
+        "accuracy":    float(accuracy_score(true, pred)),
+        "f1":          f1_w,        # preserved for backward compatibility
+        "f1_weighted": f1_w,
+        "f1_macro":    f1_m,
+        "lgg_recall":  lgg_rec,
     }
     # AUC: only if more than one class present and binary/OvR
     if len(np.unique(true)) > 1:
@@ -413,22 +527,31 @@ def train_model(
     if device is None:
         device = get_training_device()
 
+    # ---- Reproducibility: seed all RNGs before data loading / training ----
+    random.seed(RANDOM_SEED)
+    np.random.seed(RANDOM_SEED)
+    torch.manual_seed(RANDOM_SEED)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(RANDOM_SEED)
+    print(f"[Seed] RANDOM_SEED={RANDOM_SEED} applied to Python, NumPy, and PyTorch.")
+
     time_limit_str = "no limit" if deadline is None else f"{(deadline-time.time())/3600:.2f}h remaining"
     print(f"\n{'='*60}")
     print(f"  Model      : {model_name}")
     print(f"  Task       : {task}  |  Label : {label_col}")
     print(f"  Classes    : {num_classes}  |  Device : {device}")
+    print(f"  Protocol   : {TRAINING_PROTOCOL}")
     print(f"  Epochs     : {epochs}  |  Batch : {batch_size}  |  Accum : {GRADIENT_ACCUMULATION_STEPS}")
     print(f"  AMP (fp16) : {USE_MIXED_PRECISION and device.type == 'cuda'}")
     print(f"  Time limit : {time_limit_str}")
     print(f"{'='*60}")
 
-    train_loader, val_loader, _, class_weights = build_dataloaders(
+    train_loader, val_loader, _, train_labels = build_dataloaders(
         task=task, label_col=label_col, batch_size=batch_size)
 
     # ---- Build model ----
     model     = get_model(model_name, num_classes).to(device)
-    cw_tensor = torch.tensor(class_weights, dtype=torch.float32, device=device)
+    cw_tensor = compute_protocol_weights(train_labels, TRAINING_PROTOCOL, num_classes, device)
     criterion = nn.CrossEntropyLoss(weight=cw_tensor)
     optimizer = optim.AdamW(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
     scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=1e-6)
@@ -452,10 +575,11 @@ def train_model(
         print(f"Ep {epoch:3d}/{epochs} "
               f"| train loss={train_m['loss']:.4f} acc={train_m['accuracy']:.4f} "
               f"| val loss={val_m['loss']:.4f} acc={val_m['accuracy']:.4f} "
+              f"macro_f1={val_m['f1_macro']:.4f} lgg_rec={val_m['lgg_recall']:.4f} "
               f"auc={val_m['auc']:.4f} "
               f"| lr={optimizer.param_groups[0]['lr']:.2e}")
 
-        if stopper.step(val_m["accuracy"], model):
+        if stopper.step(val_m, model):
             print(f"  [EarlyStopping] Triggered at epoch {epoch}.")
             break
 
@@ -470,16 +594,19 @@ def train_model(
     # ---- Save PyTorch checkpoint ----
     ckpt_path = get_model_path(model_name)
     torch.save({
-        "model_state_dict": model.state_dict(),
-        "model_name":       model_name,
-        "task":             task,
-        "label_col":        label_col,
-        "num_classes":      num_classes,
-        "input_shape":      [INPUT_CHANNELS, INPUT_DEPTH, INPUT_HEIGHT, INPUT_WIDTH],
-        "spatial_size":     list(SPATIAL_SIZE),
-        "history":          history,
-        "class_weights":    class_weights.tolist(),
-        "best_val_accuracy": best_acc,
+        "model_state_dict":   model.state_dict(),
+        "model_name":         model_name,
+        "task":               task,
+        "label_col":          label_col,
+        "num_classes":        num_classes,
+        "input_shape":        [INPUT_CHANNELS, INPUT_DEPTH, INPUT_HEIGHT, INPUT_WIDTH],
+        "spatial_size":       list(SPATIAL_SIZE),
+        "history":            history,
+        "training_protocol":   TRAINING_PROTOCOL,
+        "class_weights":      cw_tensor.cpu().tolist() if cw_tensor is not None else None,
+        "best_val_accuracy":   best_acc,
+        "best_val_macro_f1":   stopper.best_macro_f1,
+        "best_val_lgg_recall": stopper.best_lgg_recall,
     }, ckpt_path)
     print(f"\n  [GPU] Checkpoint saved: {ckpt_path}")
 
@@ -500,7 +627,10 @@ def train_model(
         "model_name":           model_name,
         "task":                 task,
         "label_col":            label_col,
+        "training_protocol":    TRAINING_PROTOCOL,
         "best_val_accuracy":    best_acc,
+        "best_val_macro_f1":    stopper.best_macro_f1,
+        "best_val_lgg_recall":  stopper.best_lgg_recall,
         "mean_uncertainty":     uncertainty,
         "checkpoint_path":      str(ckpt_path),
         "epochs_trained":       len(history),

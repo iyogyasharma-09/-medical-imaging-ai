@@ -1,16 +1,12 @@
 """
 train.py
 --------
-Root-level entry point for training all 3D backbone models.
+[LEGACY - BraTS 2021 Training Entry Point]
 
-Run on a GPU machine:
-    python train.py
-    python train.py --models resnet50_3d densenet121_3d
-    python train.py --epochs 30 --batch-size 2 --label-col label_grade
+NOTE: For active BraTS 2023 research, use:
+    python train_brats2023.py
 
-This calls src/train_models.py::train_all_models() directly.
-All checkpoints are saved to models/
-Registry is written to results/model_registry.json
+This script calls src/train_models.py::train_all_models() directly for BraTS 2021 legacy data.
 """
 
 import argparse

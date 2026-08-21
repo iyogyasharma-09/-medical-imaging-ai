@@ -1,0 +1,10 @@
+model_key,Protocol,Model,Test Accuracy,Test Macro-F1,Test LGG Recall,Test HGG Recall,Test AUC,n_test_subjects,n_lgg,n_hgg
+resnet18_medicalnet,A,ResNet18 MedicalNet,0.9734,0.8842,0.75,0.9886,0.983,188,12,176
+densenet121_3d,A,DenseNet121 3D,0.9468,0.7934,0.6667,0.9659,0.9422,188,12,176
+swin_transformer_3d,A,SwinUNETR 3D,0.9362,0.4835,0.0,1.0,0.9337,188,12,176
+resnet18_medicalnet,B,ResNet18 MedicalNet,0.9149,0.7267,0.6667,0.9318,0.8939,188,12,176
+densenet121_3d,B,DenseNet121 3D,0.9149,0.7102,0.5833,0.9375,0.946,188,12,176
+swin_transformer_3d,B,SwinUNETR 3D,0.9362,0.4835,0.0,1.0,0.8643,188,12,176
+resnet18_medicalnet,C,ResNet18 MedicalNet,0.9255,0.6884,0.4167,0.9602,0.9167,188,12,176
+densenet121_3d,C,DenseNet121 3D,0.9202,0.6527,0.3333,0.9602,0.9013,188,12,176
+swin_transformer_3d,C,SwinUNETR 3D,0.9468,0.6736,0.25,0.9943,0.9735,188,12,176

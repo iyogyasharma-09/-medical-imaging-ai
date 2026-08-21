@@ -1,0 +1,74 @@
+[
+  {
+    "Model": "ResNet18 MedicalNet",
+    "Protocol": "A",
+    "Val Macro-F1": 0.7642,
+    "Test Macro-F1": 0.8842,
+    "Val LGG Recall": 0.7,
+    "Test LGG Recall": 0.75
+  },
+  {
+    "Model": "DenseNet121 3D",
+    "Protocol": "A",
+    "Val Macro-F1": 0.6785,
+    "Test Macro-F1": 0.7934,
+    "Val LGG Recall": 0.5,
+    "Test LGG Recall": 0.6667
+  },
+  {
+    "Model": "SwinUNETR 3D",
+    "Protocol": "A",
+    "Val Macro-F1": 0.4863,
+    "Test Macro-F1": 0.4835,
+    "Val LGG Recall": 0.0,
+    "Test LGG Recall": 0.0
+  },
+  {
+    "Model": "ResNet18 MedicalNet",
+    "Protocol": "B",
+    "Val Macro-F1": 0.7101,
+    "Test Macro-F1": 0.7267,
+    "Val LGG Recall": 0.7,
+    "Test LGG Recall": 0.6667
+  },
+  {
+    "Model": "DenseNet121 3D",
+    "Protocol": "B",
+    "Val Macro-F1": 0.6785,
+    "Test Macro-F1": 0.7102,
+    "Val LGG Recall": 0.5,
+    "Test LGG Recall": 0.5833
+  },
+  {
+    "Model": "SwinUNETR 3D",
+    "Protocol": "B",
+    "Val Macro-F1": 0.4863,
+    "Test Macro-F1": 0.4835,
+    "Val LGG Recall": 0.0,
+    "Test LGG Recall": 0.0
+  },
+  {
+    "Model": "ResNet18 MedicalNet",
+    "Protocol": "C",
+    "Val Macro-F1": 0.7642,
+    "Test Macro-F1": 0.6884,
+    "Val LGG Recall": 0.7,
+    "Test LGG Recall": 0.4167
+  },
+  {
+    "Model": "DenseNet121 3D",
+    "Protocol": "C",
+    "Val Macro-F1": 0.7006,
+    "Test Macro-F1": 0.6527,
+    "Val LGG Recall": 0.6,
+    "Test LGG Recall": 0.3333
+  },
+  {
+    "Model": "SwinUNETR 3D",
+    "Protocol": "C",
+    "Val Macro-F1": 0.6831,
+    "Test Macro-F1": 0.6736,
+    "Val LGG Recall": 0.4,
+    "Test LGG Recall": 0.25
+  }
+]

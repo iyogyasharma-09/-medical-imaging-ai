@@ -1,0 +1,110 @@
+[
+  {
+    "model_key": "resnet18_medicalnet",
+    "Model": "ResNet18 MedicalNet",
+    "Protocol": "A",
+    "Test Accuracy": 0.9734,
+    "Test Macro-F1": 0.8842,
+    "Test LGG Recall": 0.75,
+    "Test AUC": 0.983,
+    "Test HGG Recall": 0.9886,
+    "Test Precision": 0.9831,
+    "Test Weighted-F1": 0.9729
+  },
+  {
+    "model_key": "densenet121_3d",
+    "Model": "DenseNet121 3D",
+    "Protocol": "A",
+    "Test Accuracy": 0.9468,
+    "Test Macro-F1": 0.7934,
+    "Test LGG Recall": 0.6667,
+    "Test AUC": 0.9422,
+    "Test HGG Recall": 0.9659,
+    "Test Precision": 0.977,
+    "Test Weighted-F1": 0.9487
+  },
+  {
+    "model_key": "swin_transformer_3d",
+    "Model": "SwinUNETR 3D",
+    "Protocol": "A",
+    "Test Accuracy": 0.9362,
+    "Test Macro-F1": 0.4835,
+    "Test LGG Recall": 0.0,
+    "Test AUC": 0.9337,
+    "Test HGG Recall": 1.0,
+    "Test Precision": 0.9362,
+    "Test Weighted-F1": 0.9053
+  },
+  {
+    "model_key": "resnet18_medicalnet",
+    "Model": "ResNet18 MedicalNet",
+    "Protocol": "B",
+    "Test Accuracy": 0.9149,
+    "Test Macro-F1": 0.7267,
+    "Test LGG Recall": 0.6667,
+    "Test AUC": 0.8939,
+    "Test HGG Recall": 0.9318,
+    "Test Precision": 0.9762,
+    "Test Weighted-F1": 0.9245
+  },
+  {
+    "model_key": "densenet121_3d",
+    "Model": "DenseNet121 3D",
+    "Protocol": "B",
+    "Test Accuracy": 0.9149,
+    "Test Macro-F1": 0.7102,
+    "Test LGG Recall": 0.5833,
+    "Test AUC": 0.946,
+    "Test HGG Recall": 0.9375,
+    "Test Precision": 0.9706,
+    "Test Weighted-F1": 0.9227
+  },
+  {
+    "model_key": "swin_transformer_3d",
+    "Model": "SwinUNETR 3D",
+    "Protocol": "B",
+    "Test Accuracy": 0.9362,
+    "Test Macro-F1": 0.4835,
+    "Test LGG Recall": 0.0,
+    "Test AUC": 0.8643,
+    "Test HGG Recall": 1.0,
+    "Test Precision": 0.9362,
+    "Test Weighted-F1": 0.9053
+  },
+  {
+    "model_key": "resnet18_medicalnet",
+    "Model": "ResNet18 MedicalNet",
+    "Protocol": "C",
+    "Test Accuracy": 0.9255,
+    "Test Macro-F1": 0.6884,
+    "Test LGG Recall": 0.4167,
+    "Test AUC": 0.9167,
+    "Test HGG Recall": 0.9602,
+    "Test Precision": 0.9602,
+    "Test Weighted-F1": 0.9255
+  },
+  {
+    "model_key": "densenet121_3d",
+    "Model": "DenseNet121 3D",
+    "Protocol": "C",
+    "Test Accuracy": 0.9202,
+    "Test Macro-F1": 0.6527,
+    "Test LGG Recall": 0.3333,
+    "Test AUC": 0.9013,
+    "Test HGG Recall": 0.9602,
+    "Test Precision": 0.9548,
+    "Test Weighted-F1": 0.9186
+  },
+  {
+    "model_key": "swin_transformer_3d",
+    "Model": "SwinUNETR 3D",
+    "Protocol": "C",
+    "Test Accuracy": 0.9468,
+    "Test Macro-F1": 0.6736,
+    "Test LGG Recall": 0.25,
+    "Test AUC": 0.9735,
+    "Test HGG Recall": 0.9943,
+    "Test Precision": 0.9511,
+    "Test Weighted-F1": 0.9341
+  }
+]

@@ -1,0 +1,4 @@
+Architecture,Best Protocol,Best Macro-F1,Best LGG Recall,Best AUC,Best ECE,Avg Macro-F1 across A/B/C,Avg LGG Recall across A/B/C,Avg ECE across A/B/C,Avg Brier Score across A/B/C,Total High-Conf Errors
+ResNet18 MedicalNet,A,0.8842,0.75,0.983,0.0276,0.7664,0.6111,0.0271,0.0852,13
+DenseNet121 3D,A,0.7934,0.6667,0.9422,0.0308,0.7188,0.5278,0.04,0.0999,13
+SwinUNETR 3D,C,0.6736,0.25,0.9735,0.0359,0.5469,0.0833,0.025,0.1037,28

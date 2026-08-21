@@ -1,120 +1,136 @@
 {
   "resnet18_medicalnet": {
-    "epochs_trained": 7,
+    "epochs_trained": 11,
+    "best_val_macro_f1": 0.7297687861271676,
+    "best_val_lgg_recall": 0.7,
     "best_val_accuracy": 0.946524064171123,
     "val": {
       "n_subjects": 187,
-      "loss": 0.5859734600290973,
-      "accuracy": 0.946524064171123,
-      "f1_weighted": 0.9205206558147734,
-      "auc": 0.7790960451977401,
-      "sensitivity": 1.0,
-      "specificity": 0.0,
+      "loss": 0.19618509594905884,
+      "accuracy": 0.9251336898395722,
+      "f1_weighted": 0.9349633705295045,
+      "f1_macro": 0.7297687861271676,
+      "auc": 0.894632768361582,
+      "lgg_recall": 0.7,
+      "hgg_recall": 0.9378531073446328,
+      "precision": 0.9822485207100592,
+      "ece": 0.03523719502005349,
       "confusion_matrix": [
         [
-          0,
-          10
+          7,
+          3
         ],
         [
-          0,
-          177
+          11,
+          166
         ]
       ],
       "per_class": {
         "LGG": {
           "n": 10,
-          "correct": 0,
-          "recall": 0.0
+          "correct": 7,
+          "recall": 0.7
         },
         "HGG": {
           "n": 177,
-          "correct": 177,
-          "recall": 1.0
+          "correct": 166,
+          "recall": 0.9379
         }
       }
     },
     "test": {
       "n_subjects": 188,
-      "loss": 0.660912381727843,
-      "accuracy": 0.9361702127659575,
-      "f1_weighted": 0.9053074584989478,
-      "auc": 0.7928503787878788,
-      "sensitivity": 1.0,
-      "specificity": 0.0,
+      "loss": 0.14804184563616488,
+      "accuracy": 0.9308510638297872,
+      "f1_weighted": 0.9294457707557527,
+      "f1_macro": 0.6989777066141151,
+      "auc": 0.9403409090909092,
+      "lgg_recall": 0.4166666666666667,
+      "hgg_recall": 0.9659090909090909,
+      "precision": 0.96045197740113,
+      "ece": 0.03029940990691489,
       "confusion_matrix": [
         [
-          0,
-          12
+          5,
+          7
         ],
         [
-          0,
-          176
+          6,
+          170
         ]
       ],
       "per_class": {
         "LGG": {
           "n": 12,
-          "correct": 0,
-          "recall": 0.0
+          "correct": 5,
+          "recall": 0.4167
         },
         "HGG": {
           "n": 176,
-          "correct": 176,
-          "recall": 1.0
+          "correct": 170,
+          "recall": 0.9659
         }
       }
     }
   },
   "densenet121_3d": {
-    "epochs_trained": 18,
+    "epochs_trained": 12,
+    "best_val_macro_f1": 0.7585227272727273,
+    "best_val_lgg_recall": 0.6,
     "best_val_accuracy": 0.946524064171123,
     "val": {
       "n_subjects": 187,
-      "loss": 0.315372802396404,
+      "loss": 0.20549402380005477,
       "accuracy": 0.946524064171123,
-      "f1_weighted": 0.9437033921501866,
-      "auc": 0.8824858757062146,
-      "sensitivity": 0.9774011299435028,
-      "specificity": 0.4,
+      "f1_weighted": 0.9488028682547399,
+      "f1_macro": 0.7585227272727273,
+      "auc": 0.8319209039548022,
+      "lgg_recall": 0.6,
+      "hgg_recall": 0.9661016949152542,
+      "precision": 0.9771428571428571,
+      "ece": 0.056572735628342224,
       "confusion_matrix": [
         [
-          4,
-          6
+          6,
+          4
         ],
         [
-          4,
-          173
+          6,
+          171
         ]
       ],
       "per_class": {
         "LGG": {
           "n": 10,
-          "correct": 4,
-          "recall": 0.4
+          "correct": 6,
+          "recall": 0.6
         },
         "HGG": {
           "n": 177,
-          "correct": 173,
-          "recall": 0.9774
+          "correct": 171,
+          "recall": 0.9661
         }
       }
     },
     "test": {
       "n_subjects": 188,
-      "loss": 0.3122984712269712,
-      "accuracy": 0.9468085106382979,
-      "f1_weighted": 0.944540974111836,
-      "auc": 0.8657670454545455,
-      "sensitivity": 0.9772727272727273,
-      "specificity": 0.5,
+      "loss": 0.17010984458821884,
+      "accuracy": 0.9361702127659575,
+      "f1_weighted": 0.9361702127659575,
+      "f1_macro": 0.7329545454545454,
+      "auc": 0.9275568181818182,
+      "lgg_recall": 0.5,
+      "hgg_recall": 0.9659090909090909,
+      "precision": 0.9659090909090909,
+      "ece": 0.034951067985372376,
       "confusion_matrix": [
         [
           6,
           6
         ],
         [
-          4,
-          172
+          6,
+          170
         ]
       ],
       "per_class": {
@@ -125,23 +141,28 @@
         },
         "HGG": {
           "n": 176,
-          "correct": 172,
-          "recall": 0.9773
+          "correct": 170,
+          "recall": 0.9659
         }
       }
     }
   },
   "swin_transformer_3d": {
     "epochs_trained": 7,
+    "best_val_macro_f1": 0.48626373626373626,
+    "best_val_lgg_recall": 0.0,
     "best_val_accuracy": 0.946524064171123,
     "val": {
       "n_subjects": 187,
-      "loss": 0.4771312858830107,
+      "loss": 0.21334595375872673,
       "accuracy": 0.946524064171123,
       "f1_weighted": 0.9205206558147734,
-      "auc": 0.8847457627118643,
-      "sensitivity": 1.0,
-      "specificity": 0.0,
+      "f1_macro": 0.48626373626373626,
+      "auc": 0.868361581920904,
+      "lgg_recall": 0.0,
+      "hgg_recall": 1.0,
+      "precision": 0.946524064171123,
+      "ece": 0.023690779578876997,
       "confusion_matrix": [
         [
           0,
@@ -167,12 +188,15 @@
     },
     "test": {
       "n_subjects": 188,
-      "loss": 0.5088963169366756,
+      "loss": 0.24925069606050532,
       "accuracy": 0.9361702127659575,
       "f1_weighted": 0.9053074584989478,
-      "auc": 0.8868371212121212,
-      "sensitivity": 1.0,
-      "specificity": 0.0,
+      "f1_macro": 0.4835164835164835,
+      "auc": 0.9183238636363636,
+      "lgg_recall": 0.0,
+      "hgg_recall": 1.0,
+      "precision": 0.9361702127659575,
+      "ece": 0.034044630984042534,
       "confusion_matrix": [
         [
           0,

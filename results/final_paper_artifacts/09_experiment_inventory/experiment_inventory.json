@@ -1,0 +1,178 @@
+[
+  {
+    "id": "EXP-01",
+    "name": "Standard Cross-Entropy Baseline (Protocol A)",
+    "question": "How do standard 3D CNNs and Vision Transformers perform under default unweighted Cross-Entropy loss?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "ResNet18 MedicalNet",
+      "DenseNet121 3D",
+      "SwinUNETR 3D"
+    ],
+    "protocol": "Protocol A (Unweighted CE, lr=1e-4, batch=2, seed=42)",
+    "cohorts": "Val: 187 (10 LGG, 177 HGG); Test: 188 (12 LGG, 176 HGG)",
+    "training": true,
+    "test_labels_used_in_training": false,
+    "metrics": "Accuracy, Macro-F1, LGG/HGG Recall, AUC, ECE, Brier",
+    "output_dir": "results/protocol_archives/protocol_A/",
+    "main_finding": "High aggregate accuracy (>93.6%) and AUC (>0.93) masked extreme minority-class recall disparity (Swin: 0.0% LGG recall; ResNet: 75.0%).",
+    "limitation": "Single-seed training; severe class imbalance (93.6% majority)."
+  },
+  {
+    "id": "EXP-02",
+    "name": "Class-Weighting Interventions (Protocols B & C)",
+    "question": "Does loss re-weighting (inverse-frequency Protocol B and adjusted minority Protocol C) reliably resolve minority-class sensitivity?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "ResNet18 MedicalNet",
+      "DenseNet121 3D",
+      "SwinUNETR 3D"
+    ],
+    "protocol": "Protocol B (Inv-Freq), Protocol C (Adjusted Minority)",
+    "cohorts": "Val: 187 (10 LGG, 177 HGG); Test: 188 (12 LGG, 176 HGG)",
+    "training": true,
+    "test_labels_used_in_training": false,
+    "metrics": "Accuracy, Macro-F1, LGG/HGG Recall, AUC, ECE, Brier",
+    "output_dir": "results/protocol_archives/protocol_B/, protocol_C/",
+    "main_finding": "Produced divergent, architecture-dependent responses. Swin improved (0% -> 25%), while ResNet degraded (75% -> 41.7%).",
+    "limitation": "Mechanism of architecture-specific weighting response was not causally isolated."
+  },
+  {
+    "id": "EXP-03",
+    "name": "Uncalibrated Baseline Threshold Sensitivity Analysis",
+    "question": "Does the fixed tau=0.50 decision boundary mischaracterize model discriminative capabilities across architectures?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "ResNet18",
+      "DenseNet121",
+      "SwinUNETR (Protocols A, B, C)"
+    ],
+    "protocol": "Post-hoc sweep tau in [0.05, 0.95]",
+    "cohorts": "Val: 187; Test: 188",
+    "training": false,
+    "test_labels_used_in_training": false,
+    "metrics": "LGG/HGG Recall, Balanced Acc, Macro-F1 vs tau",
+    "output_dir": "results/reliability_analysis/threshold_analysis/",
+    "main_finding": "Altering decision threshold exposed continuous sensitivity trade-offs while ROC-AUC remained completely invariant.",
+    "limitation": "Threshold sweeps on test cohort are descriptive operating curves, not prospective selection."
+  },
+  {
+    "id": "EXP-04",
+    "name": "Focal Loss Intervention on ResNet18 MedicalNet",
+    "question": "Does dynamic sample-hardness weighting (Focal Loss alpha=1.0, gamma=2.0) resolve minority sensitivity without heuristic re-weighting?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "ResNet18 MedicalNet"
+    ],
+    "protocol": "Focal Loss (alpha=1.0, gamma=2.0, lr=1e-4, batch=2, seed=42)",
+    "cohorts": "Val: 187; Test: 188",
+    "training": true,
+    "test_labels_used_in_training": false,
+    "metrics": "Val Macro-F1, LGG Recall, Checkpoint State",
+    "output_dir": "models/resnet18_medicalnet_focal_lgg_hgg_3d.pt",
+    "main_finding": "Model trained stably (early stopping epoch 14), achieving strong validation F1 (0.7225) and LGG recall (50%).",
+    "limitation": "Single canonical seed (seed 42); evaluated on ResNet18 backbone."
+  },
+  {
+    "id": "EXP-05",
+    "name": "Locked-Test Evaluation of Focal Loss Checkpoint",
+    "question": "How does Focal Loss perform on the identical locked test cohort compared to the CE baseline?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "ResNet18 MedicalNet (Focal)"
+    ],
+    "protocol": "Deterministic locked-test evaluation (eval mode)",
+    "cohorts": "Test: 188 (12 LGG, 176 HGG)",
+    "training": false,
+    "test_labels_used_in_training": false,
+    "metrics": "Acc=0.9362, F1=0.7103, AUC=0.9541, LGG Rec=0.4167, HGG Rec=0.9716, ECE=0.0975, Brier=0.0497",
+    "output_dir": "results/focal_locked_test/",
+    "main_finding": "Retained high rank discrimination (AUC=0.9541), but default tau=0.50 recall remained limited (41.67%) with noticeable probability compression (ECE=9.75%).",
+    "limitation": "Revealed probability compression under default thresholding."
+  },
+  {
+    "id": "EXP-06",
+    "name": "Post-Hoc Validation-Only Temperature Scaling of Focal Loss",
+    "question": "Can validation-fitted temperature scaling correct Focal Loss probability compression without altering discrimination?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "ResNet18 MedicalNet (Focal)"
+    ],
+    "protocol": "Scalar temperature T* optimized strictly on val NLL; frozen before test eval",
+    "cohorts": "Val: 187 (for T* fit); Test: 188 (for eval)",
+    "training": false,
+    "test_labels_used_in_training": false,
+    "metrics": "T*=0.4923, Test ECE: 9.75% -> 3.41%, Brier: 0.0497 -> 0.0394, AUC=0.9541 (Invariant)",
+    "output_dir": "results/focal_locked_test/temperature_scaling/",
+    "main_finding": "Test ECE was reduced by 65% (matching CE baseline of 3.69%) while ROC-AUC and tau=0.50 classifications remained strictly invariant.",
+    "limitation": "Temperature scaling corrects probability scale, but does not alter default binary classifications."
+  },
+  {
+    "id": "EXP-07",
+    "name": "Calibrated Focal Operating-Point Analysis",
+    "question": "How do calibrated probabilities translate into clinical operating points across decision thresholds?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "ResNet18 MedicalNet (Focal + T*=0.4923)"
+    ],
+    "protocol": "Threshold sweep tau in [0.10, 0.90] on calibrated probabilities",
+    "cohorts": "Test: 188",
+    "training": false,
+    "test_labels_used_in_training": false,
+    "metrics": "tau=0.35 -> F1=0.7685 (LGG Rec=66.7%, HGG Rec=95.5%); tau=0.10 -> LGG Rec=100%, HGG Rec=83.5%",
+    "output_dir": "results/focal_locked_test/temperature_scaling/threshold_analysis/",
+    "main_finding": "Operating on calibrated probabilities provides principled sensitivity trade-offs (e.g. 66.7% LGG recall with only 4 false alarms).",
+    "limitation": "Descriptive analysis; operational cutoff selection requires prospective validation."
+  },
+  {
+    "id": "EXP-08",
+    "name": "Multi-Model Post-Hoc Calibration Benchmark",
+    "question": "Does post-hoc temperature scaling generalize across CNNs and Vision Transformers under Protocols A, B, and C?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "9 Baseline models (Protocols A, B, C x 3 archs) + Focal ResNet18"
+    ],
+    "protocol": "Validation NLL minimization for T*, evaluated on locked test",
+    "cohorts": "Val: 187; Test: 188",
+    "training": false,
+    "test_labels_used_in_training": false,
+    "metrics": "Multi-model NLL, Brier, Confidence ECE, Prob ECE, AUC, Recalls",
+    "output_dir": "results/posthoc_calibration_comparison/",
+    "main_finding": "CE models are already well-calibrated (T* ~ 1.0, ECE 1.4-3.5%); Focal model derived large benefit (T*=0.49, ECE 9.8% -> 3.4%).",
+    "limitation": "Evaluated on single-temperature parameter scaling."
+  },
+  {
+    "id": "EXP-09",
+    "name": "Multi-Model Calibrated Threshold Sensitivity Benchmark",
+    "question": "How do decision boundaries interact with calibrated probabilities across diverse architectures?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "All 10 models (9 baselines + Focal)"
+    ],
+    "protocol": "Calibrated probability threshold sweeps tau in [0.10, 0.90]",
+    "cohorts": "Test: 188",
+    "training": false,
+    "test_labels_used_in_training": false,
+    "metrics": "Operating points at tau in [0.10, 0.90], Max F1, Max BalAcc",
+    "output_dir": "results/posthoc_calibration_comparison/multi_model_threshold_comparison.csv",
+    "main_finding": "Demonstrated that discrimination, calibration, and operating threshold choices frequently decouple across models.",
+    "limitation": "Threshold sweeps reflect locked-test empirical distributions."
+  },
+  {
+    "id": "EXP-10",
+    "name": "Predictive Uncertainty & Reliability Analysis",
+    "question": "Can predictive entropy and confidence identify borderline, high-risk cases near decision boundaries?",
+    "dataset": "BraTS 2023 GLI (label_grade)",
+    "models": [
+      "All 10 models"
+    ],
+    "protocol": "Entropy and confidence computed per subject from calibrated probabilities",
+    "cohorts": "Test: 188",
+    "training": false,
+    "test_labels_used_in_training": false,
+    "metrics": "Predictive Entropy, Calibrated Confidence per subject",
+    "output_dir": "results/posthoc_calibration_comparison/calibrated_predictions/",
+    "main_finding": "High predictive entropy correlates strongly with misclassified and borderline minority cases.",
+    "limitation": "Epistemic vs aleatoric uncertainty separation is approximated."
+  }
+]

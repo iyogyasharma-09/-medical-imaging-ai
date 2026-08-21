@@ -1,0 +1,28 @@
+{
+  "model_name": "DenseNet121 3D",
+  "protocol": "C",
+  "n_test_subjects": 188,
+  "lgg_count": 12,
+  "hgg_count": 176,
+  "confusion_matrix": {
+    "tn": 4,
+    "fp": 8,
+    "fn": 7,
+    "tp": 169,
+    "matrix": [
+      [
+        4,
+        8
+      ],
+      [
+        7,
+        169
+      ]
+    ]
+  },
+  "lgg_recall": 0.3333333333333333,
+  "hgg_recall": 0.9602272727272727,
+  "accuracy": 0.9202127659574468,
+  "f1_macro": 0.6526665845547481,
+  "auc": 0.901278409090909
+}

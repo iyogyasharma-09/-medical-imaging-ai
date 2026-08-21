@@ -1,0 +1,44 @@
+{
+  "audit_metadata": {
+    "audit_name": "DAY 7 \u2014 AUDIT 3: CONTROLLED CLASS-WEIGHTING EFFECT & EXPERIMENTAL INTERPRETATION AUDIT",
+    "timestamp": "2026-08-19 10:17:53",
+    "audit_mode": "STRICT_READ_ONLY_FORENSIC_STATISTICAL",
+    "auditor": "DeepMind Antigravity Advanced Agentic AI",
+    "verdict_experimental_control": "VALID_CONTROLLED_EXPERIMENT",
+    "verdict_universal_improvement": "PROVEN_FALSE (Degraded in 6/9 configs)",
+    "verdict_architecture_divergence": "EMPIRICALLY_SUPPORTED_ON_BENCHMARK",
+    "verdict_sample_size_limitation": "CONFIRMED (N=12 LGG, 1 case = 8.33 pp)"
+  },
+  "artifacts": {
+    "class_weighting_audit.md": {
+      "relative_path": "results/reliability_analysis/day7_class_weighting_audit/class_weighting_audit.md",
+      "size_bytes": 19542,
+      "sha256": "8a70e3a864184740aa188e86238e6068f4b07e717de465fe2fe753469455fe89"
+    },
+    "class_weighting_results_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_class_weighting_audit/class_weighting_results_matrix.csv",
+      "size_bytes": 1621,
+      "sha256": "c297fc8cdc02c04d01779c201ad0e5773698a4801b84cd79e0c8c0751d7dcc6f"
+    },
+    "class_weighting_effect_sizes.csv": {
+      "relative_path": "results/reliability_analysis/day7_class_weighting_audit/class_weighting_effect_sizes.csv",
+      "size_bytes": 1118,
+      "sha256": "a18346c9aac2115f0bd8d5511c85650de21ffd720f2ed1affe8b033df39f1bb1"
+    },
+    "claim_evidence_matrix.csv": {
+      "relative_path": "results/reliability_analysis/day7_class_weighting_audit/claim_evidence_matrix.csv",
+      "size_bytes": 1859,
+      "sha256": "a0bc5cb7b210f5783923e7a193ae8b89acc0051d66cbe95372c32831b3f451cc"
+    },
+    "class_weighting_audit.json": {
+      "relative_path": "results/reliability_analysis/day7_class_weighting_audit/class_weighting_audit.json",
+      "size_bytes": 5628,
+      "sha256": "74d3d5f8ed1465836d108efd1caaefb00abf845771701affbf86cf17f2e4d393"
+    },
+    "executive_summary.md": {
+      "relative_path": "results/reliability_analysis/day7_class_weighting_audit/executive_summary.md",
+      "size_bytes": 3723,
+      "sha256": "d05edc1669d8c7985a943ed9ca1cebee6ff87128730634365eaf63506c05c8e3"
+    }
+  }
+}

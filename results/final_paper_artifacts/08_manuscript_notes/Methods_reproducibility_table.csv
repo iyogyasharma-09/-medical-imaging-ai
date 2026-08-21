@@ -1,0 +1,8 @@
+Item,Specification,Verified_In
+Random Seed,"seed = 42 (PyTorch, NumPy, CUDA)",config.py
+Data Partitioning,"Fixed JSON manifests (train=876, val=187, test=188)",processed_dataset/brats2023/
+Framework & Dependencies,"PyTorch 2.x, MONAI 1.x, TorchIO, Scikit-learn, SciPy",environment requirements
+MedicalNet Pretrained Weights,resnet_18_23dataset.pth loaded into ResNet18 backbone,models/medicalnet/
+Checkpoint Hashes,SHA-256 signatures for all 9 canonical baselines + Focal checkpoint,protocol_integrity_manifest.json
+Temperature Parameters,Exact floating-point T* parameters and NLL convergence logs,temperature_parameters.json
+Evaluation Engine,"evaluate_locked_test.py, evaluate_models.py",results/final_paper_artifacts/
